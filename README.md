@@ -1,13 +1,36 @@
-# Pak Mart Enterprise AI
+# CivicLens
 
-A Multi-Agent RAG-Based Enterprise Intelligence System.
+CivicLens is an AI-assisted civic issue management system designed to help citizens report public issues and help government authorities analyze, prioritize, and manage those issues.
 
 ## Project Overview
 
-Pak Mart Enterprise AI is an enterprise intelligence platform designed to help organizations retrieve knowledge, analyze business information, and assist with enterprise workflows using RAG, multi-agent AI, and large language models.
+Citizens can report civic problems such as:
 
-## Team
+- Potholes
+- Garbage accumulation
+- Drainage problems
+- Streetlight issues
+- Road damage
 
-- Hamza — Backend & LLM
-- Javeria — Frontend & Data
-- Tayyab — Agentic AI & RAG
+The system processes these reports and supports the complete workflow from issue analysis to project completion.
+
+## Current Backend Workflow
+
+```text
+Citizen Report
+      ↓
+FastAPI Backend
+      ↓
+Report Storage
+      ↓
+Civic Issue Analysis
+      ↓
+Decision / Priority
+      ↓
+Project Creation
+      ↓
+Contractor Assignment
+      ↓
+Project Status Tracking
+      ↓
+Project Completed
