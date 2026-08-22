@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CivicLens AI - Pakistan</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>🌐</span>
+
+            <div>
+                <strong>CivicLens AI</strong>
+                <small>Pakistan Civic Assistant</small>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#report">Report Issue</a>
+            <a href="#assistant">AI Assistant</a>
+        </div>
+
+        <button class="location-btn">
+            📍 Pakistan
+        </button>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="dashboard">
+
+        <div class="hero-text">
+
+            <span class="badge">
+                🇵🇰 SMART CIVIC PLATFORM
+            </span>
+
+            <h1>
+                Make Pakistan's
+                <span>Cities Better.</span>
+            </h1>
+
+            <p>
+                Report civic problems, understand their priority,
+                and get AI-powered guidance through CivicLens AI.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#report" class="primary-btn">
+                    📸 Report an Issue
+                </a>
+
+                <a href="#assistant" class="secondary-btn">
+                    🤖 Ask CivicLens AI
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- DASHBOARD CARD -->
+        <div class="hero-card">
+
+            <div class="card-top">
+
+                <div>
+                    <span>Civic Platform</span>
+                    <h2>Pakistan 🇵🇰</h2>
+                </div>
+
+                <span class="live">
+                    ● ONLINE
+                </span>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <span>📍</span>
+                    <strong>Pakistan</strong>
+                    <small>Civic Coverage</small>
+                </div>
+
+                <div class="stat-card">
+                    <span>⚠️</span>
+                    <strong>Issues</strong>
+                    <small>Civic Reporting</small>
+                </div>
+
+                <div class="stat-card">
+                    <span>🤖</span>
+                    <strong>AI</strong>
+                    <small>Decision Support</small>
+                </div>
+
+                <div class="stat-card">
+                    <span>📚</span>
+                    <strong>RAG</strong>
+                    <small>Policy Knowledge</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CIVIC ISSUES -->
+    <section class="section">
+
+        <div class="section-title">
+
+            <span>EXPLORE</span>
+
+            <h2>
+                Civic Issues Across Pakistan
+            </h2>
+
+            <p>
+                CivicLens helps citizens report common public issues.
+            </p>
+
+        </div>
+
+
+        <div class="issue-grid">
+
+            <div class="issue-card">
+
+                <div>🛣️</div>
+
+                <h3>
+                    Road Damage
+                </h3>
+
+                <p>
+                    Potholes, broken roads and dangerous street conditions.
+                </p>
+
+            </div>
+
+
+            <div class="issue-card">
+
+                <div>💡</div>
+
+                <h3>
+                    Street Lights
+                </h3>
+
+                <p>
+                    Broken or non-functional street lights.
+                </p>
+
+            </div>
+
+
+            <div class="issue-card">
+
+                <div>🗑️</div>
+
+                <h3>
+                    Garbage
+                </h3>
+
+                <p>
+                    Illegal dumping and public cleanliness problems.
+                </p>
+
+            </div>
+
+
+            <div class="issue-card">
+
+                <div>💧</div>
+
+                <h3>
+                    Drainage & Water
+                </h3>
+
+                <p>
+                    Water leakage, drainage and sewer problems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REPORT ISSUE -->
+    <section class="report-section" id="report">
+
+        <div class="report-content">
+
+
+            <div class="report-info">
+
+                <span class="badge">
+                    REPORT A CIVIC ISSUE
+                </span>
+
+                <h2>
+                    See a Problem?
+                    <span>Report It.</span>
+                </h2>
+
+                <p>
+                    Upload a picture of a civic issue and provide
+                    the location and description. CivicLens AI can
+                    help analyze the complaint.
+                </p>
+
+
+                <div class="report-points">
+
+                    <div>
+                        ✓ Upload an issue image
+                    </div>
+
+                    <div>
+                        ✓ Provide the location
+                    </div>
+
+                    <div>
+                        ✓ Describe the problem
+                    </div>
+
+                    <div>
+                        ✓ Get AI decision support
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- REPORT FORM -->
+            <div class="report-card">
+
+
+                <div class="upload-box" id="uploadBox">
+
+                    <div class="upload-icon">
+                        📸
+                    </div>
+
+                    <h3>
+                        Upload Issue Image
+                    </h3>
+
+                    <p>
+                        JPG, PNG or WEBP
+                    </p>
+
+
+                    <input
+                        type="file"
+                        id="imageInput"
+                        accept="image/*"
+                        hidden
+                    >
+
+
+                    <button
+                        class="upload-btn"
+                        id="uploadBtn"
+                        type="button"
+                    >
+                        Choose Image
+                    </button>
+
+
+                    <img
+                        id="preview"
+                        alt="Issue image preview"
+                    >
+
+                </div>
+
+
+                <label for="issueType">
+                    Issue Type
+                </label>
+
+                <select id="issueType">
+
+                    <option value="Road Damage">
+                        Road / Pothole
+                    </option>
+
+                    <option value="Garbage">
+                        Garbage / Cleanliness
+                    </option>
+
+                    <option value="Street Light">
+                        Street Light
+                    </option>
+
+                    <option value="Drainage">
+                        Drainage / Sewer
+                    </option>
+
+                    <option value="Water Leakage">
+                        Water Leakage
+                    </option>
+
+                    <option value="Other">
+                        Other Civic Issue
+                    </option>
+
+                </select>
+
+
+                <label for="location">
+                    Location
+                </label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Enter the area, road, sector or location"
+                >
+
+
+                <label for="description">
+                    Description
+                </label>
+
+                <textarea
+                    id="description"
+                    placeholder="Describe the civic problem..."
+                ></textarea>
+
+
+                <button
+                    class="submit-btn"
+                    id="submitReport"
+                    type="button"
+                >
+                    🚀 Submit Civic Issue
+                </button>
+
+
+                <div id="reportResult"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AI ASSISTANT -->
+    <section
+        class="assistant-section"
+        id="assistant"
+    >
+
+        <div class="assistant-heading">
+
+            <span class="badge">
+                CIVICLENS AI
+            </span>
+
+            <h2>
+                Your AI Civic Assistant 🤖
+            </h2>
+
+            <p>
+                Ask questions about civic policies and complaint priorities.
+            </p>
+
+        </div>
+
+
+        <!-- CHAT -->
+        <div class="chat-container">
+
+
+            <!-- CHAT HEADER -->
+            <div class="chat-header">
+
+                <div class="bot-avatar">
+                    🤖
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        CivicLens AI
+                    </h3>
+
+                    <span>
+                        ● Online
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CHAT MESSAGES -->
+            <main
+                id="chat-box"
+                class="chat-box"
+            >
+
+                <div class="message bot-message">
+                    👋 Hello! I'm CivicLens AI.
+                    Ask me any question about the civic knowledge base.
+                </div>
+
+            </main>
+
+
+            <!-- CHAT INPUT -->
+            <footer class="input-area">
+
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Ask CivicLens AI..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    id="send-button"
+                    type="button"
+                >
+                    ➤
+                </button>
+
+            </footer>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <h3>
+            🌐 CivicLens AI
+        </h3>
+
+        <p>
+            AI-powered civic decision support for Pakistan.
+        </p>
+
+        <small>
+            Built for better communities 🇵🇰
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

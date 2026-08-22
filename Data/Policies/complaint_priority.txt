@@ -1,0 +1,97 @@
+CivicLens AI
+Document Type: Civic Issue Priority Decision Framework
+Jurisdiction Context: General Civic Use
+
+Important: This document is a CivicLens decision-support framework, not an official government priority policy.
+
+PURPOSE
+
+CivicLens uses this framework to estimate the priority of a civic complaint based on safety risk, severity, public impact, issue type, and available municipal response information.
+
+PRIORITY LEVELS
+
+Priority 1 - CRITICAL
+
+Use when there is an immediate or serious safety risk.
+
+Examples:
+- Dangerous street opening that could cause an accident
+- Major roadway collapse or dangerous cave-in
+- Fallen streetlight pole
+- Exposed electrical hazard
+- Immediate danger from storm flood water
+
+Recommended action:
+- Escalate immediately
+- Identify the responsible emergency or municipal agency
+- Do not treat the complaint as a routine maintenance request
+
+Priority 2 - HIGH
+
+Use when the issue creates a significant public safety or infrastructure risk but is not an immediate emergency.
+
+Examples:
+- Severe road damage affecting traffic
+- Major streetlight failure in a high-use location
+- Serious drainage or sewer problem
+- Large illegal dumping affecting public access
+- Repeated civic issue at the same location
+
+Recommended action:
+- Prioritize municipal review
+- Identify the responsible agency
+- Consider location, severity, and public exposure
+
+Priority 3 - MEDIUM
+
+Use for problems that affect public infrastructure or quality of life but do not indicate an immediate safety emergency.
+
+Examples:
+- Ordinary pothole
+- Streetlight outage without emergency electrical danger
+- Sidewalk condition
+- Street condition
+- Water maintenance issue
+- Ordinary sewer maintenance issue
+
+Recommended action:
+- Create or route a service request
+- Follow the normal agency response process
+- Use available municipal response-time information
+
+Priority 4 - LOW
+
+Use for minor issues with limited immediate public impact.
+
+Examples:
+- Minor cosmetic street condition
+- Small non-hazardous cleanliness issue
+- Minor maintenance issue with no immediate safety risk
+
+Recommended action:
+- Route through normal civic service channels
+- Monitor status
+
+FACTORS USED BY CIVICLENS
+
+Priority should consider:
+
+1. Safety risk
+2. Severity of physical damage
+3. Public exposure
+4. Location
+5. Potential effect on traffic or pedestrians
+6. Environmental or sanitation impact
+7. Whether the issue is recurring
+8. Whether the issue involves an emergency condition
+9. Available municipal response-time information
+
+IMPORTANT RULE
+
+CivicLens should not claim that a priority score is an official government classification unless an official government source explicitly provides that classification.
+
+The system should explain why a complaint was classified as Critical, High, Medium, or Low.
+
+The system should provide the supporting policy or guideline retrieved from the knowledge base.
+
+CivicLens should use the location and available government information to identify the appropriate responsible agency when reliable information is available.

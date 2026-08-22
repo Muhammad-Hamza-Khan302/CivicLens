@@ -1,0 +1,68 @@
+CivicLens Knowledge Base
+Topic: Streetlight Maintenance
+Jurisdiction: General Civic Use
+Source Type: Civic service and safety guidance
+
+STREETLIGHT CONDITIONS
+
+CivicLens can analyze streetlight problems including:
+
+- Streetlight burned out
+- Streetlight operating during the daytime
+- Flickering or cycling streetlight
+- Leaning streetlight pole
+- Fallen streetlight pole
+- Exposed electrical wires
+- Electrical danger near a streetlight
+- Damaged streetlight equipment
+
+Streetlight problems may occur on:
+
+- City streets
+- Highways
+- Public pathways
+- Parks
+- Playgrounds
+- Public parking areas
+- Other public spaces
+
+RESPONSIBLE AGENCY
+
+Streetlight conditions should be reported to the relevant municipal authority, electricity authority, public works department, or other responsible organization depending on the location.
+
+RESPONSE TIME
+
+Response times for streetlight complaints may vary between cities and municipal authorities.
+
+Emergency conditions may receive faster response when they create an immediate safety risk.
+
+Some repairs may take longer because of:
+
+- Nearby construction
+- Electrical supply problems
+- Obstructions
+- Damaged underground infrastructure
+- Need for replacement equipment
+- Major foundation repairs
+
+SAFETY RULE
+
+A fallen streetlight pole or exposed electrical wire should be treated as a high-priority safety issue.
+
+People should avoid touching damaged electrical equipment and should contact the appropriate emergency or utility service when there is an immediate electrical danger.
+
+CIVICLENS APPLICATION
+
+When analyzing a streetlight complaint:
+
+1. Identify the type of streetlight problem.
+2. Check whether there is an electrical hazard.
+3. Check whether the pole has fallen or is at risk of falling.
+4. Treat emergency electrical or fallen-pole conditions as high-priority safety issues.
+5. Identify the responsible authority when reliable information is available.
+6. Consider the location and public exposure.
+7. Consider the effect on pedestrians and vehicles.
+
+IMPORTANT RULE
+
+CivicLens must not claim a specific response time as an official requirement unless it is supported by an applicable official government source.
