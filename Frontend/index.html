@@ -1,480 +1,2343 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CivicLens AI - Pakistan</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="CivicLens - AI powered civic issue reporting platform for Pakistan"
+    >
+
+    <title>CivicLens</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
+
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
+<!-- =====================================================
+     AUTH SCREEN
+===================================================== -->
 
-        <div class="logo">
-            <span>🌐</span>
+<div class="auth-screen" id="authScreen">
 
-            <div>
-                <strong>CivicLens AI</strong>
-                <small>Pakistan Civic Assistant</small>
-            </div>
-        </div>
+    <div class="auth-background">
 
-        <div class="nav-links">
-            <a href="#dashboard">Dashboard</a>
-            <a href="#report">Report Issue</a>
-            <a href="#assistant">AI Assistant</a>
-        </div>
+        <div class="auth-orb auth-orb-one"></div>
+        <div class="auth-orb auth-orb-two"></div>
 
-        <button class="location-btn">
-            📍 Pakistan
-        </button>
-
-    </nav>
+    </div>
 
 
-    <!-- HERO -->
-    <section class="hero" id="dashboard">
+    <div class="auth-container">
 
-        <div class="hero-text">
+        <!-- LEFT SIDE -->
 
-            <span class="badge">
-                🇵🇰 SMART CIVIC PLATFORM
-            </span>
+        <div class="auth-info">
 
-            <h1>
-                Make Pakistan's
-                <span>Cities Better.</span>
-            </h1>
+            <div class="brand">
 
-            <p>
-                Report civic problems, understand their priority,
-                and get AI-powered guidance through CivicLens AI.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#report" class="primary-btn">
-                    📸 Report an Issue
-                </a>
-
-                <a href="#assistant" class="secondary-btn">
-                    🤖 Ask CivicLens AI
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- DASHBOARD CARD -->
-        <div class="hero-card">
-
-            <div class="card-top">
-
-                <div>
-                    <span>Civic Platform</span>
-                    <h2>Pakistan 🇵🇰</h2>
+                <div class="brand-icon">
+                    <i class="fa-solid fa-eye"></i>
                 </div>
 
-                <span class="live">
-                    ● ONLINE
+                <span>CivicLens</span>
+
+            </div>
+
+
+            <div class="auth-info-content">
+
+                <span class="eyebrow">
+                    🇵🇰 BUILT FOR PAKISTAN
                 </span>
 
+                <h1>
+                    Make your city
+                    <span>better.</span>
+                </h1>
+
+                <p>
+                    Report civic problems, locate them on the map,
+                    and let AI help connect communities with
+                    responsible authorities.
+                </p>
+
+
+                <div class="auth-features">
+
+                    <div class="auth-feature">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+
+                        <div>
+                            <strong>Camera-based reporting</strong>
+                            <span>Capture real civic issues directly.</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="auth-feature">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <strong>Location aware</strong>
+                            <span>Pin problems accurately on the map.</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="auth-feature">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <div>
+                            <strong>AI powered</strong>
+                            <span>Analyze and prioritize civic issues.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
 
-            <div class="stats-grid">
-
-                <div class="stat-card">
-                    <span>📍</span>
-                    <strong>Pakistan</strong>
-                    <small>Civic Coverage</small>
-                </div>
-
-                <div class="stat-card">
-                    <span>⚠️</span>
-                    <strong>Issues</strong>
-                    <small>Civic Reporting</small>
-                </div>
-
-                <div class="stat-card">
-                    <span>🤖</span>
-                    <strong>AI</strong>
-                    <small>Decision Support</small>
-                </div>
-
-                <div class="stat-card">
-                    <span>📚</span>
-                    <strong>RAG</strong>
-                    <small>Policy Knowledge</small>
-                </div>
-
+            <div class="auth-footer">
+                CivicLens • AI-powered civic management
             </div>
 
         </div>
 
-    </section>
 
+        <!-- AUTH CARD -->
 
-    <!-- CIVIC ISSUES -->
-    <section class="section">
+        <div class="auth-card">
 
-        <div class="section-title">
+            <div class="mobile-brand">
 
-            <span>EXPLORE</span>
-
-            <h2>
-                Civic Issues Across Pakistan
-            </h2>
-
-            <p>
-                CivicLens helps citizens report common public issues.
-            </p>
-
-        </div>
-
-
-        <div class="issue-grid">
-
-            <div class="issue-card">
-
-                <div>🛣️</div>
-
-                <h3>
-                    Road Damage
-                </h3>
-
-                <p>
-                    Potholes, broken roads and dangerous street conditions.
-                </p>
-
-            </div>
-
-
-            <div class="issue-card">
-
-                <div>💡</div>
-
-                <h3>
-                    Street Lights
-                </h3>
-
-                <p>
-                    Broken or non-functional street lights.
-                </p>
-
-            </div>
-
-
-            <div class="issue-card">
-
-                <div>🗑️</div>
-
-                <h3>
-                    Garbage
-                </h3>
-
-                <p>
-                    Illegal dumping and public cleanliness problems.
-                </p>
-
-            </div>
-
-
-            <div class="issue-card">
-
-                <div>💧</div>
-
-                <h3>
-                    Drainage & Water
-                </h3>
-
-                <p>
-                    Water leakage, drainage and sewer problems.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- REPORT ISSUE -->
-    <section class="report-section" id="report">
-
-        <div class="report-content">
-
-
-            <div class="report-info">
-
-                <span class="badge">
-                    REPORT A CIVIC ISSUE
-                </span>
-
-                <h2>
-                    See a Problem?
-                    <span>Report It.</span>
-                </h2>
-
-                <p>
-                    Upload a picture of a civic issue and provide
-                    the location and description. CivicLens AI can
-                    help analyze the complaint.
-                </p>
-
-
-                <div class="report-points">
-
-                    <div>
-                        ✓ Upload an issue image
-                    </div>
-
-                    <div>
-                        ✓ Provide the location
-                    </div>
-
-                    <div>
-                        ✓ Describe the problem
-                    </div>
-
-                    <div>
-                        ✓ Get AI decision support
-                    </div>
-
+                <div class="brand-icon">
+                    <i class="fa-solid fa-eye"></i>
                 </div>
 
+                <span>CivicLens</span>
+
             </div>
 
 
-            <!-- REPORT FORM -->
-            <div class="report-card">
+            <!-- LOGIN -->
 
+            <div class="auth-form active" id="loginForm">
 
-                <div class="upload-box" id="uploadBox">
+                <div class="form-heading">
 
-                    <div class="upload-icon">
-                        📸
-                    </div>
+                    <h2 id="loginTitle">
+                        Welcome back
+                    </h2>
 
-                    <h3>
-                        Upload Issue Image
-                    </h3>
-
-                    <p>
-                        JPG, PNG or WEBP
+                    <p id="loginSubtitle">
+                        Sign in to your CivicLens account.
                     </p>
 
+                </div>
 
-                    <input
-                        type="file"
-                        id="imageInput"
-                        accept="image/*"
-                        hidden
-                    >
+
+                <form id="loginFormElement">
+
+                    <div class="form-group">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="loginEmail"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="loginPassword"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-options">
+
+                        <label class="checkbox-label">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            <span>Remember me</span>
+
+                        </label>
+
+                        <button
+                            type="button"
+                            class="text-btn"
+                            id="forgotPassword"
+                        >
+                            Forgot password?
+                        </button>
+
+                    </div>
 
 
                     <button
-                        class="upload-btn"
-                        id="uploadBtn"
-                        type="button"
+                        type="submit"
+                        class="primary-btn full-btn"
                     >
-                        Choose Image
+                        <span>Sign In</span>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </button>
 
+                </form>
 
-                    <img
-                        id="preview"
-                        alt="Issue image preview"
-                    >
+
+                <div class="auth-divider">
+                    <span>or</span>
+                </div>
+
+
+                <button
+                    class="demo-btn"
+                    id="demoLogin"
+                >
+                    <i class="fa-solid fa-flask"></i>
+                    Try Demo Mode
+                </button>
+
+
+                <p class="switch-auth">
+
+                    Don't have an account?
+
+                    <button id="showSignup">
+                        Create account
+                    </button>
+
+                </p>
+
+            </div>
+
+
+            <!-- SIGNUP -->
+
+            <div class="auth-form" id="signupForm">
+
+                <div class="form-heading">
+
+                    <h2>
+                        Create account
+                    </h2>
+
+                    <p>
+                        Join CivicLens and help improve your city.
+                    </p>
 
                 </div>
 
 
-                <label for="issueType">
-                    Issue Type
-                </label>
+                <form id="signupFormElement">
 
-                <select id="issueType">
+                    <div class="form-group">
 
-                    <option value="Road Damage">
-                        Road / Pothole
-                    </option>
+                        <label>
+                            Full Name
+                        </label>
 
-                    <option value="Garbage">
-                        Garbage / Cleanliness
-                    </option>
+                        <div class="input-wrapper">
 
-                    <option value="Street Light">
-                        Street Light
-                    </option>
+                            <i class="fa-regular fa-user"></i>
 
-                    <option value="Drainage">
-                        Drainage / Sewer
-                    </option>
+                            <input
+                                type="text"
+                                id="signupName"
+                                placeholder="Your full name"
+                                required
+                            >
 
-                    <option value="Water Leakage">
-                        Water Leakage
-                    </option>
+                        </div>
 
-                    <option value="Other">
-                        Other Civic Issue
-                    </option>
-
-                </select>
+                    </div>
 
 
-                <label for="location">
-                    Location
-                </label>
+                    <div class="form-group">
 
-                <input
-                    type="text"
-                    id="location"
-                    placeholder="Enter the area, road, sector or location"
-                >
+                        <label>
+                            Email
+                        </label>
 
+                        <div class="input-wrapper">
 
-                <label for="description">
-                    Description
-                </label>
+                            <i class="fa-regular fa-envelope"></i>
 
-                <textarea
-                    id="description"
-                    placeholder="Describe the civic problem..."
-                ></textarea>
+                            <input
+                                type="email"
+                                id="signupEmail"
+                                placeholder="you@example.com"
+                                required
+                            >
 
+                        </div>
 
-                <button
-                    class="submit-btn"
-                    id="submitReport"
-                    type="button"
-                >
-                    🚀 Submit Civic Issue
-                </button>
+                    </div>
 
 
-                <div id="reportResult"></div>
+                    <div class="form-group">
+
+                        <label>
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="signupPassword"
+                                placeholder="Create a password"
+                                minlength="8"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="signupPassword"
+                            >
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            City
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-city"></i>
+
+                            <select id="signupCity" required>
+
+                                <option value="">
+                                    Select your city
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn full-btn"
+                    >
+                        <span>Create Account</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+
+                <p class="switch-auth">
+
+                    Already have an account?
+
+                    <button id="showLogin">
+                        Sign in
+                    </button>
+
+                </p>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</div>
 
 
-    <!-- AI ASSISTANT -->
-    <section
-        class="assistant-section"
-        id="assistant"
+<!-- =====================================================
+     APPLICATION
+===================================================== -->
+
+<div
+    class="app hidden"
+    id="app"
+>
+
+
+    <!-- SIDEBAR -->
+
+    <aside
+        class="sidebar"
+        id="sidebar"
     >
 
-        <div class="assistant-heading">
+        <div class="sidebar-brand">
 
-            <span class="badge">
-                CIVICLENS AI
-            </span>
+            <div class="brand-icon">
+                <i class="fa-solid fa-eye"></i>
+            </div>
 
-            <h2>
-                Your AI Civic Assistant 🤖
-            </h2>
+            <div>
 
-            <p>
-                Ask questions about civic policies and complaint priorities.
-            </p>
+                <strong>CivicLens</strong>
+
+                <span>Pakistan Civic AI</span>
+
+            </div>
 
         </div>
 
 
-        <!-- CHAT -->
-        <div class="chat-container">
+        <nav class="sidebar-nav">
+
+            <button
+                class="nav-item active"
+                data-page="dashboard"
+            >
+                <i class="fa-solid fa-grid-2"></i>
+                <span data-i18n="dashboard">Dashboard</span>
+            </button>
 
 
-            <!-- CHAT HEADER -->
-            <div class="chat-header">
+            <button
+                class="nav-item citizen-only"
+                data-page="report"
+            >
+                <i class="fa-solid fa-camera"></i>
+                <span data-i18n="reportIssue">Report Issue</span>
+            </button>
 
-                <div class="bot-avatar">
-                    🤖
+
+            <button
+                class="nav-item citizen-only"
+                data-page="myReports"
+            >
+                <i class="fa-solid fa-file-lines"></i>
+                <span data-i18n="myReports">My Reports</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                data-page="map"
+            >
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span data-i18n="map">Issue Map</span>
+            </button>
+
+
+            <button
+                class="nav-item government-only"
+                data-page="government"
+            >
+                <i class="fa-solid fa-building-columns"></i>
+                <span>Government</span>
+            </button>
+
+
+            <button
+                class="nav-item admin-only"
+                data-page="admin"
+            >
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Administration</span>
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="language-card">
+
+                <div class="language-title">
+
+                    <i class="fa-solid fa-language"></i>
+
+                    <span data-i18n="language">
+                        Language
+                    </span>
+
                 </div>
 
 
-                <div>
+                <div class="language-switch">
 
-                    <h3>
-                        CivicLens AI
-                    </h3>
+                    <button
+                        class="language-btn active"
+                        data-language="en"
+                    >
+                        English
+                    </button>
 
-                    <span>
-                        ● Online
+                    <button
+                        class="language-btn"
+                        data-language="ur"
+                    >
+                        اردو
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="user-mini">
+
+                <div class="user-avatar" id="userAvatar">
+                    HK
+                </div>
+
+                <div class="user-mini-info">
+
+                    <strong id="userName">
+                        Hamza Khan
+                    </strong>
+
+                    <span id="userRole">
+                        Citizen
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="logout-btn"
+                    id="logoutBtn"
+                >
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MOBILE OVERLAY -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+    ></div>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <button
+                class="mobile-menu"
+                id="mobileMenu"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <div class="page-heading">
+
+                <span
+                    id="pageEyebrow"
+                    data-i18n="citizenPortal"
+                >
+                    CITIZEN PORTAL
+                </span>
+
+                <h1 id="pageTitle">
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <div class="city-pill">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span id="currentCity">
+                        Rawalpindi
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="notification-button"
+                    id="notificationButton"
+                >
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span></span>
+
+                </button>
+
+
+                <button
+                    class="top-avatar"
+                    id="topAvatar"
+                >
+                    HK
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             DASHBOARD PAGE
+        ================================================= -->
+
+        <section
+            class="page active-page"
+            id="dashboardPage"
+        >
+
+            <div class="content">
+
+
+                <!-- HERO -->
+
+                <div class="dashboard-hero">
+
+                    <div class="hero-content">
+
+                        <div class="hero-label">
+
+                            <span></span>
+
+                            CIVICLENS AI ONLINE
+
+                        </div>
+
+
+                        <h2>
+                            Let's improve
+                            <span id="heroCity">
+                                your city
+                            </span>.
+                        </h2>
+
+
+                        <p>
+                            Report civic problems and help your
+                            community get them resolved faster.
+                        </p>
+
+
+                        <button
+                            class="hero-btn citizen-only"
+                            data-page-link="report"
+                        >
+                            <i class="fa-solid fa-camera"></i>
+                            <span data-i18n="reportIssue">
+                                Report an Issue
+                            </span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="hero-visual">
+
+                        <div class="hero-circle circle-one"></div>
+                        <div class="hero-circle circle-two"></div>
+
+                        <div class="hero-pin">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STATS -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green-icon">
+                            <i class="fa-solid fa-file-circle-check"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Total Reports</span>
+
+                            <strong id="totalReports">
+                                24
+                            </strong>
+
+                            <small>
+                                +4 this month
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue-icon">
+                            <i class="fa-solid fa-spinner"></i>
+                        </div>
+
+                        <div>
+
+                            <span>In Progress</span>
+
+                            <strong id="progressReports">
+                                8
+                            </strong>
+
+                            <small>
+                                Being handled
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Resolved</span>
+
+                            <strong id="resolvedReports">
+                                14
+                            </strong>
+
+                            <small>
+                                58% resolution rate
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Your City</span>
+
+                            <strong
+                                class="city-stat"
+                                id="cityStat"
+                            >
+                                Rawalpindi
+                            </strong>
+
+                            <small>
+                                Pakistan
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DASHBOARD GRID -->
+
+                <div class="dashboard-grid">
+
+
+                    <!-- QUICK REPORT -->
+
+                    <div class="white-card quick-report">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    QUICK ACTION
+                                </span>
+
+                                <h3>
+                                    Report a civic issue
+                                </h3>
+
+                            </div>
+
+                            <div class="card-heading-icon">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+
+                        </div>
+
+
+                        <p>
+                            See a pothole, broken streetlight,
+                            overflowing drain or waste problem?
+                            Capture it directly using your camera.
+                        </p>
+
+
+                        <div class="report-flow">
+
+                            <div class="flow-step">
+
+                                <div>
+                                    <i class="fa-solid fa-camera"></i>
+                                </div>
+
+                                <span>Capture</span>
+
+                            </div>
+
+
+                            <div class="flow-line"></div>
+
+
+                            <div class="flow-step">
+
+                                <div>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+
+                                <span>Locate</span>
+
+                            </div>
+
+
+                            <div class="flow-line"></div>
+
+
+                            <div class="flow-step">
+
+                                <div>
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+
+                                <span>Analyze</span>
+
+                            </div>
+
+
+                            <div class="flow-line"></div>
+
+
+                            <div class="flow-step">
+
+                                <div>
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                                <span>Submit</span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="primary-btn report-action citizen-only"
+                            data-page-link="report"
+                        >
+                            <i class="fa-solid fa-camera"></i>
+
+                            <span data-i18n="startReport">
+                                Start Report
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- RECENT REPORTS -->
+
+                    <div class="white-card recent-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    RECENT ACTIVITY
+                                </span>
+
+                                <h3>
+                                    Your reports
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                class="link-btn"
+                                data-page-link="myReports"
+                            >
+                                View all
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="report-list">
+
+                            <div class="report-row">
+
+                                <div class="report-status status-high">
+                                    <i class="fa-solid fa-road"></i>
+                                </div>
+
+                                <div class="report-info">
+
+                                    <strong>
+                                        Large pothole
+                                    </strong>
+
+                                    <span>
+                                        Murree Road • 2 hours ago
+                                    </span>
+
+                                </div>
+
+                                <span class="badge badge-progress">
+                                    In progress
+                                </span>
+
+                            </div>
+
+
+                            <div class="report-row">
+
+                                <div class="report-status status-medium">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                </div>
+
+                                <div class="report-info">
+
+                                    <strong>
+                                        Broken streetlight
+                                    </strong>
+
+                                    <span>
+                                        Saddar • Yesterday
+                                    </span>
+
+                                </div>
+
+                                <span class="badge badge-resolved">
+                                    Resolved
+                                </span>
+
+                            </div>
+
+
+                            <div class="report-row">
+
+                                <div class="report-status status-low">
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+
+                                <div class="report-info">
+
+                                    <strong>
+                                        Waste collection
+                                    </strong>
+
+                                    <span>
+                                        Satellite Town • 3 days ago
+                                    </span>
+
+                                </div>
+
+                                <span class="badge badge-review">
+                                    Reviewing
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TRUST CARD -->
+
+                <div class="trust-card">
+
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Your reports are protected
+                        </strong>
+
+                        <p>
+                            CivicLens uses authenticated accounts,
+                            protected API access and role-based
+                            permissions for citizens, government
+                            users and administrators.
+                        </p>
+
+                    </div>
+
+                    <span class="security-badge">
+                        SECURE
                     </span>
 
                 </div>
 
             </div>
 
+        </section>
 
-            <!-- CHAT MESSAGES -->
-            <main
-                id="chat-box"
-                class="chat-box"
-            >
 
-                <div class="message bot-message">
-                    👋 Hello! I'm CivicLens AI.
-                    Ask me any question about the civic knowledge base.
+        <!-- =================================================
+             REPORT PAGE
+        ================================================= -->
+
+        <section
+            class="page"
+            id="reportPage"
+        >
+
+            <div class="content">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="card-eyebrow">
+                            CIVIC REPORTING
+                        </span>
+
+                        <h2 data-i18n="reportIssue">
+                            Report an Issue
+                        </h2>
+
+                        <p>
+                            Capture the problem, confirm its location,
+                            and let CivicLens AI analyze it.
+                        </p>
+
+                    </div>
+
+
+                    <div class="report-security">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <span>
+                            Secure Report
+                        </span>
+
+                    </div>
+
                 </div>
 
-            </main>
+
+                <div class="report-layout">
 
 
-            <!-- CHAT INPUT -->
-            <footer class="input-area">
+                    <!-- CAMERA -->
 
-                <input
-                    type="text"
-                    id="user-input"
-                    placeholder="Ask CivicLens AI..."
-                    autocomplete="off"
+                    <div class="white-card camera-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    STEP 1
+                                </span>
+
+                                <h3 data-i18n="takePhoto">
+                                    Take a Photo
+                                </h3>
+
+                            </div>
+
+                            <span class="required-badge">
+                                REQUIRED
+                            </span>
+
+                        </div>
+
+
+                        <p class="card-description">
+                            CivicLens only accepts photos captured
+                            directly through your camera. Gallery
+                            and file uploads are disabled.
+                        </p>
+
+
+                        <div
+                            class="camera-preview"
+                            id="cameraPreview"
+                        >
+
+                            <div
+                                class="camera-placeholder"
+                                id="cameraPlaceholder"
+                            >
+
+                                <div class="camera-large-icon">
+                                    <i class="fa-solid fa-camera"></i>
+                                </div>
+
+                                <strong>
+                                    Camera ready
+                                </strong>
+
+                                <span>
+                                    Your browser will ask for camera
+                                    permission.
+                                </span>
+
+                            </div>
+
+
+                            <video
+                                id="cameraVideo"
+                                autoplay
+                                playsinline
+                            ></video>
+
+
+                            <canvas
+                                id="cameraCanvas"
+                            ></canvas>
+
+
+                            <img
+                                id="capturedImage"
+                                alt="Captured civic issue"
+                            />
+
+
+                            <div
+                                class="camera-frame"
+                                id="cameraFrame"
+                            ></div>
+
+                        </div>
+
+
+                        <div class="camera-controls">
+
+                            <button
+                                class="secondary-btn"
+                                id="startCamera"
+                            >
+                                <i class="fa-solid fa-video"></i>
+                                Start Camera
+                            </button>
+
+
+                            <button
+                                class="capture-btn"
+                                id="capturePhoto"
+                                disabled
+                            >
+                                <span></span>
+                                Capture Photo
+                            </button>
+
+
+                            <button
+                                class="secondary-btn hidden"
+                                id="retakePhoto"
+                            >
+                                <i class="fa-solid fa-rotate-left"></i>
+                                Retake
+                            </button>
+
+                        </div>
+
+
+                        <div class="camera-security">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <span>
+                                Photos are captured from your
+                                device camera only.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LOCATION -->
+
+                    <div class="white-card location-card">
+
+                        <div class="card-heading">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    STEP 2
+                                </span>
+
+                                <h3>
+                                    Location
+                                </h3>
+
+                            </div>
+
+                            <i class="fa-solid fa-location-dot heading-icon"></i>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Your City
+                            </label>
+
+                            <div class="select-wrapper">
+
+                                <i class="fa-solid fa-city"></i>
+
+                                <select id="reportCity">
+                                    <option value="">
+                                        Select city
+                                    </option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="location-btn"
+                            id="getLocation"
+                        >
+                            <i class="fa-solid fa-crosshairs"></i>
+
+                            Use My Current Location
+
+                        </button>
+
+
+                        <div
+                            class="map-preview"
+                            id="mapPreview"
+                        >
+
+                            <div class="map-grid"></div>
+
+                            <div class="map-road road-one"></div>
+                            <div class="map-road road-two"></div>
+                            <div class="map-road road-three"></div>
+
+                            <div
+                                class="map-marker"
+                                id="mapMarker"
+                            >
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+
+                            <div class="map-overlay-label">
+
+                                <i class="fa-solid fa-map"></i>
+
+                                <span>
+                                    Location preview
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="coordinates">
+
+                            <div>
+
+                                <span>
+                                    Latitude
+                                </span>
+
+                                <strong id="latitude">
+                                    Not detected
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Longitude
+                                </span>
+
+                                <strong id="longitude">
+                                    Not detected
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- DESCRIPTION + AI -->
+
+                <div class="white-card analysis-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                STEP 3
+                            </span>
+
+                            <h3>
+                                Describe the Problem
+                            </h3>
+
+                        </div>
+
+
+                        <div class="ai-badge">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                            AI ANALYSIS
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Description
+                        </label>
+
+                        <textarea
+                            id="issueDescription"
+                            rows="5"
+                            placeholder="Describe what you observed. For example: A large pothole is blocking half of the road near the intersection..."
+                        ></textarea>
+
+                        <div class="character-count">
+                            <span id="characterCount">
+                                0
+                            </span>
+                            / 500
+                        </div>
+
+                    </div>
+
+
+                    <div class="analysis-actions">
+
+                        <button
+                            class="secondary-btn"
+                            id="clearReport"
+                        >
+                            Clear
+                        </button>
+
+
+                        <button
+                            class="primary-btn"
+                            id="analyzeIssue"
+                        >
+                            <i class="fa-solid fa-brain"></i>
+
+                            Analyze with AI
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- AI RESULT -->
+
+                    <div
+                        class="ai-result hidden"
+                        id="aiResult"
+                    >
+
+                        <div class="result-header">
+
+                            <div>
+
+                                <span class="card-eyebrow">
+                                    AI ANALYSIS COMPLETE
+                                </span>
+
+                                <h3>
+                                    Issue detected
+                                </h3>
+
+                            </div>
+
+                            <span
+                                class="severity-badge"
+                                id="severityBadge"
+                            >
+                                HIGH
+                            </span>
+
+                        </div>
+
+
+                        <div class="result-grid">
+
+                            <div class="result-item">
+
+                                <span>
+                                    Issue Type
+                                </span>
+
+                                <strong id="detectedIssue">
+                                    Pothole
+                                </strong>
+
+                            </div>
+
+
+                            <div class="result-item">
+
+                                <span>
+                                    Severity
+                                </span>
+
+                                <strong id="detectedSeverity">
+                                    High
+                                </strong>
+
+                            </div>
+
+
+                            <div class="result-item">
+
+                                <span>
+                                    Priority
+                                </span>
+
+                                <strong id="detectedPriority">
+                                    Urgent
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ai-message">
+
+                            <i class="fa-solid fa-sparkles"></i>
+
+                            <p id="aiMessage">
+                                The issue appears to require
+                                attention from the relevant
+                                municipal department.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            class="primary-btn full-btn"
+                            id="submitReport"
+                        >
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                            Submit Report
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MY REPORTS
+        ================================================= -->
+
+        <section
+            class="page"
+            id="myReportsPage"
+        >
+
+            <div class="content">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="card-eyebrow">
+                            CITIZEN ACTIVITY
+                        </span>
+
+                        <h2>
+                            My Reports
+                        </h2>
+
+                        <p>
+                            Track the civic issues you have reported.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        data-page-link="report"
+                    >
+                        <i class="fa-solid fa-plus"></i>
+                        New Report
+                    </button>
+
+                </div>
+
+
+                <div class="filter-bar white-card">
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="reportSearch"
+                            placeholder="Search your reports..."
+                        >
+
+                    </div>
+
+
+                    <select id="statusFilter">
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="submitted">
+                            Submitted
+                        </option>
+
+                        <option value="reviewing">
+                            Reviewing
+                        </option>
+
+                        <option value="progress">
+                            In Progress
+                        </option>
+
+                        <option value="resolved">
+                            Resolved
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div
+                    class="reports-table white-card"
+                    id="reportsTable"
                 >
 
+                    <div class="table-header">
 
-                <button
-                    id="send-button"
-                    type="button"
-                >
-                    ➤
-                </button>
+                        <span>
+                            Issue
+                        </span>
 
-            </footer>
+                        <span>
+                            Location
+                        </span>
 
-        </div>
+                        <span>
+                            Status
+                        </span>
 
-    </section>
+                        <span>
+                            Date
+                        </span>
 
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <h3>
-            🌐 CivicLens AI
-        </h3>
-
-        <p>
-            AI-powered civic decision support for Pakistan.
-        </p>
-
-        <small>
-            Built for better communities 🇵🇰
-        </small>
-
-    </footer>
+                    </div>
 
 
-    <script src="script.js"></script>
+                    <div class="table-row">
+
+                        <div class="table-issue">
+
+                            <div class="table-icon high">
+                                <i class="fa-solid fa-road"></i>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Large pothole
+                                </strong>
+
+                                <span>
+                                    REP-001
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <span>
+                            Rawalpindi
+                        </span>
+
+
+                        <span class="badge badge-progress">
+                            In Progress
+                        </span>
+
+
+                        <span>
+                            24 Aug 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <div class="table-issue">
+
+                            <div class="table-icon medium">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Broken streetlight
+                                </strong>
+
+                                <span>
+                                    REP-002
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <span>
+                            Rawalpindi
+                        </span>
+
+
+                        <span class="badge badge-resolved">
+                            Resolved
+                        </span>
+
+
+                        <span>
+                            21 Aug 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <div class="table-issue">
+
+                            <div class="table-icon low">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Waste collection
+                                </strong>
+
+                                <span>
+                                    REP-003
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <span>
+                            Islamabad
+                        </span>
+
+
+                        <span class="badge badge-review">
+                            Reviewing
+                        </span>
+
+
+                        <span>
+                            18 Aug 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MAP PAGE
+        ================================================= -->
+
+        <section
+            class="page"
+            id="mapPage"
+        >
+
+            <div class="content">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="card-eyebrow">
+                            CIVIC INTELLIGENCE
+                        </span>
+
+                        <h2>
+                            Issue Map
+                        </h2>
+
+                        <p>
+                            Explore reported civic problems
+                            around your selected city.
+                        </p>
+
+                    </div>
+
+                    <div class="map-legend">
+
+                        <span>
+                            <i class="legend-dot red"></i>
+                            High
+                        </span>
+
+                        <span>
+                            <i class="legend-dot orange"></i>
+                            Medium
+                        </span>
+
+                        <span>
+                            <i class="legend-dot green"></i>
+                            Resolved
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="full-map white-card">
+
+                    <div class="large-map-grid"></div>
+
+                    <div class="large-road large-road-one"></div>
+                    <div class="large-road large-road-two"></div>
+                    <div class="large-road large-road-three"></div>
+                    <div class="large-road large-road-four"></div>
+
+
+                    <button
+                        class="issue-marker marker-red"
+                        style="left: 28%; top: 38%;"
+                        title="High priority pothole"
+                    >
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
+
+
+                    <button
+                        class="issue-marker marker-orange"
+                        style="left: 52%; top: 60%;"
+                        title="Streetlight"
+                    >
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
+
+
+                    <button
+                        class="issue-marker marker-green"
+                        style="left: 70%; top: 32%;"
+                        title="Resolved issue"
+                    >
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
+
+
+                    <button
+                        class="issue-marker marker-red"
+                        style="left: 43%; top: 25%;"
+                        title="Drainage issue"
+                    >
+                        <i class="fa-solid fa-location-dot"></i>
+                    </button>
+
+
+                    <div class="map-center-label">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <strong id="mapCityLabel">
+                            Rawalpindi
+                        </strong>
+
+                        <span>
+                            Civic issue overview
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             GOVERNMENT PAGE
+        ================================================= -->
+
+        <section
+            class="page"
+            id="governmentPage"
+        >
+
+            <div class="content">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="card-eyebrow">
+                            GOVERNMENT PORTAL
+                        </span>
+
+                        <h2>
+                            Civic Operations
+                        </h2>
+
+                        <p>
+                            Review, prioritize and manage civic
+                            reports submitted by citizens.
+                        </p>
+
+                    </div>
+
+
+                    <span class="role-badge government-role">
+                        <i class="fa-solid fa-building-columns"></i>
+                        Government
+                    </span>
+
+                </div>
+
+
+                <div class="government-stats">
+
+                    <div class="operation-card">
+
+                        <span>
+                            Pending Reports
+                        </span>
+
+                        <strong>
+                            47
+                        </strong>
+
+                        <i class="fa-solid fa-inbox"></i>
+
+                    </div>
+
+
+                    <div class="operation-card">
+
+                        <span>
+                            High Priority
+                        </span>
+
+                        <strong>
+                            12
+                        </strong>
+
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    </div>
+
+
+                    <div class="operation-card">
+
+                        <span>
+                            Projects Active
+                        </span>
+
+                        <strong>
+                            9
+                        </strong>
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+
+                    <div class="operation-card">
+
+                        <span>
+                            Resolution Rate
+                        </span>
+
+                        <strong>
+                            81%
+                        </strong>
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="white-card government-reports">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                PRIORITY QUEUE
+                            </span>
+
+                            <h3>
+                                Reports requiring attention
+                            </h3>
+
+                        </div>
+
+                        <button class="secondary-btn">
+                            Export
+                        </button>
+
+                    </div>
+
+
+                    <div class="gov-report-row">
+
+                        <div class="priority-indicator high-priority"></div>
+
+                        <div class="gov-report-info">
+
+                            <strong>
+                                Major road damage
+                            </strong>
+
+                            <span>
+                                Rawalpindi • AI severity: HIGH
+                            </span>
+
+                        </div>
+
+                        <span class="badge badge-high">
+                            High
+                        </span>
+
+                        <button class="small-action">
+                            Review
+                        </button>
+
+                    </div>
+
+
+                    <div class="gov-report-row">
+
+                        <div class="priority-indicator medium-priority"></div>
+
+                        <div class="gov-report-info">
+
+                            <strong>
+                                Drainage blockage
+                            </strong>
+
+                            <span>
+                                Islamabad • AI severity: MEDIUM
+                            </span>
+
+                        </div>
+
+                        <span class="badge badge-review">
+                            Medium
+                        </span>
+
+                        <button class="small-action">
+                            Review
+                        </button>
+
+                    </div>
+
+
+                    <div class="gov-report-row">
+
+                        <div class="priority-indicator high-priority"></div>
+
+                        <div class="gov-report-info">
+
+                            <strong>
+                                Flooding risk
+                            </strong>
+
+                            <span>
+                                Lahore • AI severity: HIGH
+                            </span>
+
+                        </div>
+
+                        <span class="badge badge-high">
+                            High
+                        </span>
+
+                        <button class="small-action">
+                            Review
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ADMIN PAGE
+        ================================================= -->
+
+        <section
+            class="page"
+            id="adminPage"
+        >
+
+            <div class="content">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="card-eyebrow">
+                            SYSTEM ADMINISTRATION
+                        </span>
+
+                        <h2>
+                            Administration
+                        </h2>
+
+                        <p>
+                            Manage users, permissions and
+                            CivicLens system security.
+                        </p>
+
+                    </div>
+
+
+                    <span class="role-badge admin-role">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        Administrator
+
+                    </span>
+
+                </div>
+
+
+                <div class="admin-security-banner">
+
+                    <div class="security-large-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Security controls active
+                        </strong>
+
+                        <p>
+                            Authentication, JWT-based API access
+                            and role-based authorization are
+                            configured for protected operations.
+                        </p>
+
+                    </div>
+
+                    <span>
+                        PROTECTED
+                    </span>
+
+                </div>
+
+
+                <div class="admin-grid">
+
+
+                    <div class="admin-card">
+
+                        <div class="admin-card-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <strong>
+                            Users
+                        </strong>
+
+                        <span>
+                            2,847 registered users
+                        </span>
+
+                        <button>
+                            Manage Users
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="admin-card">
+
+                        <div class="admin-card-icon">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+
+                        <strong>
+                            Roles & Permissions
+                        </strong>
+
+                        <span>
+                            Citizen • Government • Admin
+                        </span>
+
+                        <button>
+                            Manage Roles
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="admin-card">
+
+                        <div class="admin-card-icon">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+
+                        <strong>
+                            Cities
+                        </strong>
+
+                        <span>
+                            Pakistani cities supported
+                        </span>
+
+                        <button>
+                            Manage Cities
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="admin-card">
+
+                        <div class="admin-card-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <strong>
+                            System Data
+                        </strong>
+
+                        <span>
+                            Reports, projects and decisions
+                        </span>
+
+                        <button>
+                            View System Data
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div
+    class="toast"
+    id="toast"
+>
+
+    <div class="toast-icon">
+        <i class="fa-solid fa-check"></i>
+    </div>
+
+    <div>
+
+        <strong id="toastTitle">
+            Success
+        </strong>
+
+        <span id="toastMessage">
+            Action completed.
+        </span>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
