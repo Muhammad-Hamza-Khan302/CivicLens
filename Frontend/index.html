@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,16 +69,16 @@
 
             <div class="auth-info-content">
 
-                <span class="eyebrow">
+                <span class="eyebrow" data-i18n="builtForPakistan">
                     🇵🇰 BUILT FOR PAKISTAN
                 </span>
 
-                <h1>
+                <h1 data-i18n="makeCityBetter">
                     Make your city
-                    <span>better.</span>
+                    <span data-i18n="better">better.</span>
                 </h1>
 
-                <p>
+                <p data-i18n="authDescription">
                     Report civic problems, locate them on the map,
                     and let AI help connect communities with
                     responsible authorities.
@@ -93,8 +94,13 @@
                         </div>
 
                         <div>
-                            <strong>Camera-based reporting</strong>
-                            <span>Capture real civic issues directly.</span>
+                            <strong data-i18n="cameraBasedReporting">
+                                Camera-based reporting
+                            </strong>
+
+                            <span data-i18n="cameraBasedReportingDesc">
+                                Capture real civic issues directly.
+                            </span>
                         </div>
 
                     </div>
@@ -107,8 +113,13 @@
                         </div>
 
                         <div>
-                            <strong>Location aware</strong>
-                            <span>Pin problems accurately on the map.</span>
+                            <strong data-i18n="locationAware">
+                                Location aware
+                            </strong>
+
+                            <span data-i18n="locationAwareDesc">
+                                Pin problems accurately on the map.
+                            </span>
                         </div>
 
                     </div>
@@ -121,8 +132,13 @@
                         </div>
 
                         <div>
-                            <strong>AI powered</strong>
-                            <span>Analyze and prioritize civic issues.</span>
+                            <strong data-i18n="aiPowered">
+                                AI powered
+                            </strong>
+
+                            <span data-i18n="aiPoweredDesc">
+                                Analyze and prioritize civic issues.
+                            </span>
                         </div>
 
                     </div>
@@ -132,7 +148,7 @@
             </div>
 
 
-            <div class="auth-footer">
+            <div class="auth-footer" data-i18n="authFooter">
                 CivicLens • AI-powered civic management
             </div>
 
@@ -160,11 +176,11 @@
 
                 <div class="form-heading">
 
-                    <h2 id="loginTitle">
+                    <h2 id="loginTitle" data-i18n="welcomeBack">
                         Welcome back
                     </h2>
 
-                    <p id="loginSubtitle">
+                    <p id="loginSubtitle" data-i18n="signInSubtitle">
                         Sign in to your CivicLens account.
                     </p>
 
@@ -175,7 +191,7 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label data-i18n="email">
                             Email
                         </label>
 
@@ -187,6 +203,7 @@
                                 type="email"
                                 id="loginEmail"
                                 placeholder="you@example.com"
+                                data-i18n-placeholder="emailPlaceholder"
                                 required
                             >
 
@@ -197,7 +214,7 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label data-i18n="password">
                             Password
                         </label>
 
@@ -209,6 +226,7 @@
                                 type="password"
                                 id="loginPassword"
                                 placeholder="Enter your password"
+                                data-i18n-placeholder="passwordPlaceholder"
                                 required
                             >
 
@@ -216,6 +234,7 @@
                                 type="button"
                                 class="password-toggle"
                                 data-target="loginPassword"
+                                aria-label="Show password"
                             >
                                 <i class="fa-regular fa-eye"></i>
                             </button>
@@ -234,7 +253,9 @@
                                 id="rememberMe"
                             >
 
-                            <span>Remember me</span>
+                            <span data-i18n="rememberMe">
+                                Remember me
+                            </span>
 
                         </label>
 
@@ -242,6 +263,7 @@
                             type="button"
                             class="text-btn"
                             id="forgotPassword"
+                            data-i18n="forgotPassword"
                         >
                             Forgot password?
                         </button>
@@ -253,7 +275,10 @@
                         type="submit"
                         class="primary-btn full-btn"
                     >
-                        <span>Sign In</span>
+                        <span data-i18n="signIn">
+                            Sign In
+                        </span>
+
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
 
@@ -261,7 +286,7 @@
 
 
                 <div class="auth-divider">
-                    <span>or</span>
+                    <span data-i18n="or">or</span>
                 </div>
 
 
@@ -270,15 +295,23 @@
                     id="demoLogin"
                 >
                     <i class="fa-solid fa-flask"></i>
-                    Try Demo Mode
+
+                    <span data-i18n="tryDemoMode">
+                        Try Demo Mode
+                    </span>
                 </button>
 
 
                 <p class="switch-auth">
 
-                    Don't have an account?
+                    <span data-i18n="dontHaveAccount">
+                        Don't have an account?
+                    </span>
 
-                    <button id="showSignup">
+                    <button
+                        id="showSignup"
+                        data-i18n="createAccount"
+                    >
                         Create account
                     </button>
 
@@ -293,11 +326,11 @@
 
                 <div class="form-heading">
 
-                    <h2>
+                    <h2 data-i18n="createAccount">
                         Create account
                     </h2>
 
-                    <p>
+                    <p data-i18n="signupSubtitle">
                         Join CivicLens and help improve your city.
                     </p>
 
@@ -308,7 +341,7 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label data-i18n="fullName">
                             Full Name
                         </label>
 
@@ -320,6 +353,7 @@
                                 type="text"
                                 id="signupName"
                                 placeholder="Your full name"
+                                data-i18n-placeholder="fullNamePlaceholder"
                                 required
                             >
 
@@ -330,7 +364,7 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label data-i18n="email">
                             Email
                         </label>
 
@@ -342,6 +376,7 @@
                                 type="email"
                                 id="signupEmail"
                                 placeholder="you@example.com"
+                                data-i18n-placeholder="emailPlaceholder"
                                 required
                             >
 
@@ -352,7 +387,7 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label data-i18n="password">
                             Password
                         </label>
 
@@ -364,6 +399,7 @@
                                 type="password"
                                 id="signupPassword"
                                 placeholder="Create a password"
+                                data-i18n-placeholder="createPasswordPlaceholder"
                                 minlength="8"
                                 required
                             >
@@ -372,6 +408,7 @@
                                 type="button"
                                 class="password-toggle"
                                 data-target="signupPassword"
+                                aria-label="Show password"
                             >
                                 <i class="fa-regular fa-eye"></i>
                             </button>
@@ -383,7 +420,7 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label data-i18n="city">
                             City
                         </label>
 
@@ -393,7 +430,10 @@
 
                             <select id="signupCity" required>
 
-                                <option value="">
+                                <option
+                                    value=""
+                                    data-i18n="selectYourCity"
+                                >
                                     Select your city
                                 </option>
 
@@ -408,7 +448,10 @@
                         type="submit"
                         class="primary-btn full-btn"
                     >
-                        <span>Create Account</span>
+                        <span data-i18n="createAccount">
+                            Create Account
+                        </span>
+
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
 
@@ -417,9 +460,14 @@
 
                 <p class="switch-auth">
 
-                    Already have an account?
+                    <span data-i18n="alreadyHaveAccount">
+                        Already have an account?
+                    </span>
 
-                    <button id="showLogin">
+                    <button
+                        id="showLogin"
+                        data-i18n="signIn"
+                    >
                         Sign in
                     </button>
 
@@ -461,7 +509,9 @@
 
                 <strong>CivicLens</strong>
 
-                <span>Pakistan Civic AI</span>
+                <span data-i18n="pakistanCivicAI">
+                    Pakistan Civic AI
+                </span>
 
             </div>
 
@@ -475,7 +525,10 @@
                 data-page="dashboard"
             >
                 <i class="fa-solid fa-grid-2"></i>
-                <span data-i18n="dashboard">Dashboard</span>
+
+                <span data-i18n="dashboard">
+                    Dashboard
+                </span>
             </button>
 
 
@@ -484,7 +537,10 @@
                 data-page="report"
             >
                 <i class="fa-solid fa-camera"></i>
-                <span data-i18n="reportIssue">Report Issue</span>
+
+                <span data-i18n="reportIssue">
+                    Report Issue
+                </span>
             </button>
 
 
@@ -493,7 +549,10 @@
                 data-page="myReports"
             >
                 <i class="fa-solid fa-file-lines"></i>
-                <span data-i18n="myReports">My Reports</span>
+
+                <span data-i18n="myReports">
+                    My Reports
+                </span>
             </button>
 
 
@@ -502,7 +561,10 @@
                 data-page="map"
             >
                 <i class="fa-solid fa-map-location-dot"></i>
-                <span data-i18n="map">Issue Map</span>
+
+                <span data-i18n="map">
+                    Issue Map
+                </span>
             </button>
 
 
@@ -511,7 +573,10 @@
                 data-page="government"
             >
                 <i class="fa-solid fa-building-columns"></i>
-                <span>Government</span>
+
+                <span data-i18n="government">
+                    Government
+                </span>
             </button>
 
 
@@ -520,7 +585,10 @@
                 data-page="admin"
             >
                 <i class="fa-solid fa-shield-halved"></i>
-                <span>Administration</span>
+
+                <span data-i18n="administration">
+                    Administration
+                </span>
             </button>
 
         </nav>
@@ -574,7 +642,10 @@
                         Hamza Khan
                     </strong>
 
-                    <span id="userRole">
+                    <span
+                        id="userRole"
+                        data-role-key="citizen"
+                    >
                         Citizen
                     </span>
 
@@ -584,6 +655,9 @@
                 <button
                     class="logout-btn"
                     id="logoutBtn"
+                    data-i18n-title="logout"
+                    title="Logout"
+                    aria-label="Logout"
                 >
                     <i class="fa-solid fa-right-from-bracket"></i>
                 </button>
@@ -612,6 +686,9 @@
             <button
                 class="mobile-menu"
                 id="mobileMenu"
+                title="Open menu"
+                data-i18n-title="openMenu"
+                aria-label="Open menu"
             >
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -626,7 +703,10 @@
                     CITIZEN PORTAL
                 </span>
 
-                <h1 id="pageTitle">
+                <h1
+                    id="pageTitle"
+                    data-i18n="dashboard"
+                >
                     Dashboard
                 </h1>
 
@@ -649,6 +729,9 @@
                 <button
                     class="notification-button"
                     id="notificationButton"
+                    title="Notifications"
+                    data-i18n-title="notifications"
+                    aria-label="Notifications"
                 >
 
                     <i class="fa-regular fa-bell"></i>
@@ -692,20 +775,27 @@
 
                             <span></span>
 
-                            CIVICLENS AI ONLINE
+                            <span data-i18n="civicLensAIOnline">
+                                CIVICLENS AI ONLINE
+                            </span>
 
                         </div>
 
 
                         <h2>
-                            Let's improve
+
+                            <span data-i18n="letsImprove">
+                                Let's improve
+                            </span>
+
                             <span id="heroCity">
                                 your city
                             </span>.
+
                         </h2>
 
 
-                        <p>
+                        <p data-i18n="dashboardHeroDescription">
                             Report civic problems and help your
                             community get them resolved faster.
                         </p>
@@ -716,9 +806,11 @@
                             data-page-link="report"
                         >
                             <i class="fa-solid fa-camera"></i>
-                            <span data-i18n="reportIssue">
+
+                            <span data-i18n="reportAnIssue">
                                 Report an Issue
                             </span>
+
                         </button>
 
                     </div>
@@ -752,13 +844,15 @@
 
                         <div>
 
-                            <span>Total Reports</span>
+                            <span data-i18n="totalReports">
+                                Total Reports
+                            </span>
 
                             <strong id="totalReports">
                                 24
                             </strong>
 
-                            <small>
+                            <small data-i18n="thisMonth4">
                                 +4 this month
                             </small>
 
@@ -775,13 +869,15 @@
 
                         <div>
 
-                            <span>In Progress</span>
+                            <span data-i18n="inProgress">
+                                In Progress
+                            </span>
 
                             <strong id="progressReports">
                                 8
                             </strong>
 
-                            <small>
+                            <small data-i18n="beingHandled">
                                 Being handled
                             </small>
 
@@ -798,13 +894,15 @@
 
                         <div>
 
-                            <span>Resolved</span>
+                            <span data-i18n="resolved">
+                                Resolved
+                            </span>
 
                             <strong id="resolvedReports">
                                 14
                             </strong>
 
-                            <small>
+                            <small data-i18n="resolutionRate">
                                 58% resolution rate
                             </small>
 
@@ -821,7 +919,9 @@
 
                         <div>
 
-                            <span>Your City</span>
+                            <span data-i18n="yourCity">
+                                Your City
+                            </span>
 
                             <strong
                                 class="city-stat"
@@ -830,7 +930,7 @@
                                 Rawalpindi
                             </strong>
 
-                            <small>
+                            <small data-i18n="pakistan">
                                 Pakistan
                             </small>
 
@@ -854,11 +954,14 @@
 
                             <div>
 
-                                <span class="card-eyebrow">
+                                <span
+                                    class="card-eyebrow"
+                                    data-i18n="quickAction"
+                                >
                                     QUICK ACTION
                                 </span>
 
-                                <h3>
+                                <h3 data-i18n="reportCivicIssue">
                                     Report a civic issue
                                 </h3>
 
@@ -871,7 +974,7 @@
                         </div>
 
 
-                        <p>
+                        <p data-i18n="quickReportDescription">
                             See a pothole, broken streetlight,
                             overflowing drain or waste problem?
                             Capture it directly using your camera.
@@ -886,7 +989,9 @@
                                     <i class="fa-solid fa-camera"></i>
                                 </div>
 
-                                <span>Capture</span>
+                                <span data-i18n="capture">
+                                    Capture
+                                </span>
 
                             </div>
 
@@ -900,7 +1005,9 @@
                                     <i class="fa-solid fa-location-dot"></i>
                                 </div>
 
-                                <span>Locate</span>
+                                <span data-i18n="locate">
+                                    Locate
+                                </span>
 
                             </div>
 
@@ -914,7 +1021,9 @@
                                     <i class="fa-solid fa-brain"></i>
                                 </div>
 
-                                <span>Analyze</span>
+                                <span data-i18n="analyze">
+                                    Analyze
+                                </span>
 
                             </div>
 
@@ -928,7 +1037,9 @@
                                     <i class="fa-solid fa-check"></i>
                                 </div>
 
-                                <span>Submit</span>
+                                <span data-i18n="submit">
+                                    Submit
+                                </span>
 
                             </div>
 
@@ -958,11 +1069,14 @@
 
                             <div>
 
-                                <span class="card-eyebrow">
+                                <span
+                                    class="card-eyebrow"
+                                    data-i18n="recentActivity"
+                                >
                                     RECENT ACTIVITY
                                 </span>
 
-                                <h3>
+                                <h3 data-i18n="yourReports">
                                     Your reports
                                 </h3>
 
@@ -973,7 +1087,10 @@
                                 class="link-btn"
                                 data-page-link="myReports"
                             >
-                                View all
+                                <span data-i18n="viewAll">
+                                    View all
+                                </span>
+
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
 
@@ -990,17 +1107,23 @@
 
                                 <div class="report-info">
 
-                                    <strong>
+                                    <strong data-i18n="largePothole">
                                         Large pothole
                                     </strong>
 
                                     <span>
-                                        Murree Road • 2 hours ago
+                                        Murree Road •
+                                        <span data-i18n="twoHoursAgo">
+                                            2 hours ago
+                                        </span>
                                     </span>
 
                                 </div>
 
-                                <span class="badge badge-progress">
+                                <span
+                                    class="badge badge-progress"
+                                    data-i18n="inProgress"
+                                >
                                     In progress
                                 </span>
 
@@ -1015,17 +1138,23 @@
 
                                 <div class="report-info">
 
-                                    <strong>
+                                    <strong data-i18n="brokenStreetlight">
                                         Broken streetlight
                                     </strong>
 
                                     <span>
-                                        Saddar • Yesterday
+                                        Saddar •
+                                        <span data-i18n="yesterday">
+                                            Yesterday
+                                        </span>
                                     </span>
 
                                 </div>
 
-                                <span class="badge badge-resolved">
+                                <span
+                                    class="badge badge-resolved"
+                                    data-i18n="resolved"
+                                >
                                     Resolved
                                 </span>
 
@@ -1040,17 +1169,23 @@
 
                                 <div class="report-info">
 
-                                    <strong>
+                                    <strong data-i18n="wasteCollection">
                                         Waste collection
                                     </strong>
 
                                     <span>
-                                        Satellite Town • 3 days ago
+                                        Satellite Town •
+                                        <span data-i18n="threeDaysAgo">
+                                            3 days ago
+                                        </span>
                                     </span>
 
                                 </div>
 
-                                <span class="badge badge-review">
+                                <span
+                                    class="badge badge-review"
+                                    data-i18n="reviewing"
+                                >
                                     Reviewing
                                 </span>
 
@@ -1073,11 +1208,11 @@
 
                     <div>
 
-                        <strong>
+                        <strong data-i18n="reportsProtected">
                             Your reports are protected
                         </strong>
 
-                        <p>
+                        <p data-i18n="reportsProtectedDescription">
                             CivicLens uses authenticated accounts,
                             protected API access and role-based
                             permissions for citizens, government
@@ -1086,7 +1221,10 @@
 
                     </div>
 
-                    <span class="security-badge">
+                    <span
+                        class="security-badge"
+                        data-i18n="secure"
+                    >
                         SECURE
                     </span>
 
@@ -1112,15 +1250,18 @@
 
                     <div>
 
-                        <span class="card-eyebrow">
+                        <span
+                            class="card-eyebrow"
+                            data-i18n="civicReporting"
+                        >
                             CIVIC REPORTING
                         </span>
 
-                        <h2 data-i18n="reportIssue">
+                        <h2 data-i18n="reportAnIssue">
                             Report an Issue
                         </h2>
 
-                        <p>
+                        <p data-i18n="reportIntro">
                             Capture the problem, confirm its location,
                             and let CivicLens AI analyze it.
                         </p>
@@ -1132,7 +1273,7 @@
 
                         <i class="fa-solid fa-shield-halved"></i>
 
-                        <span>
+                        <span data-i18n="secureReport">
                             Secure Report
                         </span>
 
@@ -1152,7 +1293,10 @@
 
                             <div>
 
-                                <span class="card-eyebrow">
+                                <span
+                                    class="card-eyebrow"
+                                    data-i18n="step1"
+                                >
                                     STEP 1
                                 </span>
 
@@ -1162,14 +1306,20 @@
 
                             </div>
 
-                            <span class="required-badge">
+                            <span
+                                class="required-badge"
+                                data-i18n="required"
+                            >
                                 REQUIRED
                             </span>
 
                         </div>
 
 
-                        <p class="card-description">
+                        <p
+                            class="card-description"
+                            data-i18n="cameraDescription"
+                        >
                             CivicLens only accepts photos captured
                             directly through your camera. Gallery
                             and file uploads are disabled.
@@ -1190,11 +1340,11 @@
                                     <i class="fa-solid fa-camera"></i>
                                 </div>
 
-                                <strong>
+                                <strong data-i18n="cameraReady">
                                     Camera ready
                                 </strong>
 
-                                <span>
+                                <span data-i18n="cameraPermission">
                                     Your browser will ask for camera
                                     permission.
                                 </span>
@@ -1217,7 +1367,7 @@
                             <img
                                 id="capturedImage"
                                 alt="Captured civic issue"
-                            />
+                            >
 
 
                             <div
@@ -1235,7 +1385,10 @@
                                 id="startCamera"
                             >
                                 <i class="fa-solid fa-video"></i>
-                                Start Camera
+
+                                <span data-i18n="startCamera">
+                                    Start Camera
+                                </span>
                             </button>
 
 
@@ -1245,7 +1398,10 @@
                                 disabled
                             >
                                 <span></span>
-                                Capture Photo
+
+                                <span data-i18n="capturePhoto">
+                                    Capture Photo
+                                </span>
                             </button>
 
 
@@ -1254,7 +1410,10 @@
                                 id="retakePhoto"
                             >
                                 <i class="fa-solid fa-rotate-left"></i>
-                                Retake
+
+                                <span data-i18n="retake">
+                                    Retake
+                                </span>
                             </button>
 
                         </div>
@@ -1264,7 +1423,7 @@
 
                             <i class="fa-solid fa-lock"></i>
 
-                            <span>
+                            <span data-i18n="cameraSecurity">
                                 Photos are captured from your
                                 device camera only.
                             </span>
@@ -1282,11 +1441,14 @@
 
                             <div>
 
-                                <span class="card-eyebrow">
+                                <span
+                                    class="card-eyebrow"
+                                    data-i18n="step2"
+                                >
                                     STEP 2
                                 </span>
 
-                                <h3>
+                                <h3 data-i18n="location">
                                     Location
                                 </h3>
 
@@ -1299,7 +1461,7 @@
 
                         <div class="form-group">
 
-                            <label>
+                            <label data-i18n="yourCity">
                                 Your City
                             </label>
 
@@ -1308,9 +1470,14 @@
                                 <i class="fa-solid fa-city"></i>
 
                                 <select id="reportCity">
-                                    <option value="">
+
+                                    <option
+                                        value=""
+                                        data-i18n="selectCity"
+                                    >
                                         Select city
                                     </option>
+
                                 </select>
 
                             </div>
@@ -1324,7 +1491,9 @@
                         >
                             <i class="fa-solid fa-crosshairs"></i>
 
-                            Use My Current Location
+                            <span data-i18n="useCurrentLocation">
+                                Use My Current Location
+                            </span>
 
                         </button>
 
@@ -1352,7 +1521,7 @@
 
                                 <i class="fa-solid fa-map"></i>
 
-                                <span>
+                                <span data-i18n="locationPreview">
                                     Location preview
                                 </span>
 
@@ -1365,11 +1534,14 @@
 
                             <div>
 
-                                <span>
+                                <span data-i18n="latitude">
                                     Latitude
                                 </span>
 
-                                <strong id="latitude">
+                                <strong
+                                    id="latitude"
+                                    data-i18n="notDetected"
+                                >
                                     Not detected
                                 </strong>
 
@@ -1378,11 +1550,14 @@
 
                             <div>
 
-                                <span>
+                                <span data-i18n="longitude">
                                     Longitude
                                 </span>
 
-                                <strong id="longitude">
+                                <strong
+                                    id="longitude"
+                                    data-i18n="notDetected"
+                                >
                                     Not detected
                                 </strong>
 
@@ -1404,11 +1579,14 @@
 
                         <div>
 
-                            <span class="card-eyebrow">
+                            <span
+                                class="card-eyebrow"
+                                data-i18n="step3"
+                            >
                                 STEP 3
                             </span>
 
-                            <h3>
+                            <h3 data-i18n="describeProblem">
                                 Describe the Problem
                             </h3>
 
@@ -1419,7 +1597,9 @@
 
                             <i class="fa-solid fa-brain"></i>
 
-                            AI ANALYSIS
+                            <span data-i18n="aiAnalysis">
+                                AI ANALYSIS
+                            </span>
 
                         </div>
 
@@ -1428,7 +1608,7 @@
 
                     <div class="form-group">
 
-                        <label>
+                        <label data-i18n="description">
                             Description
                         </label>
 
@@ -1436,13 +1616,17 @@
                             id="issueDescription"
                             rows="5"
                             placeholder="Describe what you observed. For example: A large pothole is blocking half of the road near the intersection..."
+                            data-i18n-placeholder="descriptionPlaceholder"
                         ></textarea>
 
                         <div class="character-count">
+
                             <span id="characterCount">
                                 0
                             </span>
+
                             / 500
+
                         </div>
 
                     </div>
@@ -1453,6 +1637,7 @@
                         <button
                             class="secondary-btn"
                             id="clearReport"
+                            data-i18n="clear"
                         >
                             Clear
                         </button>
@@ -1464,7 +1649,9 @@
                         >
                             <i class="fa-solid fa-brain"></i>
 
-                            Analyze with AI
+                            <span data-i18n="analyzeWithAI">
+                                Analyze with AI
+                            </span>
 
                             <i class="fa-solid fa-arrow-right"></i>
 
@@ -1484,11 +1671,14 @@
 
                             <div>
 
-                                <span class="card-eyebrow">
+                                <span
+                                    class="card-eyebrow"
+                                    data-i18n="aiAnalysisComplete"
+                                >
                                     AI ANALYSIS COMPLETE
                                 </span>
 
-                                <h3>
+                                <h3 data-i18n="issueDetected">
                                     Issue detected
                                 </h3>
 
@@ -1508,7 +1698,7 @@
 
                             <div class="result-item">
 
-                                <span>
+                                <span data-i18n="issueType">
                                     Issue Type
                                 </span>
 
@@ -1521,7 +1711,7 @@
 
                             <div class="result-item">
 
-                                <span>
+                                <span data-i18n="severity">
                                     Severity
                                 </span>
 
@@ -1534,7 +1724,7 @@
 
                             <div class="result-item">
 
-                                <span>
+                                <span data-i18n="priority">
                                     Priority
                                 </span>
 
@@ -1551,7 +1741,10 @@
 
                             <i class="fa-solid fa-sparkles"></i>
 
-                            <p id="aiMessage">
+                            <p
+                                id="aiMessage"
+                                data-i18n="defaultAIMessage"
+                            >
                                 The issue appears to require
                                 attention from the relevant
                                 municipal department.
@@ -1566,7 +1759,9 @@
                         >
                             <i class="fa-solid fa-paper-plane"></i>
 
-                            Submit Report
+                            <span data-i18n="submitReport">
+                                Submit Report
+                            </span>
 
                         </button>
 
@@ -1594,15 +1789,18 @@
 
                     <div>
 
-                        <span class="card-eyebrow">
+                        <span
+                            class="card-eyebrow"
+                            data-i18n="citizenActivity"
+                        >
                             CITIZEN ACTIVITY
                         </span>
 
-                        <h2>
+                        <h2 data-i18n="myReports">
                             My Reports
                         </h2>
 
-                        <p>
+                        <p data-i18n="trackReports">
                             Track the civic issues you have reported.
                         </p>
 
@@ -1613,7 +1811,10 @@
                         data-page-link="report"
                     >
                         <i class="fa-solid fa-plus"></i>
-                        New Report
+
+                        <span data-i18n="newReport">
+                            New Report
+                        </span>
                     </button>
 
                 </div>
@@ -1629,6 +1830,7 @@
                             type="text"
                             id="reportSearch"
                             placeholder="Search your reports..."
+                            data-i18n-placeholder="searchReports"
                         >
 
                     </div>
@@ -1636,23 +1838,38 @@
 
                     <select id="statusFilter">
 
-                        <option value="all">
+                        <option
+                            value="all"
+                            data-i18n="allStatus"
+                        >
                             All Status
                         </option>
 
-                        <option value="submitted">
+                        <option
+                            value="submitted"
+                            data-i18n="submitted"
+                        >
                             Submitted
                         </option>
 
-                        <option value="reviewing">
+                        <option
+                            value="reviewing"
+                            data-i18n="reviewing"
+                        >
                             Reviewing
                         </option>
 
-                        <option value="progress">
+                        <option
+                            value="progress"
+                            data-i18n="inProgress"
+                        >
                             In Progress
                         </option>
 
-                        <option value="resolved">
+                        <option
+                            value="resolved"
+                            data-i18n="resolved"
+                        >
                             Resolved
                         </option>
 
@@ -1668,19 +1885,19 @@
 
                     <div class="table-header">
 
-                        <span>
+                        <span data-i18n="issue">
                             Issue
                         </span>
 
-                        <span>
+                        <span data-i18n="location">
                             Location
                         </span>
 
-                        <span>
+                        <span data-i18n="status">
                             Status
                         </span>
 
-                        <span>
+                        <span data-i18n="date">
                             Date
                         </span>
 
@@ -1696,7 +1913,7 @@
                             </div>
 
                             <div>
-                                <strong>
+                                <strong data-i18n="largePothole">
                                     Large pothole
                                 </strong>
 
@@ -1713,7 +1930,10 @@
                         </span>
 
 
-                        <span class="badge badge-progress">
+                        <span
+                            class="badge badge-progress"
+                            data-i18n="inProgress"
+                        >
                             In Progress
                         </span>
 
@@ -1734,7 +1954,7 @@
                             </div>
 
                             <div>
-                                <strong>
+                                <strong data-i18n="brokenStreetlight">
                                     Broken streetlight
                                 </strong>
 
@@ -1751,7 +1971,10 @@
                         </span>
 
 
-                        <span class="badge badge-resolved">
+                        <span
+                            class="badge badge-resolved"
+                            data-i18n="resolved"
+                        >
                             Resolved
                         </span>
 
@@ -1772,7 +1995,7 @@
                             </div>
 
                             <div>
-                                <strong>
+                                <strong data-i18n="wasteCollection">
                                     Waste collection
                                 </strong>
 
@@ -1789,7 +2012,10 @@
                         </span>
 
 
-                        <span class="badge badge-review">
+                        <span
+                            class="badge badge-review"
+                            data-i18n="reviewing"
+                        >
                             Reviewing
                         </span>
 
@@ -1822,15 +2048,18 @@
 
                     <div>
 
-                        <span class="card-eyebrow">
+                        <span
+                            class="card-eyebrow"
+                            data-i18n="civicIntelligence"
+                        >
                             CIVIC INTELLIGENCE
                         </span>
 
-                        <h2>
+                        <h2 data-i18n="issueMap">
                             Issue Map
                         </h2>
 
-                        <p>
+                        <p data-i18n="mapDescription">
                             Explore reported civic problems
                             around your selected city.
                         </p>
@@ -1841,17 +2070,26 @@
 
                         <span>
                             <i class="legend-dot red"></i>
-                            High
+
+                            <span data-i18n="high">
+                                High
+                            </span>
                         </span>
 
                         <span>
                             <i class="legend-dot orange"></i>
-                            Medium
+
+                            <span data-i18n="medium">
+                                Medium
+                            </span>
                         </span>
 
                         <span>
                             <i class="legend-dot green"></i>
-                            Resolved
+
+                            <span data-i18n="resolved">
+                                Resolved
+                            </span>
                         </span>
 
                     </div>
@@ -1873,6 +2111,7 @@
                         class="issue-marker marker-red"
                         style="left: 28%; top: 38%;"
                         title="High priority pothole"
+                        data-i18n-title="highPriorityPothole"
                     >
                         <i class="fa-solid fa-location-dot"></i>
                     </button>
@@ -1882,6 +2121,7 @@
                         class="issue-marker marker-orange"
                         style="left: 52%; top: 60%;"
                         title="Streetlight"
+                        data-i18n-title="streetlight"
                     >
                         <i class="fa-solid fa-location-dot"></i>
                     </button>
@@ -1891,6 +2131,7 @@
                         class="issue-marker marker-green"
                         style="left: 70%; top: 32%;"
                         title="Resolved issue"
+                        data-i18n-title="resolvedIssue"
                     >
                         <i class="fa-solid fa-location-dot"></i>
                     </button>
@@ -1900,6 +2141,7 @@
                         class="issue-marker marker-red"
                         style="left: 43%; top: 25%;"
                         title="Drainage issue"
+                        data-i18n-title="drainageIssue"
                     >
                         <i class="fa-solid fa-location-dot"></i>
                     </button>
@@ -1913,7 +2155,7 @@
                             Rawalpindi
                         </strong>
 
-                        <span>
+                        <span data-i18n="civicIssueOverview">
                             Civic issue overview
                         </span>
 
@@ -1941,15 +2183,18 @@
 
                     <div>
 
-                        <span class="card-eyebrow">
+                        <span
+                            class="card-eyebrow"
+                            data-i18n="governmentPortal"
+                        >
                             GOVERNMENT PORTAL
                         </span>
 
-                        <h2>
+                        <h2 data-i18n="civicOperations">
                             Civic Operations
                         </h2>
 
-                        <p>
+                        <p data-i18n="governmentDescription">
                             Review, prioritize and manage civic
                             reports submitted by citizens.
                         </p>
@@ -1958,8 +2203,13 @@
 
 
                     <span class="role-badge government-role">
+
                         <i class="fa-solid fa-building-columns"></i>
-                        Government
+
+                        <span data-i18n="government">
+                            Government
+                        </span>
+
                     </span>
 
                 </div>
@@ -1969,7 +2219,7 @@
 
                     <div class="operation-card">
 
-                        <span>
+                        <span data-i18n="pendingReports">
                             Pending Reports
                         </span>
 
@@ -1984,7 +2234,7 @@
 
                     <div class="operation-card">
 
-                        <span>
+                        <span data-i18n="highPriority">
                             High Priority
                         </span>
 
@@ -1999,7 +2249,7 @@
 
                     <div class="operation-card">
 
-                        <span>
+                        <span data-i18n="projectsActive">
                             Projects Active
                         </span>
 
@@ -2014,7 +2264,7 @@
 
                     <div class="operation-card">
 
-                        <span>
+                        <span data-i18n="resolutionRate">
                             Resolution Rate
                         </span>
 
@@ -2035,17 +2285,23 @@
 
                         <div>
 
-                            <span class="card-eyebrow">
+                            <span
+                                class="card-eyebrow"
+                                data-i18n="priorityQueue"
+                            >
                                 PRIORITY QUEUE
                             </span>
 
-                            <h3>
+                            <h3 data-i18n="reportsRequiringAttention">
                                 Reports requiring attention
                             </h3>
 
                         </div>
 
-                        <button class="secondary-btn">
+                        <button
+                            class="secondary-btn"
+                            data-i18n="export"
+                        >
                             Export
                         </button>
 
@@ -2058,21 +2314,30 @@
 
                         <div class="gov-report-info">
 
-                            <strong>
+                            <strong data-i18n="majorRoadDamage">
                                 Major road damage
                             </strong>
 
                             <span>
-                                Rawalpindi • AI severity: HIGH
+                                Rawalpindi •
+                                <span data-i18n="aiSeverityHigh">
+                                    AI severity: HIGH
+                                </span>
                             </span>
 
                         </div>
 
-                        <span class="badge badge-high">
+                        <span
+                            class="badge badge-high"
+                            data-i18n="high"
+                        >
                             High
                         </span>
 
-                        <button class="small-action">
+                        <button
+                            class="small-action"
+                            data-i18n="review"
+                        >
                             Review
                         </button>
 
@@ -2085,21 +2350,30 @@
 
                         <div class="gov-report-info">
 
-                            <strong>
+                            <strong data-i18n="drainageBlockage">
                                 Drainage blockage
                             </strong>
 
                             <span>
-                                Islamabad • AI severity: MEDIUM
+                                Islamabad •
+                                <span data-i18n="aiSeverityMedium">
+                                    AI severity: MEDIUM
+                                </span>
                             </span>
 
                         </div>
 
-                        <span class="badge badge-review">
+                        <span
+                            class="badge badge-review"
+                            data-i18n="medium"
+                        >
                             Medium
                         </span>
 
-                        <button class="small-action">
+                        <button
+                            class="small-action"
+                            data-i18n="review"
+                        >
                             Review
                         </button>
 
@@ -2112,21 +2386,30 @@
 
                         <div class="gov-report-info">
 
-                            <strong>
+                            <strong data-i18n="floodingRisk">
                                 Flooding risk
                             </strong>
 
                             <span>
-                                Lahore • AI severity: HIGH
+                                Lahore •
+                                <span data-i18n="aiSeverityHigh">
+                                    AI severity: HIGH
+                                </span>
                             </span>
 
                         </div>
 
-                        <span class="badge badge-high">
+                        <span
+                            class="badge badge-high"
+                            data-i18n="high"
+                        >
                             High
                         </span>
 
-                        <button class="small-action">
+                        <button
+                            class="small-action"
+                            data-i18n="review"
+                        >
                             Review
                         </button>
 
@@ -2154,15 +2437,18 @@
 
                     <div>
 
-                        <span class="card-eyebrow">
+                        <span
+                            class="card-eyebrow"
+                            data-i18n="systemAdministration"
+                        >
                             SYSTEM ADMINISTRATION
                         </span>
 
-                        <h2>
+                        <h2 data-i18n="administration">
                             Administration
                         </h2>
 
-                        <p>
+                        <p data-i18n="adminDescription">
                             Manage users, permissions and
                             CivicLens system security.
                         </p>
@@ -2174,7 +2460,9 @@
 
                         <i class="fa-solid fa-shield-halved"></i>
 
-                        Administrator
+                        <span data-i18n="administrator">
+                            Administrator
+                        </span>
 
                     </span>
 
@@ -2189,11 +2477,11 @@
 
                     <div>
 
-                        <strong>
+                        <strong data-i18n="securityControlsActive">
                             Security controls active
                         </strong>
 
-                        <p>
+                        <p data-i18n="securityControlsDescription">
                             Authentication, JWT-based API access
                             and role-based authorization are
                             configured for protected operations.
@@ -2201,7 +2489,7 @@
 
                     </div>
 
-                    <span>
+                    <span data-i18n="protected">
                         PROTECTED
                     </span>
 
@@ -2217,17 +2505,22 @@
                             <i class="fa-solid fa-users"></i>
                         </div>
 
-                        <strong>
+                        <strong data-i18n="users">
                             Users
                         </strong>
 
-                        <span>
+                        <span data-i18n="registeredUsers">
                             2,847 registered users
                         </span>
 
                         <button>
-                            Manage Users
+
+                            <span data-i18n="manageUsers">
+                                Manage Users
+                            </span>
+
                             <i class="fa-solid fa-arrow-right"></i>
+
                         </button>
 
                     </div>
@@ -2239,17 +2532,22 @@
                             <i class="fa-solid fa-user-shield"></i>
                         </div>
 
-                        <strong>
+                        <strong data-i18n="rolesPermissions">
                             Roles & Permissions
                         </strong>
 
-                        <span>
+                        <span data-i18n="roleTypes">
                             Citizen • Government • Admin
                         </span>
 
                         <button>
-                            Manage Roles
+
+                            <span data-i18n="manageRoles">
+                                Manage Roles
+                            </span>
+
                             <i class="fa-solid fa-arrow-right"></i>
+
                         </button>
 
                     </div>
@@ -2261,17 +2559,22 @@
                             <i class="fa-solid fa-city"></i>
                         </div>
 
-                        <strong>
+                        <strong data-i18n="cities">
                             Cities
                         </strong>
 
-                        <span>
+                        <span data-i18n="pakistaniCitiesSupported">
                             Pakistani cities supported
                         </span>
 
                         <button>
-                            Manage Cities
+
+                            <span data-i18n="manageCities">
+                                Manage Cities
+                            </span>
+
                             <i class="fa-solid fa-arrow-right"></i>
+
                         </button>
 
                     </div>
@@ -2283,17 +2586,22 @@
                             <i class="fa-solid fa-database"></i>
                         </div>
 
-                        <strong>
+                        <strong data-i18n="systemData">
                             System Data
                         </strong>
 
-                        <span>
+                        <span data-i18n="reportsProjectsDecisions">
                             Reports, projects and decisions
                         </span>
 
                         <button>
-                            View System Data
+
+                            <span data-i18n="viewSystemData">
+                                View System Data
+                            </span>
+
                             <i class="fa-solid fa-arrow-right"></i>
+
                         </button>
 
                     </div>
@@ -2341,3 +2649,4 @@
 
 </body>
 </html>
+

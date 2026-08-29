@@ -1,3 +1,4 @@
+
 /* =====================================================
    CIVICLENS FRONTEND
 ===================================================== */
@@ -178,46 +179,747 @@ const translations = {
 
     en: {
 
+        /* ---------- GENERAL ---------- */
+
         dashboard: "Dashboard",
-
         reportIssue: "Report Issue",
-
         myReports: "My Reports",
-
         map: "Issue Map",
-
         language: "Language",
-
         citizenPortal: "CITIZEN PORTAL",
+        government: "Government",
+        administration: "Administration",
+        pakistanCivicAI: "Pakistan Civic AI",
+        pakistan: "Pakistan",
+        city: "City",
+        yourCity: "Your City",
+        location: "Location",
+        status: "Status",
+        date: "Date",
+        issue: "Issue",
+        high: "High",
+        medium: "Medium",
+        low: "Low",
+        resolved: "Resolved",
+        reviewing: "Reviewing",
+        inProgress: "In Progress",
+        submitted: "Submitted",
+        required: "REQUIRED",
+        secure: "SECURE",
+        protected: "PROTECTED",
 
+        /* ---------- AUTH ---------- */
+
+        builtForPakistan: "🇵🇰 BUILT FOR PAKISTAN",
+        makeCityBetter: "Make your city",
+        better: "better.",
+        authDescription:
+            "Report civic problems, locate them on the map, and let AI help connect communities with responsible authorities.",
+        cameraBasedReporting: "Camera-based reporting",
+        cameraBasedReportingDesc:
+            "Capture real civic issues directly.",
+        locationAware: "Location aware",
+        locationAwareDesc:
+            "Pin problems accurately on the map.",
+        aiPowered: "AI powered",
+        aiPoweredDesc:
+            "Analyze and prioritize civic issues.",
+        authFooter:
+            "CivicLens • AI-powered civic management",
+
+        welcomeBack: "Welcome back",
+        signInSubtitle:
+            "Sign in to your CivicLens account.",
+        email: "Email",
+        password: "Password",
+        emailPlaceholder: "you@example.com",
+        passwordPlaceholder: "Enter your password",
+        rememberMe: "Remember me",
+        forgotPassword: "Forgot password?",
+        signIn: "Sign In",
+        or: "or",
+        tryDemoMode: "Try Demo Mode",
+        dontHaveAccount: "Don't have an account?",
+        createAccount: "Create account",
+        signupSubtitle:
+            "Join CivicLens and help improve your city.",
+        fullName: "Full Name",
+        fullNamePlaceholder: "Your full name",
+        createPasswordPlaceholder:
+            "Create a password",
+        selectYourCity: "Select your city",
+        alreadyHaveAccount:
+            "Already have an account?",
+
+        /* ---------- DASHBOARD ---------- */
+
+        civicLensAIOnline: "CIVICLENS AI ONLINE",
+        letsImprove: "Let's improve",
+        dashboardHeroDescription:
+            "Report civic problems and help your community get them resolved faster.",
+        reportAnIssue: "Report an Issue",
+        totalReports: "Total Reports",
+        thisMonth4: "+4 this month",
+        beingHandled: "Being handled",
+        resolutionRate: "58% resolution rate",
+        quickAction: "QUICK ACTION",
+        reportCivicIssue: "Report a civic issue",
+        quickReportDescription:
+            "See a pothole, broken streetlight, overflowing drain or waste problem? Capture it directly using your camera.",
+        capture: "Capture",
+        locate: "Locate",
+        analyze: "Analyze",
+        submit: "Submit",
+        startReport: "Start Report",
+        recentActivity: "RECENT ACTIVITY",
+        yourReports: "Your reports",
+        viewAll: "View all",
+        largePothole: "Large pothole",
+        twoHoursAgo: "2 hours ago",
+        brokenStreetlight: "Broken streetlight",
+        yesterday: "Yesterday",
+        wasteCollection: "Waste collection",
+        threeDaysAgo: "3 days ago",
+        reportsProtected: "Your reports are protected",
+        reportsProtectedDescription:
+            "CivicLens uses authenticated accounts, protected API access and role-based permissions for citizens, government users and administrators.",
+
+        /* ---------- REPORT PAGE ---------- */
+
+        civicReporting: "CIVIC REPORTING",
+        reportIntro:
+            "Capture the problem, confirm its location, and let CivicLens AI analyze it.",
+        secureReport: "Secure Report",
+        step1: "STEP 1",
         takePhoto: "Take a Photo",
+        cameraDescription:
+            "CivicLens only accepts photos captured directly through your camera. Gallery and file uploads are disabled.",
+        cameraReady: "Camera ready",
+        cameraPermission:
+            "Your browser will ask for camera permission.",
+        startCamera: "Start Camera",
+        capturePhoto: "Capture Photo",
+        retake: "Retake",
+        cameraSecurity:
+            "Photos are captured from your device camera only.",
+        step2: "STEP 2",
+        selectCity: "Select city",
+        useCurrentLocation:
+            "Use My Current Location",
+        locationPreview: "Location preview",
+        latitude: "Latitude",
+        longitude: "Longitude",
+        notDetected: "Not detected",
+        step3: "STEP 3",
+        describeProblem: "Describe the Problem",
+        aiAnalysis: "AI ANALYSIS",
+        description: "Description",
+        descriptionPlaceholder:
+            "Describe what you observed. For example: A large pothole is blocking half of the road near the intersection...",
+        clear: "Clear",
+        analyzeWithAI: "Analyze with AI",
+        aiAnalysisComplete: "AI ANALYSIS COMPLETE",
+        issueDetected: "Issue detected",
+        issueType: "Issue Type",
+        severity: "Severity",
+        priority: "Priority",
+        urgent: "Urgent",
+        normal: "Normal",
+        defaultAIMessage:
+            "The issue appears to require attention from the relevant municipal department.",
+        submitReport: "Submit Report",
 
-        startReport: "Start Report"
+        /* ---------- MY REPORTS ---------- */
 
+        citizenActivity: "CITIZEN ACTIVITY",
+        trackReports:
+            "Track the civic issues you have reported.",
+        newReport: "New Report",
+        searchReports: "Search your reports...",
+        allStatus: "All Status",
+
+        /* ---------- MAP ---------- */
+
+        civicIntelligence: "CIVIC INTELLIGENCE",
+        issueMap: "Issue Map",
+        mapDescription:
+            "Explore reported civic problems around your selected city.",
+        highPriorityPothole: "High priority pothole",
+        streetlight: "Streetlight",
+        resolvedIssue: "Resolved issue",
+        drainageIssue: "Drainage issue",
+        civicIssueOverview: "Civic issue overview",
+
+        /* ---------- GOVERNMENT ---------- */
+
+        governmentPortal: "GOVERNMENT PORTAL",
+        civicOperations: "Civic Operations",
+        governmentDescription:
+            "Review, prioritize and manage civic reports submitted by citizens.",
+        pendingReports: "Pending Reports",
+        highPriority: "High Priority",
+        projectsActive: "Projects Active",
+        priorityQueue: "PRIORITY QUEUE",
+        reportsRequiringAttention:
+            "Reports requiring attention",
+        export: "Export",
+        majorRoadDamage: "Major road damage",
+        aiSeverityHigh: "AI severity: HIGH",
+        drainageBlockage: "Drainage blockage",
+        aiSeverityMedium: "AI severity: MEDIUM",
+        floodingRisk: "Flooding risk",
+        review: "Review",
+
+        /* ---------- ADMIN ---------- */
+
+        systemAdministration: "SYSTEM ADMINISTRATION",
+        administrator: "Administrator",
+        adminDescription:
+            "Manage users, permissions and CivicLens system security.",
+        securityControlsActive:
+            "Security controls active",
+        securityControlsDescription:
+            "Authentication, JWT-based API access and role-based authorization are configured for protected operations.",
+        users: "Users",
+        registeredUsers: "2,847 registered users",
+        manageUsers: "Manage Users",
+        rolesPermissions: "Roles & Permissions",
+        roleTypes: "Citizen • Government • Admin",
+        manageRoles: "Manage Roles",
+        cities: "Cities",
+        pakistaniCitiesSupported:
+            "Pakistani cities supported",
+        manageCities: "Manage Cities",
+        systemData: "System Data",
+        reportsProjectsDecisions:
+            "Reports, projects and decisions",
+        viewSystemData: "View System Data",
+
+        /* ---------- UI ---------- */
+
+        notifications: "Notifications",
+        openMenu: "Open menu",
+        logout: "Logout",
+
+        /* ---------- TOASTS ---------- */
+
+        success: "Success",
+        actionCompleted: "Action completed.",
+        missingInformation: "Missing information",
+        completeAllFields:
+            "Please complete all fields.",
+        accountCreated: "Account created",
+        welcomeToCivicLens:
+            "Welcome to CivicLens.",
+        loginSuccessful: "Login successful",
+        welcomeBackToCivicLens:
+            "Welcome back to CivicLens.",
+        demoMode: "Demo Mode",
+        demoAccountActivated:
+            "CivicLens demo account activated.",
+        loggedOut: "Logged out",
+        signedOut: "You have been signed out.",
+        languageChanged: "Language changed",
+        englishActive: "English is now active.",
+        cameraUnavailable: "Camera unavailable",
+        cameraUnsupported:
+            "Your browser does not support camera access.",
+        cameraReadyToast: "Camera ready",
+        pointCamera:
+            "Point the camera at the civic issue.",
+        cameraPermissionRequired:
+            "Camera permission required",
+        allowCamera:
+            "Please allow camera access in your browser.",
+        cameraNotActive: "Camera not active",
+        startCameraFirst:
+            "Start the camera first.",
+        cameraLoading: "Camera loading",
+        waitForCamera:
+            "Please wait for the camera.",
+        photoCaptured: "Photo captured",
+        photoReady:
+            "Your civic issue photo is ready.",
+        locationUnavailable: "Location unavailable",
+        locationUnsupported:
+            "Your browser does not support location.",
+        detectingLocation: "Detecting Location...",
+        locationDetected: "Location detected",
+        currentLocationCaptured:
+            "Your current location has been captured.",
+        locationPermissionRequired:
+            "Location permission required",
+        allowLocation:
+            "Please allow location access.",
+        photoRequired: "Photo required",
+        takePhotoBeforeAnalysis:
+            "Take a photo before analyzing the issue.",
+        cityRequired: "City required",
+        selectCityToast:
+            "Please select your city.",
+        descriptionRequired: "Description required",
+        describeIssueFirst:
+            "Describe the civic issue first.",
+        analyzing: "Analyzing...",
+        aiAnalysisCompleteToast:
+            "AI analysis complete",
+        issueAnalyzed:
+            "The issue has been analyzed successfully.",
+        aiError: "AI error",
+        unableToAnalyze:
+            "Unable to analyze the issue.",
+        photoMissing: "Photo missing",
+        capturePhotoFirst:
+            "Capture an issue photo first.",
+        incompleteReport: "Incomplete report",
+        completeReport:
+            "Please complete the report.",
+        submitting: "Submitting...",
+        reportSubmitted: "Report submitted",
+        reportSubmittedSuccessfully:
+            "Your civic report has been submitted successfully.",
+        notificationsTitle: "Notifications",
+        newUpdates:
+            "You have 3 new CivicLens updates.",
+
+        /* ---------- AI RESULT TYPES ---------- */
+
+        potholeRoadDamage: "Pothole / Road Damage",
+        streetlightIssue: "Streetlight",
+        drainageFlooding: "Drainage / Flooding",
+        wasteManagement: "Waste Management",
+        civicIssue: "Civic Issue",
+        highSeverity: "High",
+        mediumSeverity: "Medium",
+        lowSeverity: "Low",
+        urgentPriority: "Urgent",
+        normalPriority: "Normal",
+        lowPriority: "Low",
+
+        aiRecommendation:
+            "CivicLens AI has analyzed the submitted issue and recommends that the relevant municipal department review it."
     },
 
 
     ur: {
 
+        /* ---------- GENERAL ---------- */
+
         dashboard: "ڈیش بورڈ",
-
         reportIssue: "مسئلہ رپورٹ کریں",
-
         myReports: "میری رپورٹس",
-
         map: "مسائل کا نقشہ",
-
         language: "زبان",
-
         citizenPortal: "شہری پورٹل",
+        government: "حکومت",
+        administration: "انتظامیہ",
+        pakistanCivicAI: "پاکستان سِوک AI",
+        pakistan: "پاکستان",
+        city: "شہر",
+        yourCity: "آپ کا شہر",
+        location: "مقام",
+        status: "حیثیت",
+        date: "تاریخ",
+        issue: "مسئلہ",
+        high: "زیادہ",
+        medium: "درمیانہ",
+        low: "کم",
+        resolved: "حل شدہ",
+        reviewing: "جائزہ جاری ہے",
+        inProgress: "زیرِ کارروائی",
+        submitted: "جمع شدہ",
+        required: "ضروری",
+        secure: "محفوظ",
+        protected: "محفوظ شدہ",
 
+        /* ---------- AUTH ---------- */
+
+        builtForPakistan: "🇵🇰 پاکستان کے لیے بنایا گیا",
+        makeCityBetter: "اپنے شہر کو",
+        better: "بہتر بنائیں۔",
+        authDescription:
+            "شہری مسائل کی رپورٹ کریں، انہیں نقشے پر دیکھیں اور AI کی مدد سے متعلقہ ذمہ دار اداروں تک پہنچائیں۔",
+        cameraBasedReporting: "کیمرے کے ذریعے رپورٹنگ",
+        cameraBasedReportingDesc:
+            "حقیقی شہری مسائل کی براہِ راست تصویر لیں۔",
+        locationAware: "مقام کی نشاندہی",
+        locationAwareDesc:
+            "مسائل کو نقشے پر درست مقام کے ساتھ نشان زد کریں۔",
+        aiPowered: "AI سے چلنے والا نظام",
+        aiPoweredDesc:
+            "شہری مسائل کا تجزیہ اور ترجیح بندی کریں۔",
+        authFooter:
+            "CivicLens • AI پر مبنی شہری انتظام",
+
+        welcomeBack: "خوش آمدید",
+        signInSubtitle:
+            "اپنے CivicLens اکاؤنٹ میں سائن اِن کریں۔",
+        email: "ای میل",
+        password: "پاس ورڈ",
+        emailPlaceholder: "you@example.com",
+        passwordPlaceholder: "اپنا پاس ورڈ درج کریں",
+        rememberMe: "مجھے یاد رکھیں",
+        forgotPassword: "پاس ورڈ بھول گئے؟",
+        signIn: "سائن اِن",
+        or: "یا",
+        tryDemoMode: "ڈیمو موڈ آزمائیں",
+        dontHaveAccount: "اکاؤنٹ موجود نہیں؟",
+        createAccount: "اکاؤنٹ بنائیں",
+        signupSubtitle:
+            "CivicLens میں شامل ہوں اور اپنے شہر کو بہتر بنانے میں مدد کریں۔",
+        fullName: "پورا نام",
+        fullNamePlaceholder: "اپنا پورا نام درج کریں",
+        createPasswordPlaceholder:
+            "پاس ورڈ بنائیں",
+        selectYourCity: "اپنا شہر منتخب کریں",
+        alreadyHaveAccount:
+            "پہلے سے اکاؤنٹ موجود ہے؟",
+
+        /* ---------- DASHBOARD ---------- */
+
+        civicLensAIOnline: "CIVICLENS AI آن لائن",
+        letsImprove: "آئیں بہتر بنائیں",
+        dashboardHeroDescription:
+            "شہری مسائل کی رپورٹ کریں اور اپنی کمیونٹی میں انہیں تیزی سے حل کروانے میں مدد کریں۔",
+        reportAnIssue: "مسئلہ رپورٹ کریں",
+        totalReports: "کل رپورٹس",
+        thisMonth4: "اس ماہ +4",
+        beingHandled: "کارروائی جاری ہے",
+        resolutionRate: "حل ہونے کی شرح 58٪",
+        quickAction: "فوری کارروائی",
+        reportCivicIssue: "شہری مسئلہ رپورٹ کریں",
+        quickReportDescription:
+            "کیا آپ کو گڑھا، خراب اسٹریٹ لائٹ، بھرا ہوا نالہ یا کچرے کا مسئلہ نظر آیا؟ کیمرے سے براہِ راست تصویر لیں۔",
+        capture: "تصویر لیں",
+        locate: "مقام معلوم کریں",
+        analyze: "تجزیہ کریں",
+        submit: "جمع کریں",
+        startReport: "رپورٹ شروع کریں",
+        recentActivity: "حالیہ سرگرمی",
+        yourReports: "آپ کی رپورٹس",
+        viewAll: "سب دیکھیں",
+        largePothole: "بڑا سڑک کا گڑھا",
+        twoHoursAgo: "2 گھنٹے پہلے",
+        brokenStreetlight: "خراب اسٹریٹ لائٹ",
+        yesterday: "کل",
+        wasteCollection: "کچرا جمع کرنا",
+        threeDaysAgo: "3 دن پہلے",
+        reportsProtected: "آپ کی رپورٹس محفوظ ہیں",
+        reportsProtectedDescription:
+            "CivicLens شہریوں، حکومتی صارفین اور منتظمین کے لیے تصدیق شدہ اکاؤنٹس، محفوظ API رسائی اور کردار پر مبنی اجازتیں استعمال کرتا ہے۔",
+
+        /* ---------- REPORT PAGE ---------- */
+
+        civicReporting: "شہری رپورٹنگ",
+        reportIntro:
+            "مسئلے کی تصویر لیں، مقام کی تصدیق کریں اور CivicLens AI سے اس کا تجزیہ کروائیں۔",
+        secureReport: "محفوظ رپورٹ",
+        step1: "مرحلہ 1",
         takePhoto: "تصویر لیں",
+        cameraDescription:
+            "CivicLens صرف کیمرے کے ذریعے براہِ راست لی گئی تصاویر قبول کرتا ہے۔ گیلری اور فائل اپ لوڈ بند ہیں۔",
+        cameraReady: "کیمرہ تیار ہے",
+        cameraPermission:
+            "آپ کا براؤزر کیمرے کی اجازت طلب کرے گا۔",
+        startCamera: "کیمرہ شروع کریں",
+        capturePhoto: "تصویر لیں",
+        retake: "دوبارہ لیں",
+        cameraSecurity:
+            "تصاویر صرف آپ کے ڈیوائس کے کیمرے سے لی جاتی ہیں۔",
+        step2: "مرحلہ 2",
+        selectCity: "شہر منتخب کریں",
+        useCurrentLocation:
+            "میرا موجودہ مقام استعمال کریں",
+        locationPreview: "مقام کا پیش منظر",
+        latitude: "عرض بلد",
+        longitude: "طول بلد",
+        notDetected: "معلوم نہیں ہوا",
+        step3: "مرحلہ 3",
+        describeProblem: "مسئلہ بیان کریں",
+        aiAnalysis: "AI تجزیہ",
+        description: "تفصیل",
+        descriptionPlaceholder:
+            "جو کچھ آپ نے دیکھا اسے بیان کریں۔ مثال کے طور پر: چوراہے کے قریب سڑک کا ایک بڑا گڑھا آدھی سڑک کو روک رہا ہے...",
+        clear: "صاف کریں",
+        analyzeWithAI: "AI سے تجزیہ کریں",
+        aiAnalysisComplete: "AI تجزیہ مکمل",
+        issueDetected: "مسئلہ معلوم ہوا",
+        issueType: "مسئلے کی قسم",
+        severity: "شدت",
+        priority: "ترجیح",
+        urgent: "فوری",
+        normal: "معمول",
+        defaultAIMessage:
+            "یہ مسئلہ متعلقہ میونسپل محکمے کی توجہ کا متقاضی معلوم ہوتا ہے۔",
+        submitReport: "رپورٹ جمع کریں",
 
-        startReport: "رپورٹ شروع کریں"
+        /* ---------- MY REPORTS ---------- */
 
+        citizenActivity: "شہری سرگرمی",
+        trackReports:
+            "ان شہری مسائل کی نگرانی کریں جن کی آپ نے رپورٹ کی ہے۔",
+        newReport: "نئی رپورٹ",
+        searchReports: "اپنی رپورٹس تلاش کریں...",
+        allStatus: "تمام حیثیتیں",
+
+        /* ---------- MAP ---------- */
+
+        civicIntelligence: "شہری ذہانت",
+        issueMap: "مسائل کا نقشہ",
+        mapDescription:
+            "اپنے منتخب شہر کے اردگرد رپورٹ کیے گئے شہری مسائل دیکھیں۔",
+        highPriorityPothole:
+            "زیادہ ترجیح والا سڑک کا گڑھا",
+        streetlight: "اسٹریٹ لائٹ",
+        resolvedIssue: "حل شدہ مسئلہ",
+        drainageIssue: "نکاسی آب کا مسئلہ",
+        civicIssueOverview: "شہری مسائل کا جائزہ",
+
+        /* ---------- GOVERNMENT ---------- */
+
+        governmentPortal: "حکومتی پورٹل",
+        civicOperations: "شہری کارروائیاں",
+        governmentDescription:
+            "شہریوں کی جانب سے جمع کرائی گئی رپورٹس کا جائزہ لیں، ترجیح مقرر کریں اور ان کا انتظام کریں۔",
+        pendingReports: "زیر التوا رپورٹس",
+        highPriority: "زیادہ ترجیح",
+        projectsActive: "فعال منصوبے",
+        priorityQueue: "ترجیحی فہرست",
+        reportsRequiringAttention:
+            "توجہ کی ضرورت والی رپورٹس",
+        export: "برآمد کریں",
+        majorRoadDamage: "سڑک کو بڑا نقصان",
+        aiSeverityHigh: "AI شدت: زیادہ",
+        drainageBlockage: "نکاسی آب میں رکاوٹ",
+        aiSeverityMedium: "AI شدت: درمیانی",
+        floodingRisk: "سیلاب کا خطرہ",
+        review: "جائزہ",
+
+        /* ---------- ADMIN ---------- */
+
+        systemAdministration: "سسٹم انتظامیہ",
+        administrator: "منتظم",
+        adminDescription:
+            "صارفین، اجازتوں اور CivicLens سسٹم کی سیکیورٹی کا انتظام کریں۔",
+        securityControlsActive:
+            "سیکیورٹی کنٹرولز فعال ہیں",
+        securityControlsDescription:
+            "تصدیق، JWT پر مبنی API رسائی اور کردار پر مبنی اجازت محفوظ کارروائیوں کے لیے ترتیب دی گئی ہے۔",
+        users: "صارفین",
+        registeredUsers: "2,847 رجسٹرڈ صارفین",
+        manageUsers: "صارفین کا انتظام",
+        rolesPermissions: "کردار اور اجازتیں",
+        roleTypes: "شہری • حکومت • منتظم",
+        manageRoles: "کردار کا انتظام",
+        cities: "شہر",
+        pakistaniCitiesSupported:
+            "پاکستانی شہروں کی معاونت",
+        manageCities: "شہروں کا انتظام",
+        systemData: "سسٹم ڈیٹا",
+        reportsProjectsDecisions:
+            "رپورٹس، منصوبے اور فیصلے",
+        viewSystemData: "سسٹم ڈیٹا دیکھیں",
+
+        /* ---------- UI ---------- */
+
+        notifications: "اطلاعات",
+        openMenu: "مینو کھولیں",
+        logout: "لاگ آؤٹ",
+
+        /* ---------- TOASTS ---------- */
+
+        success: "کامیاب",
+        actionCompleted: "کارروائی مکمل ہوگئی۔",
+        missingInformation: "معلومات نامکمل ہیں",
+        completeAllFields:
+            "براہِ کرم تمام خانے مکمل کریں۔",
+        accountCreated: "اکاؤنٹ بن گیا",
+        welcomeToCivicLens:
+            "CivicLens میں خوش آمدید۔",
+        loginSuccessful: "لاگ اِن کامیاب",
+        welcomeBackToCivicLens:
+            "CivicLens میں دوبارہ خوش آمدید۔",
+        demoMode: "ڈیمو موڈ",
+        demoAccountActivated:
+            "CivicLens ڈیمو اکاؤنٹ فعال ہوگیا۔",
+        loggedOut: "لاگ آؤٹ ہوگیا",
+        signedOut:
+            "آپ سائن آؤٹ ہوگئے ہیں۔",
+        languageChanged: "زبان تبدیل ہوگئی",
+        englishActive:
+            "انگریزی فعال ہوگئی ہے۔",
+        cameraUnavailable: "کیمرہ دستیاب نہیں",
+        cameraUnsupported:
+            "آپ کا براؤزر کیمرے تک رسائی کی معاونت نہیں کرتا۔",
+        cameraReadyToast: "کیمرہ تیار ہے",
+        pointCamera:
+            "کیمرے کو شہری مسئلے کی طرف کریں۔",
+        cameraPermissionRequired:
+            "کیمرے کی اجازت درکار ہے",
+        allowCamera:
+            "براہِ کرم اپنے براؤزر میں کیمرے کی اجازت دیں۔",
+        cameraNotActive: "کیمرہ فعال نہیں",
+        startCameraFirst:
+            "پہلے کیمرہ شروع کریں۔",
+        cameraLoading: "کیمرہ لوڈ ہورہا ہے",
+        waitForCamera:
+            "براہِ کرم کیمرے کے لیے انتظار کریں۔",
+        photoCaptured: "تصویر لے لی گئی",
+        photoReady:
+            "آپ کے شہری مسئلے کی تصویر تیار ہے۔",
+        locationUnavailable:
+            "مقام دستیاب نہیں",
+        locationUnsupported:
+            "آپ کا براؤزر مقام کی سہولت فراہم نہیں کرتا۔",
+        detectingLocation: "مقام معلوم کیا جارہا ہے...",
+        locationDetected: "مقام معلوم ہوگیا",
+        currentLocationCaptured:
+            "آپ کا موجودہ مقام محفوظ ہوگیا ہے۔",
+        locationPermissionRequired:
+            "مقام کی اجازت درکار ہے",
+        allowLocation:
+            "براہِ کرم مقام تک رسائی کی اجازت دیں۔",
+        photoRequired: "تصویر ضروری ہے",
+        takePhotoBeforeAnalysis:
+            "مسئلے کا تجزیہ کرنے سے پہلے تصویر لیں۔",
+        cityRequired: "شہر ضروری ہے",
+        selectCityToast:
+            "براہِ کرم اپنا شہر منتخب کریں۔",
+        descriptionRequired: "تفصیل ضروری ہے",
+        describeIssueFirst:
+            "پہلے شہری مسئلہ بیان کریں۔",
+        analyzing: "تجزیہ کیا جارہا ہے...",
+        aiAnalysisCompleteToast:
+            "AI تجزیہ مکمل ہوگیا",
+        issueAnalyzed:
+            "مسئلے کا کامیابی سے تجزیہ ہوگیا۔",
+        aiError: "AI خرابی",
+        unableToAnalyze:
+            "مسئلے کا تجزیہ نہیں ہوسکا۔",
+        photoMissing: "تصویر موجود نہیں",
+        capturePhotoFirst:
+            "پہلے مسئلے کی تصویر لیں۔",
+        incompleteReport: "رپورٹ نامکمل ہے",
+        completeReport:
+            "براہِ کرم رپورٹ مکمل کریں۔",
+        submitting: "جمع کیا جارہا ہے...",
+        reportSubmitted: "رپورٹ جمع ہوگئی",
+        reportSubmittedSuccessfully:
+            "آپ کی شہری رپورٹ کامیابی سے جمع ہوگئی ہے۔",
+        notificationsTitle: "اطلاعات",
+        newUpdates:
+            "CivicLens کی 3 نئی اپ ڈیٹس موجود ہیں۔",
+
+        /* ---------- AI RESULT TYPES ---------- */
+
+        potholeRoadDamage:
+            "سڑک کا گڑھا / سڑک کو نقصان",
+        streetlightIssue: "اسٹریٹ لائٹ",
+        drainageFlooding:
+            "نکاسی آب / سیلاب",
+        wasteManagement: "کچرے کا انتظام",
+        civicIssue: "شہری مسئلہ",
+        highSeverity: "زیادہ",
+        mediumSeverity: "درمیانہ",
+        lowSeverity: "کم",
+        urgentPriority: "فوری",
+        normalPriority: "معمول",
+        lowPriority: "کم",
+
+        aiRecommendation:
+            "CivicLens AI نے جمع کرائے گئے مسئلے کا تجزیہ کیا ہے اور متعلقہ میونسپل محکمے کو اس کا جائزہ لینے کی سفارش کی ہے۔"
     }
 
 };
+
+
+/* =====================================================
+   TRANSLATION HELPERS
+===================================================== */
+
+function t(key) {
+
+    return (
+        translations[currentLanguage] &&
+        translations[currentLanguage][key]
+    ) ||
+    translations.en[key] ||
+    key;
+
+}
+
+
+function applyTranslations() {
+
+    /* ---------- TEXT ---------- */
+
+    document
+        .querySelectorAll("[data-i18n]")
+        .forEach(element => {
+
+            const key =
+                element.dataset.i18n;
+
+            const translated =
+                t(key);
+
+            if (translated !== key) {
+
+                element.textContent =
+                    translated;
+
+            }
+
+        });
+
+
+    /* ---------- PLACEHOLDERS ---------- */
+
+    document
+        .querySelectorAll("[data-i18n-placeholder]")
+        .forEach(element => {
+
+            const key =
+                element.dataset.i18nPlaceholder;
+
+            element.placeholder =
+                t(key);
+
+        });
+
+
+    /* ---------- TITLES ---------- */
+
+    document
+        .querySelectorAll("[data-i18n-title]")
+        .forEach(element => {
+
+            const key =
+                element.dataset.i18nTitle;
+
+            element.title =
+                t(key);
+
+            element.setAttribute(
+                "aria-label",
+                t(key)
+            );
+
+        });
+
+
+    /* ---------- ROLE ---------- */
+
+    if (currentUser) {
+
+        userRole.textContent =
+            formatRole(
+                currentUser.role
+            );
+
+    }
+
+}
 
 
 /* =====================================================
@@ -235,7 +937,9 @@ function populateCities() {
 
         signupOption.textContent = city;
 
-        signupCity.appendChild(signupOption);
+        signupCity.appendChild(
+            signupOption
+        );
 
 
         const reportOption =
@@ -245,7 +949,9 @@ function populateCities() {
 
         reportOption.textContent = city;
 
-        reportCity.appendChild(reportOption);
+        reportCity.appendChild(
+            reportOption
+        );
 
     });
 
@@ -291,7 +997,9 @@ document
                 button.dataset.target;
 
             const input =
-                document.getElementById(targetId);
+                document.getElementById(
+                    targetId
+                );
 
             const icon =
                 button.querySelector("i");
@@ -336,7 +1044,7 @@ document
 
 signupFormElement.addEventListener(
     "submit",
-    async (event) => {
+    async event => {
 
         event.preventDefault();
 
@@ -368,8 +1076,8 @@ signupFormElement.addEventListener(
         if (!name || !email || !password || !city) {
 
             showToast(
-                "Missing information",
-                "Please complete all fields."
+                t("missingInformation"),
+                t("completeAllFields")
             );
 
             return;
@@ -418,14 +1126,16 @@ signupFormElement.addEventListener(
 
 
         showToast(
-            "Account created",
-            "Welcome to CivicLens."
+            t("accountCreated"),
+            t("welcomeToCivicLens")
         );
 
 
         setTimeout(() => {
 
-            startApplication(demoUser);
+            startApplication(
+                demoUser
+            );
 
         }, 700);
 
@@ -439,7 +1149,7 @@ signupFormElement.addEventListener(
 
 loginFormElement.addEventListener(
     "submit",
-    async (event) => {
+    async event => {
 
         event.preventDefault();
 
@@ -460,8 +1170,8 @@ loginFormElement.addEventListener(
         if (!email || !password) {
 
             showToast(
-                "Missing information",
-                "Enter your email and password."
+                t("missingInformation"),
+                t("completeAllFields")
             );
 
             return;
@@ -475,18 +1185,6 @@ loginFormElement.addEventListener(
             Later this becomes:
 
             POST /auth/login
-
-            Backend returns:
-
-            {
-                access_token: "...",
-                token_type: "bearer",
-                user: {...}
-            }
-
-            The JWT will be stored/managed here.
-
-            The JWT_SECRET_KEY is NEVER stored here.
         */
 
 
@@ -512,14 +1210,16 @@ loginFormElement.addEventListener(
 
 
         showToast(
-            "Login successful",
-            "Welcome back to CivicLens."
+            t("loginSuccessful"),
+            t("welcomeBackToCivicLens")
         );
 
 
         setTimeout(() => {
 
-            startApplication(demoUser);
+            startApplication(
+                demoUser
+            );
 
         }, 600);
 
@@ -532,40 +1232,48 @@ loginFormElement.addEventListener(
 ===================================================== */
 
 const demoLogin =
-    document.getElementById("demoLogin");
-
-
-demoLogin.addEventListener("click", () => {
-
-    const demoUser = {
-
-        user_id: "CIT-DEMO",
-
-        name: "Hamza Khan",
-
-        email: "demo@civiclens.pk",
-
-        role: "citizen",
-
-        city: "Rawalpindi"
-
-    };
-
-
-    localStorage.setItem(
-        "civic_user",
-        JSON.stringify(demoUser)
+    document.getElementById(
+        "demoLogin"
     );
 
 
-    startApplication(demoUser);
+demoLogin.addEventListener(
+    "click",
+    () => {
 
-    showToast(
-        "Demo Mode",
-        "CivicLens demo account activated."
-    );
+        const demoUser = {
 
-});
+            user_id: "CIT-DEMO",
+
+            name: "Hamza Khan",
+
+            email: "demo@civiclens.pk",
+
+            role: "citizen",
+
+            city: "Rawalpindi"
+
+        };
+
+
+        localStorage.setItem(
+            "civic_user",
+            JSON.stringify(demoUser)
+        );
+
+
+        startApplication(
+            demoUser
+        );
+
+
+        showToast(
+            t("demoMode"),
+            t("demoAccountActivated")
+        );
+
+    }
+);
 
 
 /* =====================================================
@@ -577,12 +1285,18 @@ function startApplication(user) {
     currentUser = user;
 
 
-    authScreen.classList.add("hidden");
+    authScreen.classList.add(
+        "hidden"
+    );
 
-    app.classList.remove("hidden");
+    app.classList.remove(
+        "hidden"
+    );
 
 
     updateUserInterface();
+
+    applyTranslations();
 
     showPage("dashboard");
 
@@ -655,7 +1369,9 @@ function updateUserInterface() {
         city;
 
 
-    setupRoleVisibility(role);
+    setupRoleVisibility(
+        role
+    );
 
 }
 
@@ -667,16 +1383,22 @@ function updateUserInterface() {
 function formatRole(role) {
 
     if (role === "government") {
-        return "Government";
+
+        return t("government");
+
     }
 
 
     if (role === "admin") {
-        return "Administrator";
+
+        return t("administrator");
+
     }
 
 
-    return "Citizen";
+    return currentLanguage === "ur"
+        ? "شہری"
+        : "Citizen";
 
 }
 
@@ -746,23 +1468,28 @@ function setupRoleVisibility(role) {
 ===================================================== */
 
 const navItems =
-    document.querySelectorAll(".nav-item");
+    document.querySelectorAll(
+        ".nav-item"
+    );
 
 
 navItems.forEach(item => {
 
-    item.addEventListener("click", () => {
+    item.addEventListener(
+        "click",
+        () => {
 
-        const page =
-            item.dataset.page;
+            const page =
+                item.dataset.page;
 
 
-        showPage(page);
+            showPage(page);
 
 
-        closeSidebar();
+            closeSidebar();
 
-    });
+        }
+    );
 
 });
 
@@ -771,15 +1498,18 @@ document
     .querySelectorAll("[data-page-link]")
     .forEach(button => {
 
-        button.addEventListener("click", () => {
+        button.addEventListener(
+            "click",
+            () => {
 
-            const page =
-                button.dataset.pageLink;
+                const page =
+                    button.dataset.pageLink;
 
 
-            showPage(page);
+                showPage(page);
 
-        });
+            }
+        );
 
     });
 
@@ -787,7 +1517,9 @@ document
 function showPage(pageName) {
 
     const pages =
-        document.querySelectorAll(".page");
+        document.querySelectorAll(
+            ".page"
+        );
 
 
     pages.forEach(page => {
@@ -817,21 +1549,28 @@ function showPage(pageName) {
 
     navItems.forEach(item => {
 
-        item.classList.remove("active");
+        item.classList.remove(
+            "active"
+        );
 
 
         if (
-            item.dataset.page === pageName
+            item.dataset.page ===
+            pageName
         ) {
 
-            item.classList.add("active");
+            item.classList.add(
+                "active"
+            );
 
         }
 
     });
 
 
-    updatePageTitle(pageName);
+    updatePageTitle(
+        pageName
+    );
 
 }
 
@@ -856,47 +1595,50 @@ function updatePageTitle(page) {
 
     const titles = {
 
-        dashboard: "Dashboard",
+        dashboard: "dashboard",
 
-        report: "Report an Issue",
+        report: "reportAnIssue",
 
-        myReports: "My Reports",
+        myReports: "myReports",
 
-        map: "Issue Map",
+        map: "issueMap",
 
-        government: "Civic Operations",
+        government: "civicOperations",
 
-        admin: "Administration"
+        admin: "administration"
+
+    };
+
+
+    const eyebrowKeys = {
+
+        dashboard: "citizenPortal",
+
+        report: "citizenPortal",
+
+        myReports: "citizenActivity",
+
+        map: "civicIntelligence",
+
+        government: "governmentPortal",
+
+        admin: "systemAdministration"
 
     };
 
 
     title.textContent =
-        titles[page] || "CivicLens";
+        t(
+            titles[page] ||
+            "dashboard"
+        );
 
 
-    if (page === "government") {
-
-        eyebrow.textContent =
-            "GOVERNMENT PORTAL";
-
-    }
-
-    else if (page === "admin") {
-
-        eyebrow.textContent =
-            "SYSTEM ADMINISTRATION";
-
-    }
-
-    else {
-
-        eyebrow.textContent =
-            currentLanguage === "ur"
-                ? "شہری پورٹل"
-                : "CITIZEN PORTAL";
-
-    }
+    eyebrow.textContent =
+        t(
+            eyebrowKeys[page] ||
+            "citizenPortal"
+        );
 
 }
 
@@ -905,13 +1647,20 @@ function updatePageTitle(page) {
    MOBILE SIDEBAR
 ===================================================== */
 
-mobileMenu.addEventListener("click", () => {
+mobileMenu.addEventListener(
+    "click",
+    () => {
 
-    sidebar.classList.add("open");
+        sidebar.classList.add(
+            "open"
+        );
 
-    sidebarOverlay.classList.add("show");
+        sidebarOverlay.classList.add(
+            "show"
+        );
 
-});
+    }
+);
 
 
 sidebarOverlay.addEventListener(
@@ -922,9 +1671,13 @@ sidebarOverlay.addEventListener(
 
 function closeSidebar() {
 
-    sidebar.classList.remove("open");
+    sidebar.classList.remove(
+        "open"
+    );
 
-    sidebarOverlay.classList.remove("show");
+    sidebarOverlay.classList.remove(
+        "show"
+    );
 
 }
 
@@ -933,42 +1686,46 @@ function closeSidebar() {
    LOGOUT
 ===================================================== */
 
-logoutBtn.addEventListener("click", () => {
+logoutBtn.addEventListener(
+    "click",
+    () => {
 
-    stopCamera();
-
-
-    localStorage.removeItem(
-        "civic_user"
-    );
+        stopCamera();
 
 
-    /*
-        When real JWT authentication
-        is connected, also remove the
-        access token here.
-    */
+        localStorage.removeItem(
+            "civic_user"
+        );
 
 
-    currentUser = null;
+        currentUser = null;
 
 
-    app.classList.add("hidden");
+        app.classList.add(
+            "hidden"
+        );
 
-    authScreen.classList.remove("hidden");
+        authScreen.classList.remove(
+            "hidden"
+        );
 
 
-    loginForm.classList.add("active");
+        loginForm.classList.add(
+            "active"
+        );
 
-    signupForm.classList.remove("active");
+        signupForm.classList.remove(
+            "active"
+        );
 
 
-    showToast(
-        "Logged out",
-        "You have been signed out."
-    );
+        showToast(
+            t("loggedOut"),
+            t("signedOut")
+        );
 
-});
+    }
+);
 
 
 /* =====================================================
@@ -987,7 +1744,9 @@ document
                     button.dataset.language;
 
 
-                changeLanguage(language);
+                changeLanguage(
+                    language
+                );
 
             }
         );
@@ -996,6 +1755,15 @@ document
 
 
 function changeLanguage(language) {
+
+    if (
+        !translations[language]
+    ) {
+
+        return;
+
+    }
+
 
     currentLanguage =
         language;
@@ -1007,38 +1775,43 @@ function changeLanguage(language) {
 
             button.classList.toggle(
                 "active",
-                button.dataset.language === language
+                button.dataset.language ===
+                language
             );
 
         });
 
 
-    document
-        .querySelectorAll("[data-i18n]")
-        .forEach(element => {
+    /*
+        Translate all static HTML
+        text, placeholders and titles.
+    */
 
-            const key =
-                element.dataset.i18n;
+    applyTranslations();
 
 
-            if (
-                translations[language] &&
-                translations[language][key]
-            ) {
-
-                element.textContent =
-                    translations[language][key];
-
-            }
-
-        });
-
+    /*
+        Preserve the existing RTL
+        system.
+    */
 
     if (language === "ur") {
 
         document.body.classList.add(
             "rtl"
         );
+
+        document.documentElement
+            .setAttribute(
+                "lang",
+                "ur"
+            );
+
+        document.documentElement
+            .setAttribute(
+                "dir",
+                "rtl"
+            );
 
     }
 
@@ -1047,6 +1820,30 @@ function changeLanguage(language) {
         document.body.classList.remove(
             "rtl"
         );
+
+        document.documentElement
+            .setAttribute(
+                "lang",
+                "en"
+            );
+
+        document.documentElement
+            .setAttribute(
+                "dir",
+                "ltr"
+            );
+
+    }
+
+
+    /*
+        Dynamic values need to be
+        restored after translation.
+    */
+
+    if (currentUser) {
+
+        updateUserInterface();
 
     }
 
@@ -1057,12 +1854,10 @@ function changeLanguage(language) {
 
 
     showToast(
-        language === "ur"
-            ? "زبان تبدیل ہوگئی"
-            : "Language changed",
+        t("languageChanged"),
         language === "ur"
             ? "اردو فعال ہوگئی ہے۔"
-            : "English is now active."
+            : t("englishActive")
     );
 
 }
@@ -1081,7 +1876,9 @@ function getCurrentPage() {
 
 
     if (!active) {
+
         return "dashboard";
+
     }
 
 
@@ -1170,8 +1967,8 @@ startCamera.addEventListener(
             ) {
 
                 showToast(
-                    "Camera unavailable",
-                    "Your browser does not support camera access."
+                    t("cameraUnavailable"),
+                    t("cameraUnsupported")
                 );
 
                 return;
@@ -1228,13 +2025,21 @@ startCamera.addEventListener(
 
             startCamera.innerHTML = `
                 <i class="fa-solid fa-camera"></i>
-                Camera Active
+                <span data-i18n="cameraReady">Camera Active</span>
             `;
 
 
+            /*
+                We inserted a translation key
+                dynamically, so translate it now.
+            */
+
+            applyTranslations();
+
+
             showToast(
-                "Camera ready",
-                "Point the camera at the civic issue."
+                t("cameraReadyToast"),
+                t("pointCamera")
             );
 
         }
@@ -1248,8 +2053,8 @@ startCamera.addEventListener(
 
 
             showToast(
-                "Camera permission required",
-                "Please allow camera access in your browser."
+                t("cameraPermissionRequired"),
+                t("allowCamera")
             );
 
         }
@@ -1269,8 +2074,8 @@ capturePhoto.addEventListener(
         if (!cameraStream) {
 
             showToast(
-                "Camera not active",
-                "Start the camera first."
+                t("cameraNotActive"),
+                t("startCameraFirst")
             );
 
             return;
@@ -1286,11 +2091,14 @@ capturePhoto.addEventListener(
             cameraVideo.videoHeight;
 
 
-        if (!videoWidth || !videoHeight) {
+        if (
+            !videoWidth ||
+            !videoHeight
+        ) {
 
             showToast(
-                "Camera loading",
-                "Please wait for the camera."
+                t("cameraLoading"),
+                t("waitForCamera")
             );
 
             return;
@@ -1357,8 +2165,8 @@ capturePhoto.addEventListener(
 
 
         showToast(
-            "Photo captured",
-            "Your civic issue photo is ready."
+            t("photoCaptured"),
+            t("photoReady")
         );
 
     }
@@ -1458,8 +2266,8 @@ getLocation.addEventListener(
         if (!navigator.geolocation) {
 
             showToast(
-                "Location unavailable",
-                "Your browser does not support location."
+                t("locationUnavailable"),
+                t("locationUnsupported")
             );
 
             return;
@@ -1469,8 +2277,13 @@ getLocation.addEventListener(
 
         getLocation.innerHTML = `
             <i class="fa-solid fa-spinner fa-spin"></i>
-            Detecting Location...
+            <span data-i18n="detectingLocation">
+                Detecting Location...
+            </span>
         `;
+
+
+        applyTranslations();
 
 
         navigator.geolocation.getCurrentPosition(
@@ -1486,11 +2299,24 @@ getLocation.addEventListener(
 
 
                 latitude.textContent =
-                    currentCoordinates.latitude.toFixed(6);
+                    currentCoordinates
+                        .latitude
+                        .toFixed(6);
 
 
                 longitude.textContent =
-                    currentCoordinates.longitude.toFixed(6);
+                    currentCoordinates
+                        .longitude
+                        .toFixed(6);
+
+
+                latitude.removeAttribute(
+                    "data-i18n"
+                );
+
+                longitude.removeAttribute(
+                    "data-i18n"
+                );
 
 
                 mapMarker.style.left =
@@ -1503,13 +2329,18 @@ getLocation.addEventListener(
 
                 getLocation.innerHTML = `
                     <i class="fa-solid fa-location-dot"></i>
-                    Location Detected
+                    <span data-i18n="locationDetected">
+                        Location Detected
+                    </span>
                 `;
 
 
+                applyTranslations();
+
+
                 showToast(
-                    "Location detected",
-                    "Your current location has been captured."
+                    t("locationDetected"),
+                    t("currentLocationCaptured")
                 );
 
             },
@@ -1525,16 +2356,22 @@ getLocation.addEventListener(
 
                 getLocation.innerHTML = `
                     <i class="fa-solid fa-crosshairs"></i>
-                    Use My Current Location
+                    <span data-i18n="useCurrentLocation">
+                        Use My Current Location
+                    </span>
                 `;
 
 
+                applyTranslations();
+
+
                 showToast(
-                    "Location permission required",
-                    "Please allow location access."
+                    t("locationPermissionRequired"),
+                    t("allowLocation")
                 );
 
             },
+
 
             {
 
@@ -1573,7 +2410,8 @@ issueDescription.addEventListener(
     () => {
 
         if (
-            issueDescription.value.length > 500
+            issueDescription.value.length >
+            500
         ) {
 
             issueDescription.value =
@@ -1619,8 +2457,8 @@ analyzeIssue.addEventListener(
         if (!capturedPhoto) {
 
             showToast(
-                "Photo required",
-                "Take a photo before analyzing the issue."
+                t("photoRequired"),
+                t("takePhotoBeforeAnalysis")
             );
 
             return;
@@ -1631,8 +2469,8 @@ analyzeIssue.addEventListener(
         if (!reportCity.value) {
 
             showToast(
-                "City required",
-                "Please select your city."
+                t("cityRequired"),
+                t("selectCityToast")
             );
 
             return;
@@ -1643,8 +2481,8 @@ analyzeIssue.addEventListener(
         if (!description) {
 
             showToast(
-                "Description required",
-                "Describe the civic issue first."
+                t("descriptionRequired"),
+                t("describeIssueFirst")
             );
 
             return;
@@ -1662,23 +2500,13 @@ analyzeIssue.addEventListener(
 
         analyzeIssue.innerHTML = `
             <i class="fa-solid fa-spinner fa-spin"></i>
-            Analyzing...
+            <span data-i18n="analyzing">
+                Analyzing...
+            </span>
         `;
 
 
-        /*
-            REAL BACKEND CONNECTION:
-
-            Your existing backend already has:
-
-            POST /issues/analyze
-
-            We will connect this properly after
-            confirming the exact request schema.
-
-            The following demo response allows
-            the frontend workflow to be tested now.
-        */
+        applyTranslations();
 
 
         try {
@@ -1693,16 +2521,22 @@ analyzeIssue.addEventListener(
             const analysis = {
 
                 issue_type:
-                    detectIssueType(description),
+                    detectIssueType(
+                        description
+                    ),
 
                 severity:
-                    detectSeverity(description),
+                    detectSeverity(
+                        description
+                    ),
 
                 priority:
-                    detectPriority(description),
+                    detectPriority(
+                        description
+                    ),
 
                 answer:
-                    "CivicLens AI has analyzed the submitted issue and recommends that the relevant municipal department review it."
+                    t("aiRecommendation")
 
             };
 
@@ -1713,8 +2547,8 @@ analyzeIssue.addEventListener(
 
 
             showToast(
-                "AI analysis complete",
-                "The issue has been analyzed successfully."
+                t("aiAnalysisCompleteToast"),
+                t("issueAnalyzed")
             );
 
         }
@@ -1727,8 +2561,8 @@ analyzeIssue.addEventListener(
 
 
             showToast(
-                "AI error",
-                "Unable to analyze the issue."
+                t("aiError"),
+                t("unableToAnalyze")
             );
 
         }
@@ -1741,6 +2575,9 @@ analyzeIssue.addEventListener(
 
             analyzeIssue.innerHTML =
                 originalHTML;
+
+
+            applyTranslations();
 
         }
 
@@ -1766,7 +2603,9 @@ function detectIssueType(
         text.includes("street")
     ) {
 
-        return "Pothole / Road Damage";
+        return t(
+            "potholeRoadDamage"
+        );
 
     }
 
@@ -1776,7 +2615,9 @@ function detectIssueType(
         text.includes("lamp")
     ) {
 
-        return "Streetlight";
+        return t(
+            "streetlightIssue"
+        );
 
     }
 
@@ -1786,7 +2627,9 @@ function detectIssueType(
         text.includes("flood")
     ) {
 
-        return "Drainage / Flooding";
+        return t(
+            "drainageFlooding"
+        );
 
     }
 
@@ -1797,12 +2640,16 @@ function detectIssueType(
         text.includes("trash")
     ) {
 
-        return "Waste Management";
+        return t(
+            "wasteManagement"
+        );
 
     }
 
 
-    return "Civic Issue";
+    return t(
+        "civicIssue"
+    );
 
 }
 
@@ -1863,21 +2710,31 @@ function detectPriority(
         );
 
 
-    if (severity === "high") {
+    if (
+        severity === "high"
+    ) {
 
-        return "Urgent";
-
-    }
-
-
-    if (severity === "medium") {
-
-        return "Normal";
+        return t(
+            "urgentPriority"
+        );
 
     }
 
 
-    return "Low";
+    if (
+        severity === "medium"
+    ) {
+
+        return t(
+            "normalPriority"
+        );
+
+    }
+
+
+    return t(
+        "lowPriority"
+    );
 
 }
 
@@ -1904,9 +2761,17 @@ function displayAIResult(
     document.getElementById(
         "detectedSeverity"
     ).textContent =
-        capitalize(
-            analysis.severity
-        );
+        currentLanguage === "ur"
+            ? t(
+                analysis.severity === "high"
+                    ? "highSeverity"
+                    : analysis.severity === "medium"
+                        ? "mediumSeverity"
+                        : "lowSeverity"
+            )
+            : capitalize(
+                analysis.severity
+            );
 
 
     document.getElementById(
@@ -1928,8 +2793,15 @@ function displayAIResult(
 
 
     severityBadge.textContent =
-        analysis.severity
-            .toUpperCase();
+        currentLanguage === "ur"
+            ? t(
+                analysis.severity === "high"
+                    ? "highSeverity"
+                    : analysis.severity === "medium"
+                        ? "mediumSeverity"
+                        : "lowSeverity"
+            )
+            : analysis.severity.toUpperCase();
 
 
     if (
@@ -1992,8 +2864,8 @@ submitReport.addEventListener(
         if (!capturedPhoto) {
 
             showToast(
-                "Photo missing",
-                "Capture an issue photo first."
+                t("photoMissing"),
+                t("capturePhotoFirst")
             );
 
             return;
@@ -2009,11 +2881,14 @@ submitReport.addEventListener(
             issueDescription.value.trim();
 
 
-        if (!city || !description) {
+        if (
+            !city ||
+            !description
+        ) {
 
             showToast(
-                "Incomplete report",
-                "Please complete the report."
+                t("incompleteReport"),
+                t("completeReport")
             );
 
             return;
@@ -2027,8 +2902,13 @@ submitReport.addEventListener(
 
         submitReport.innerHTML = `
             <i class="fa-solid fa-spinner fa-spin"></i>
-            Submitting...
+            <span data-i18n="submitting">
+                Submitting...
+            </span>
         `;
+
+
+        applyTranslations();
 
 
         /*
@@ -2036,10 +2916,7 @@ submitReport.addEventListener(
 
             POST /reports
 
-            with authenticated JWT:
-
-            Authorization:
-            Bearer <access_token>
+            with authenticated JWT.
         */
 
 
@@ -2052,13 +2929,18 @@ submitReport.addEventListener(
 
         submitReport.innerHTML = `
             <i class="fa-solid fa-paper-plane"></i>
-            Submit Report
+            <span data-i18n="submitReport">
+                Submit Report
+            </span>
         `;
 
 
+        applyTranslations();
+
+
         showToast(
-            "Report submitted",
-            "Your civic report has been submitted successfully."
+            t("reportSubmitted"),
+            t("reportSubmittedSuccessfully")
         );
 
 
@@ -2145,16 +3027,29 @@ function resetReport() {
 
     startCamera.innerHTML = `
         <i class="fa-solid fa-video"></i>
-        Start Camera
+        <span data-i18n="startCamera">
+            Start Camera
+        </span>
     `;
 
 
     latitude.textContent =
-        "Not detected";
+        t("notDetected");
 
 
     longitude.textContent =
-        "Not detected";
+        t("notDetected");
+
+
+    latitude.setAttribute(
+        "data-i18n",
+        "notDetected"
+    );
+
+    longitude.setAttribute(
+        "data-i18n",
+        "notDetected"
+    );
 
 
     currentCoordinates = {
@@ -2164,6 +3059,9 @@ function resetReport() {
         longitude: null
 
     };
+
+
+    applyTranslations();
 
 }
 
@@ -2252,8 +3150,8 @@ document
         () => {
 
             showToast(
-                "Notifications",
-                "You have 3 new CivicLens updates."
+                t("notificationsTitle"),
+                t("newUpdates")
             );
 
         }
@@ -2350,7 +3248,9 @@ function loadSavedUser() {
 
 
     if (!savedUser) {
+
         return;
+
     }
 
 
@@ -2423,4 +3323,7 @@ window.addEventListener(
    INITIALIZE
 ===================================================== */
 
+applyTranslations();
+
 loadSavedUser();
+
