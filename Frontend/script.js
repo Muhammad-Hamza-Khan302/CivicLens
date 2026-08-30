@@ -101,6 +101,7 @@ const translations = {
         required:"REQUIRED",
         secure:"SECURE",
         protected:"PROTECTED",
+
         builtForPakistan:"🇵🇰 BUILT FOR PAKISTAN",
         makeCityBetter:"Make your city",
         better:"better.",
@@ -112,6 +113,7 @@ const translations = {
         aiPowered:"AI powered",
         aiPoweredDesc:"Analyze and prioritize civic issues.",
         authFooter:"CivicLens • AI-powered civic management",
+
         welcomeBack:"Welcome back",
         signInSubtitle:"Sign in to your CivicLens account.",
         email:"Email",
@@ -131,6 +133,7 @@ const translations = {
         createPasswordPlaceholder:"Create a password",
         selectYourCity:"Select your city",
         alreadyHaveAccount:"Already have an account?",
+
         civicLensAIOnline:"CIVICLENS AI ONLINE",
         letsImprove:"Let's improve",
         dashboardHeroDescription:"Report civic problems and help your community get them resolved faster.",
@@ -158,6 +161,7 @@ const translations = {
         threeDaysAgo:"3 days ago",
         reportsProtected:"Your reports are protected",
         reportsProtectedDescription:"CivicLens uses authenticated accounts, protected API access and role-based permissions for citizens, government users and administrators.",
+
         civicReporting:"CIVIC REPORTING",
         reportIntro:"Capture the problem, confirm its location, and let CivicLens AI analyze it.",
         secureReport:"Secure Report",
@@ -193,11 +197,13 @@ const translations = {
         normal:"Normal",
         defaultAIMessage:"The issue appears to require attention from the relevant municipal department.",
         submitReport:"Submit Report",
+
         citizenActivity:"CITIZEN ACTIVITY",
         trackReports:"Track the civic issues you have reported.",
         newReport:"New Report",
         searchReports:"Search your reports...",
         allStatus:"All Status",
+
         civicIntelligence:"CIVIC INTELLIGENCE",
         issueMap:"Issue Map",
         mapDescription:"Explore reported civic problems around your selected city.",
@@ -206,6 +212,7 @@ const translations = {
         resolvedIssue:"Resolved issue",
         drainageIssue:"Drainage issue",
         civicIssueOverview:"Civic issue overview",
+
         civicOperations:"Civic Operations",
         governmentDescription:"Review, prioritize and manage civic reports submitted by citizens.",
         pendingReports:"Pending Reports",
@@ -220,6 +227,7 @@ const translations = {
         aiSeverityMedium:"AI severity: MEDIUM",
         floodingRisk:"Flooding risk",
         review:"Review",
+
         systemAdministration:"SYSTEM ADMINISTRATION",
         adminDescription:"Manage users, permissions and CivicLens system security.",
         securityControlsActive:"Security controls active",
@@ -236,9 +244,11 @@ const translations = {
         systemData:"System Data",
         reportsProjectsDecisions:"Reports, projects and decisions",
         viewSystemData:"View System Data",
+
         notifications:"Notifications",
         openMenu:"Open menu",
         logout:"Logout",
+
         success:"Success",
         actionCompleted:"Action completed.",
         missingInformation:"Missing information",
@@ -253,6 +263,7 @@ const translations = {
         signedOut:"You have been signed out.",
         languageChanged:"Language changed",
         englishActive:"English is now active.",
+
         cameraUnavailable:"Camera unavailable",
         cameraUnsupported:"Your browser does not support camera access.",
         cameraReadyToast:"Camera ready",
@@ -265,6 +276,7 @@ const translations = {
         waitForCamera:"Please wait for the camera.",
         photoCaptured:"Photo captured",
         photoReady:"Your civic issue photo is ready.",
+
         locationUnavailable:"Location unavailable",
         locationUnsupported:"Your browser does not support location.",
         detectingLocation:"Detecting Location...",
@@ -272,6 +284,7 @@ const translations = {
         currentLocationCaptured:"Your current location has been captured.",
         locationPermissionRequired:"Location permission required",
         allowLocation:"Please allow location access.",
+
         photoRequired:"Photo required",
         takePhotoBeforeAnalysis:"Take a photo before analyzing the issue.",
         cityRequired:"City required",
@@ -290,8 +303,10 @@ const translations = {
         submitting:"Submitting...",
         reportSubmitted:"Report submitted",
         reportSubmittedSuccessfully:"Your civic report has been submitted successfully.",
+
         notificationsTitle:"Notifications",
         newUpdates:"You have 3 new CivicLens updates.",
+
         potholeRoadDamage:"Pothole / Road Damage",
         streetlightIssue:"Streetlight",
         drainageFlooding:"Drainage / Flooding",
@@ -304,6 +319,7 @@ const translations = {
         normalPriority:"Normal",
         lowPriority:"Low",
         aiRecommendation:"CivicLens AI has analyzed the submitted issue and recommends that the relevant municipal department review it.",
+
         reviewReport:"Review Report",
         reportDetails:"Report Details",
         reportStatus:"Report Status",
@@ -365,8 +381,49 @@ const translations = {
         noContractors:"No contractors found.",
         citizen:"Citizen",
         reportSavedToDatabase:"Your report was saved to the CivicLens database.",
-        reportIdCreated:"Report ID"
+        reportIdCreated:"Report ID",
+
+        adminUsers:"ADMIN USER MANAGEMENT",
+        adminRoles:"ROLES & PERMISSIONS",
+        adminCities:"CITY MANAGEMENT",
+        adminSystemData:"SYSTEM DATA",
+        searchUsers:"Search users...",
+        userDetails:"User Details",
+        userId:"User ID",
+        changeRole:"Change Role",
+        selectRole:"Select Role",
+        saveRole:"Save Role",
+        userRoleUpdated:"User role updated",
+        userRoleUpdatedSuccessfully:"The user role was updated successfully.",
+        cannotChangeOwnRole:"You cannot change your own role.",
+        invalidRole:"Invalid role.",
+        noUsers:"No users found.",
+        permissions:"Permissions",
+        permissionSubmitReports:"Submit civic reports",
+        permissionViewOwnReports:"View own reports",
+        permissionIssueMap:"View issue map",
+        permissionReviewReports:"Review citizen reports",
+        permissionVerifyReports:"Verify or reject reports",
+        permissionManageProjects:"Manage civic projects",
+        permissionManageContractors:"Manage contractors",
+        permissionManageUsers:"Manage system users",
+        permissionManageRoles:"Manage user roles",
+        permissionManageSystem:"Manage system administration",
+        searchCities:"Search cities...",
+        supportedCities:"Supported Cities",
+        totalUsers:"Total Users",
+        totalReportsAdmin:"Total Reports",
+        totalProjects:"Total Projects",
+        totalContractors:"Total Contractors",
+        totalDecisions:"Total Decisions",
+        refreshData:"Refresh Data",
+        loading:"Loading...",
+        details:"Details",
+        noSystemData:"No system data available.",
+        userUpdated:"User updated",
+        userNotFound:"User not found"
     },
+
     ur: {}
 };
 
@@ -526,7 +583,7 @@ translations.ur = Object.assign({}, translations.en, {
     securityControlsActive:"سیکیورٹی کنٹرولز فعال ہیں",
     securityControlsDescription:"تصدیق، JWT پر مبنی API رسائی اور کردار پر مبنی اجازت محفوظ کارروائیوں کے لیے ترتیب دی گئی ہے۔",
     users:"صارفین",
-    registeredUsers:"2,847 رجسٹرڈ صارفین",
+    registeredUsers:"رجسٹرڈ صارفین",
     manageUsers:"صارفین کا انتظام",
     rolesPermissions:"کردار اور اجازتیں",
     roleTypes:"شہری • حکومت • منتظم",
@@ -540,69 +597,8 @@ translations.ur = Object.assign({}, translations.en, {
     notifications:"اطلاعات",
     openMenu:"مینو کھولیں",
     logout:"لاگ آؤٹ",
-    success:"کامیاب",
-    actionCompleted:"کارروائی مکمل ہوگئی۔",
-    missingInformation:"معلومات نامکمل ہیں",
-    completeAllFields:"براہِ کرم تمام خانے مکمل کریں۔",
-    accountCreated:"اکاؤنٹ بن گیا",
-    welcomeToCivicLens:"CivicLens میں خوش آمدید۔",
-    loginSuccessful:"لاگ اِن کامیاب",
-    welcomeBackToCivicLens:"CivicLens میں دوبارہ خوش آمدید۔",
-    loggedOut:"لاگ آؤٹ ہوگیا",
-    signedOut:"آپ سائن آؤٹ ہوگئے ہیں۔",
-    languageChanged:"زبان تبدیل ہوگئی",
-    englishActive:"انگریزی فعال ہوگئی ہے۔",
-    cameraUnavailable:"کیمرہ دستیاب نہیں",
-    cameraUnsupported:"آپ کا براؤزر کیمرے تک رسائی کی معاونت نہیں کرتا۔",
-    cameraReadyToast:"کیمرہ تیار ہے",
-    pointCamera:"کیمرے کو شہری مسئلے کی طرف کریں۔",
-    cameraPermissionRequired:"کیمرے کی اجازت درکار ہے",
-    allowCamera:"براہِ کرم اپنے براؤزر میں کیمرے کی اجازت دیں۔",
-    cameraNotActive:"کیمرہ فعال نہیں",
-    startCameraFirst:"پہلے کیمرہ شروع کریں۔",
-    cameraLoading:"کیمرہ لوڈ ہورہا ہے",
-    waitForCamera:"براہِ کرم کیمرے کے لیے انتظار کریں۔",
-    photoCaptured:"تصویر لے لی گئی",
-    photoReady:"آپ کے شہری مسئلے کی تصویر تیار ہے۔",
-    locationUnavailable:"مقام دستیاب نہیں",
-    locationUnsupported:"آپ کا براؤزر مقام کی سہولت فراہم نہیں کرتا۔",
-    detectingLocation:"مقام معلوم کیا جارہا ہے...",
-    locationDetected:"مقام معلوم ہوگیا",
-    currentLocationCaptured:"آپ کا موجودہ مقام محفوظ ہوگیا ہے۔",
-    locationPermissionRequired:"مقام کی اجازت درکار ہے",
-    allowLocation:"براہِ کرم مقام تک رسائی کی اجازت دیں۔",
-    photoRequired:"تصویر ضروری ہے",
-    takePhotoBeforeAnalysis:"مسئلے کا تجزیہ کرنے سے پہلے تصویر لیں۔",
-    cityRequired:"شہر ضروری ہے",
-    selectCityToast:"براہِ کرم اپنا شہر منتخب کریں۔",
-    descriptionRequired:"تفصیل ضروری ہے",
-    describeIssueFirst:"پہلے شہری مسئلہ بیان کریں۔",
-    analyzing:"تجزیہ کیا جارہا ہے...",
-    aiAnalysisCompleteToast:"AI تجزیہ مکمل ہوگیا",
-    issueAnalyzed:"مسئلے کا کامیابی سے تجزیہ ہوگیا۔",
-    aiError:"AI خرابی",
-    unableToAnalyze:"مسئلے کا تجزیہ نہیں ہوسکا۔",
-    photoMissing:"تصویر موجود نہیں",
-    capturePhotoFirst:"پہلے مسئلے کی تصویر لیں۔",
-    incompleteReport:"رپورٹ نامکمل ہے",
-    completeReport:"براہِ کرم رپورٹ مکمل کریں۔",
-    submitting:"جمع کیا جارہا ہے...",
-    reportSubmitted:"رپورٹ جمع ہوگئی",
-    reportSubmittedSuccessfully:"آپ کی شہری رپورٹ کامیابی سے جمع ہوگئی ہے۔",
-    notificationsTitle:"اطلاعات",
-    newUpdates:"CivicLens کی 3 نئی اپ ڈیٹس موجود ہیں۔",
-    potholeRoadDamage:"سڑک کا گڑھا / سڑک کو نقصان",
-    streetlightIssue:"اسٹریٹ لائٹ",
-    drainageFlooding:"نکاسی آب / سیلاب",
-    wasteManagement:"کچرے کا انتظام",
-    civicIssue:"شہری مسئلہ",
-    highSeverity:"زیادہ",
-    mediumSeverity:"درمیانہ",
-    lowSeverity:"کم",
-    urgentPriority:"فوری",
-    normalPriority:"معمول",
-    lowPriority:"کم",
-    aiRecommendation:"CivicLens AI نے جمع کرائے گئے مسئلے کا تجزیہ کیا ہے اور متعلقہ میونسپل محکمے کو اس کا جائزہ لینے کی سفارش کی ہے۔",
+    operationFailed:"کارروائی ناکام ہوگئی",
+    retry:"دوبارہ کوشش کریں",
     reviewReport:"رپورٹ کا جائزہ",
     reportDetails:"رپورٹ کی تفصیلات",
     reportStatus:"رپورٹ کی حیثیت",
@@ -637,34 +633,48 @@ translations.ur = Object.assign({}, translations.en, {
     noProjects:"کوئی منصوبہ نہیں ملا۔",
     noReports:"کوئی رپورٹ نہیں ملی۔",
     governmentDataReady:"حکومتی ڈیٹا کامیابی سے لوڈ ہوگیا۔",
-    operationFailed:"کارروائی ناکام ہوگئی",
-    retry:"دوبارہ کوشش کریں",
-    rejectReason:"مسترد کرنے کی وجہ",
-    informationRequest:"مطلوبہ معلومات",
-    choosePriority:"ترجیح منتخب کریں",
-    chooseDepartment:"محکمہ منتخب کریں",
-    projectCreated:"منصوبہ بن گیا",
-    projectCreatedSuccessfully:"منصوبہ کامیابی سے بن گیا۔",
-    statusUpdated:"حیثیت اپ ڈیٹ ہوگئی",
-    contractorAssigned:"ٹھیکیدار مقرر ہوگیا",
-    contractorAssignedSuccessfully:"ٹھیکیدار کامیابی سے مقرر ہوگیا۔",
-    reportVerified:"رپورٹ کی تصدیق ہوگئی",
-    reportVerifiedSuccessfully:"رپورٹ کی تصدیق ہوگئی۔",
-    reportRejected:"رپورٹ مسترد ہوگئی",
-    reportRejectedSuccessfully:"رپورٹ مسترد کردی گئی۔",
-    informationRequested:"معلومات طلب کردی گئیں",
-    informationRequestedSuccessfully:"شہری سے مزید معلومات طلب کردی گئی ہیں۔",
-    departmentAssigned:"محکمہ مقرر ہوگیا",
-    departmentAssignedSuccessfully:"محکمہ کامیابی سے مقرر ہوگیا۔",
-    reportResolved:"رپورٹ حل ہوگئی",
-    reportResolvedSuccessfully:"شہری رپورٹ حل شدہ قرار دے دی گئی۔",
     contractors:"ٹھیکیدار",
     rating:"درجہ بندی",
     completedProjects:"مکمل منصوبے",
     noContractors:"کوئی ٹھیکیدار نہیں ملا۔",
     citizen:"شہری",
-    reportSavedToDatabase:"آپ کی رپورٹ CivicLens ڈیٹا بیس میں محفوظ ہوگئی۔",
-    reportIdCreated:"رپورٹ ID"
+    adminUsers:"ایڈمن صارفین کا انتظام",
+    adminRoles:"کردار اور اجازتیں",
+    adminCities:"شہروں کا انتظام",
+    adminSystemData:"سسٹم ڈیٹا",
+    searchUsers:"صارفین تلاش کریں...",
+    userDetails:"صارف کی تفصیلات",
+    userId:"صارف ID",
+    changeRole:"کردار تبدیل کریں",
+    selectRole:"کردار منتخب کریں",
+    saveRole:"کردار محفوظ کریں",
+    userRoleUpdated:"صارف کا کردار اپ ڈیٹ ہوگیا",
+    userRoleUpdatedSuccessfully:"صارف کا کردار کامیابی سے اپ ڈیٹ ہوگیا۔",
+    cannotChangeOwnRole:"آپ اپنا کردار تبدیل نہیں کرسکتے۔",
+    noUsers:"کوئی صارف نہیں ملا۔",
+    permissions:"اجازتیں",
+    permissionSubmitReports:"شہری رپورٹس جمع کرنا",
+    permissionViewOwnReports:"اپنی رپورٹس دیکھنا",
+    permissionIssueMap:"مسائل کا نقشہ دیکھنا",
+    permissionReviewReports:"شہری رپورٹس کا جائزہ لینا",
+    permissionVerifyReports:"رپورٹس کی تصدیق یا مسترد کرنا",
+    permissionManageProjects:"شہری منصوبوں کا انتظام",
+    permissionManageContractors:"ٹھیکیداروں کا انتظام",
+    permissionManageUsers:"سسٹم صارفین کا انتظام",
+    permissionManageRoles:"صارف کرداروں کا انتظام",
+    permissionManageSystem:"سسٹم انتظامیہ",
+    searchCities:"شہر تلاش کریں...",
+    supportedCities:"معاون شہروں",
+    totalUsers:"کل صارفین",
+    totalReportsAdmin:"کل رپورٹس",
+    totalProjects:"کل منصوبے",
+    totalContractors:"کل ٹھیکیدار",
+    totalDecisions:"کل فیصلے",
+    refreshData:"ڈیٹا تازہ کریں",
+    loading:"لوڈ ہورہا ہے...",
+    details:"تفصیلات",
+    noSystemData:"سسٹم ڈیٹا دستیاب نہیں۔",
+    userNotFound:"صارف نہیں ملا"
 });
 
 function t(key) {
@@ -676,267 +686,432 @@ function t(key) {
 
 function applyTranslations() {
     document.querySelectorAll("[data-i18n]").forEach(element => {
-        element.textContent = t(element.dataset.i18n);
+        element.textContent =
+            t(element.dataset.i18n);
     });
 
     document.querySelectorAll("[data-i18n-placeholder]").forEach(element => {
-        element.placeholder = t(element.dataset.i18nPlaceholder);
+        element.placeholder =
+            t(element.dataset.i18nPlaceholder);
     });
 
     document.querySelectorAll("[data-i18n-title]").forEach(element => {
-        const value = t(element.dataset.i18nTitle);
+        const value =
+            t(element.dataset.i18nTitle);
+
         element.title = value;
-        element.setAttribute("aria-label", value);
+        element.setAttribute(
+            "aria-label",
+            value
+        );
     });
 
     if (currentUser) {
-        userRole.textContent = formatRole(currentUser.role);
+        userRole.textContent =
+            formatRole(
+                currentUser.role
+            );
     }
 }
 
 function populateCities() {
-    const cities = [...new Set(pakistanCities)].sort((a, b) => a.localeCompare(b));
+    const cities =
+        [...new Set(pakistanCities)]
+            .sort(
+                (a, b) =>
+                    a.localeCompare(b)
+            );
 
     cities.forEach(city => {
         if (signupCity) {
-            const option = document.createElement("option");
-            option.value = city;
-            option.textContent = city;
-            signupCity.appendChild(option);
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                city;
+
+            option.textContent =
+                city;
+
+            signupCity.appendChild(
+                option
+            );
         }
 
         if (reportCity) {
-            const option = document.createElement("option");
-            option.value = city;
-            option.textContent = city;
-            reportCity.appendChild(option);
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                city;
+
+            option.textContent =
+                city;
+
+            reportCity.appendChild(
+                option
+            );
         }
     });
 }
 
 populateCities();
 
-showSignup.addEventListener("click", () => {
-    loginForm.classList.remove("active");
-    signupForm.classList.add("active");
-});
+showSignup.addEventListener(
+    "click",
+    () => {
+        loginForm.classList.remove(
+            "active"
+        );
 
-showLogin.addEventListener("click", () => {
-    signupForm.classList.remove("active");
-    loginForm.classList.add("active");
-});
+        signupForm.classList.add(
+            "active"
+        );
+    }
+);
 
-document.querySelectorAll(".password-toggle").forEach(button => {
-    button.addEventListener("click", () => {
-        const input = document.getElementById(button.dataset.target);
-        const icon = button.querySelector("i");
+showLogin.addEventListener(
+    "click",
+    () => {
+        signupForm.classList.remove(
+            "active"
+        );
 
-        if (!input) {
+        loginForm.classList.add(
+            "active"
+        );
+    }
+);
+
+document
+    .querySelectorAll(
+        ".password-toggle"
+    )
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                const input =
+                    document.getElementById(
+                        button.dataset.target
+                    );
+
+                const icon =
+                    button.querySelector(
+                        "i"
+                    );
+
+                if (!input) {
+                    return;
+                }
+
+                if (
+                    input.type ===
+                    "password"
+                ) {
+                    input.type =
+                        "text";
+
+                    if (icon) {
+                        icon.classList.remove(
+                            "fa-eye"
+                        );
+
+                        icon.classList.add(
+                            "fa-eye-slash"
+                        );
+                    }
+
+                } else {
+                    input.type =
+                        "password";
+
+                    if (icon) {
+                        icon.classList.remove(
+                            "fa-eye-slash"
+                        );
+
+                        icon.classList.add(
+                            "fa-eye"
+                        );
+                    }
+                }
+            }
+        );
+    });
+
+signupFormElement.addEventListener(
+    "submit",
+    event => {
+
+        event.preventDefault();
+
+        const name =
+            document
+                .getElementById(
+                    "signupName"
+                )
+                .value
+                .trim();
+
+        const email =
+            document
+                .getElementById(
+                    "signupEmail"
+                )
+                .value
+                .trim();
+
+        const password =
+            document
+                .getElementById(
+                    "signupPassword"
+                )
+                .value;
+
+        const city =
+            signupCity.value;
+
+        if (
+            !name ||
+            !email ||
+            !password ||
+            !city
+        ) {
+            showToast(
+                t("missingInformation"),
+                t("completeAllFields")
+            );
+
             return;
         }
 
-        if (input.type === "password") {
-            input.type = "text";
-
-            if (icon) {
-                icon.classList.remove("fa-eye");
-                icon.classList.add("fa-eye-slash");
-            }
-        } else {
-            input.type = "password";
-
-            if (icon) {
-                icon.classList.remove("fa-eye-slash");
-                icon.classList.add("fa-eye");
-            }
-        }
-    });
-});
-
-signupFormElement.addEventListener("submit", event => {
-    event.preventDefault();
-
-    const name = document.getElementById("signupName").value.trim();
-    const email = document.getElementById("signupEmail").value.trim();
-    const password = document.getElementById("signupPassword").value;
-    const city = signupCity.value;
-
-    if (!name || !email || !password || !city) {
-        showToast(t("missingInformation"), t("completeAllFields"));
-        return;
-    }
-
-    const user = {
-        user_id: `CIT-${Date.now()}`,
-        name,
-        email,
-        role: "citizen",
-        city
-    };
-
-    localStorage.setItem(
-        "civic_user",
-        JSON.stringify(user)
-    );
-
-    startApplication(user);
-
-    showToast(
-        t("accountCreated"),
-        t("welcomeToCivicLens")
-    );
-});
-
-loginFormElement.addEventListener("submit", async event => {
-    event.preventDefault();
-
-    const email =
-        document.getElementById("loginEmail").value.trim();
-
-    const password =
-        document.getElementById("loginPassword").value;
-
-    if (!email || !password) {
-        showToast(
-            t("missingInformation"),
-            t("completeAllFields")
-        );
-        return;
-    }
-
-    const submitButton =
-        loginFormElement.querySelector(
-            'button[type="submit"]'
-        );
-
-    const originalHTML =
-        submitButton
-            ? submitButton.innerHTML
-            : "";
-
-    if (submitButton) {
-        submitButton.disabled = true;
-        submitButton.innerHTML = `
-            <i class="fa-solid fa-spinner fa-spin"></i>
-            <span>${t("signIn")}</span>
-        `;
-    }
-
-    try {
-        const response = await fetch(
-            `${API_BASE_URL}/auth/login`,
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    email,
-                    password
-                })
-            }
-        );
-
-        let data = {};
-
-        try {
-            data = await response.json();
-        } catch {
-            data = {};
-        }
-
-        if (!response.ok) {
-            throw new Error(
-                data.detail ||
-                data.message ||
-                "Login failed"
-            );
-        }
-
-        const token =
-            data.access_token ||
-            data.token ||
-            data.jwt ||
-            null;
-
-        const backendUser =
-            data.user ||
-            data;
-
-        if (token) {
-            localStorage.setItem(
-                "civic_token",
-                token
-            );
-        }
-
-        const loggedInUser = {
+        const user = {
             user_id:
-                backendUser.user_id ||
-                backendUser.id ||
-                "USER",
+                `CIT-${Date.now()}`,
 
             name:
-                backendUser.name ||
-                backendUser.full_name ||
-                email.split("@")[0],
+                name,
 
             email:
-                backendUser.email ||
                 email,
 
             role:
-                normalizeRole(
-                    backendUser.role ||
-                    data.role ||
-                    "citizen"
-                ),
+                "citizen",
 
             city:
-                backendUser.city ||
-                "Rawalpindi"
+                city
         };
 
         localStorage.setItem(
             "civic_user",
             JSON.stringify(
-                loggedInUser
+                user
             )
         );
 
-        showToast(
-            t("loginSuccessful"),
-            t("welcomeBackToCivicLens")
+        startApplication(
+            user
         );
 
-        setTimeout(() => {
-            startApplication(
-                loggedInUser
+        showToast(
+            t("accountCreated"),
+            t("welcomeToCivicLens")
+        );
+    }
+);
+
+loginFormElement.addEventListener(
+    "submit",
+    async event => {
+
+        event.preventDefault();
+
+        const email =
+            document
+                .getElementById(
+                    "loginEmail"
+                )
+                .value
+                .trim();
+
+        const password =
+            document
+                .getElementById(
+                    "loginPassword"
+                )
+                .value;
+
+        if (
+            !email ||
+            !password
+        ) {
+            showToast(
+                t("missingInformation"),
+                t("completeAllFields")
             );
-        }, 300);
 
-    } catch (error) {
-        console.error(
-            "Login error:",
-            error
-        );
+            return;
+        }
 
-        showToast(
-            "Login failed",
-            error.message ||
-            "Unable to login."
-        );
+        const submitButton =
+            loginFormElement.querySelector(
+                'button[type="submit"]'
+            );
 
-    } finally {
+        const originalHTML =
+            submitButton
+                ? submitButton.innerHTML
+                : "";
+
         if (submitButton) {
-            submitButton.disabled = false;
-            submitButton.innerHTML =
-                originalHTML;
+            submitButton.disabled =
+                true;
+
+            submitButton.innerHTML = `
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <span>${t("signIn")}</span>
+            `;
+        }
+
+        try {
+
+            const response =
+                await fetch(
+                    `${API_BASE_URL}/auth/login`,
+                    {
+                        method:
+                            "POST",
+
+                        headers: {
+                            "Content-Type":
+                                "application/json"
+                        },
+
+                        body:
+                            JSON.stringify({
+                                email,
+                                password
+                            })
+                    }
+                );
+
+            let data = {};
+
+            try {
+                data =
+                    await response.json();
+            } catch {
+                data = {};
+            }
+
+            if (!response.ok) {
+                throw new Error(
+                    data.detail ||
+                    data.message ||
+                    "Login failed"
+                );
+            }
+
+            const token =
+                data.access_token ||
+                data.token ||
+                data.jwt ||
+                null;
+
+            const backendUser =
+                data.user ||
+                data;
+
+            if (token) {
+                localStorage.setItem(
+                    "civic_token",
+                    token
+                );
+            }
+
+            const loggedInUser = {
+                user_id:
+                    backendUser.user_id ||
+                    backendUser.id ||
+                    "USER",
+
+                name:
+                    backendUser.name ||
+                    backendUser.full_name ||
+                    email.split("@")[0],
+
+                email:
+                    backendUser.email ||
+                    email,
+
+                role:
+                    normalizeRole(
+                        backendUser.role ||
+                        data.role ||
+                        "citizen"
+                    ),
+
+                city:
+                    backendUser.city ||
+                    "Rawalpindi"
+            };
+
+            localStorage.setItem(
+                "civic_user",
+                JSON.stringify(
+                    loggedInUser
+                )
+            );
+
+            showToast(
+                t("loginSuccessful"),
+                t("welcomeBackToCivicLens")
+            );
+
+            setTimeout(
+                () => {
+                    startApplication(
+                        loggedInUser
+                    );
+                },
+                300
+            );
+
+        } catch (error) {
+
+            console.error(
+                "Login error:",
+                error
+            );
+
+            showToast(
+                "Login failed",
+                error.message ||
+                "Unable to login."
+            );
+
+        } finally {
+
+            if (submitButton) {
+                submitButton.disabled =
+                    false;
+
+                submitButton.innerHTML =
+                    originalHTML;
+            }
         }
     }
-});
+);
 
 function normalizeRole(role) {
+
     if (!role) {
         return "citizen";
     }
@@ -946,7 +1121,10 @@ function normalizeRole(role) {
             .toLowerCase()
             .trim();
 
-    if (value === "government") {
+    if (
+        value ===
+        "government"
+    ) {
         return "government";
     }
 
@@ -961,7 +1139,9 @@ function normalizeRole(role) {
 }
 
 const demoLogin =
-    document.getElementById("demoLogin");
+    document.getElementById(
+        "demoLogin"
+    );
 
 if (demoLogin) {
     demoLogin.addEventListener(
@@ -1004,25 +1184,41 @@ if (demoLogin) {
     );
 }
 
-function startApplication(user) {
-    currentUser = user;
+function startApplication(
+    user
+) {
+
+    currentUser =
+        user;
+
     currentUser.role =
         normalizeRole(
             currentUser.role
         );
 
-    authScreen.classList.add("hidden");
-    app.classList.remove("hidden");
+    authScreen.classList.add(
+        "hidden"
+    );
+
+    app.classList.remove(
+        "hidden"
+    );
 
     updateUserInterface();
+
     applyTranslations();
 
     if (
         currentUser.role ===
         "government"
     ) {
-        showPage("government");
+
+        showPage(
+            "government"
+        );
+
         loadGovernmentData();
+
         return;
     }
 
@@ -1030,14 +1226,23 @@ function startApplication(user) {
         currentUser.role ===
         "admin"
     ) {
-        showPage("admin");
+
+        showPage(
+            "admin"
+        );
+
+        initializeAdminPortal();
+
         return;
     }
 
-    showPage("dashboard");
+    showPage(
+        "dashboard"
+    );
 }
 
 function updateUserInterface() {
+
     if (!currentUser) {
         return;
     }
@@ -1064,7 +1269,9 @@ function updateUserInterface() {
         );
 
     const initials =
-        getInitials(name);
+        getInitials(
+            name
+        );
 
     userAvatar.textContent =
         initials;
@@ -1094,69 +1301,111 @@ function updateUserInterface() {
     );
 }
 
-function formatRole(role) {
+function formatRole(
+    role
+) {
+
     const value =
-        normalizeRole(role);
+        normalizeRole(
+            role
+        );
 
-    if (value === "government") {
-        return t("government");
+    if (
+        value ===
+        "government"
+    ) {
+        return t(
+            "government"
+        );
     }
 
-    if (value === "admin") {
-        return t("administrator");
+    if (
+        value ===
+        "admin"
+    ) {
+        return t(
+            "administrator"
+        );
     }
 
-    return currentLanguage === "ur"
+    return currentLanguage ===
+        "ur"
         ? "شہری"
         : "Citizen";
 }
 
-function getInitials(name) {
+function getInitials(
+    name
+) {
+
     return String(name)
         .split(" ")
         .filter(Boolean)
-        .map(part => part[0])
-        .slice(0, 2)
+        .map(
+            part =>
+                part[0]
+        )
+        .slice(
+            0,
+            2
+        )
         .join("")
         .toUpperCase();
 }
 
-function setupRoleVisibility(role) {
+function setupRoleVisibility(
+    role
+) {
+
     const value =
-        normalizeRole(role);
+        normalizeRole(
+            role
+        );
 
     document
         .querySelectorAll(
             ".citizen-only"
         )
-        .forEach(element => {
-            element.style.display =
-                value === "citizen"
-                    ? ""
-                    : "none";
-        });
+        .forEach(
+            element => {
+
+                element.style.display =
+                    value ===
+                    "citizen"
+                        ? ""
+                        : "none";
+            }
+        );
 
     document
         .querySelectorAll(
             ".government-only"
         )
-        .forEach(element => {
-            element.style.display =
-                value === "government"
-                    ? ""
-                    : "none";
-        });
+        .forEach(
+            element => {
+
+                element.style.display =
+                    value ===
+                    "government"
+                        ? ""
+                        : "none";
+            }
+        );
 
     document
         .querySelectorAll(
             ".admin-only"
         )
-        .forEach(element => {
-            element.style.display =
-                value === "admin"
-                    ? ""
-                    : "none";
-        });
+        .forEach(
+            element => {
+
+                element.style.display =
+                    value ===
+                    "admin"
+                        ? ""
+                        : "none";
+            }
+        );
 }
 
 const navItems =
@@ -1164,50 +1413,31 @@ const navItems =
         ".nav-item"
     );
 
-navItems.forEach(item => {
-    item.addEventListener(
-        "click",
-        event => {
-            event.preventDefault();
+navItems.forEach(
+    item => {
 
-            const page =
-                item.dataset.page;
-
-            if (!canAccessPage(page)) {
-                return;
-            }
-
-            showPage(page);
-            closeSidebar();
-
-            if (
-                page ===
-                "government"
-            ) {
-                loadGovernmentData();
-            }
-        }
-    );
-});
-
-document
-    .querySelectorAll(
-        "[data-page-link]"
-    )
-    .forEach(button => {
-        button.addEventListener(
+        item.addEventListener(
             "click",
             event => {
+
                 event.preventDefault();
 
                 const page =
-                    button.dataset.pageLink;
+                    item.dataset.page;
 
-                if (!canAccessPage(page)) {
+                if (
+                    !canAccessPage(
+                        page
+                    )
+                ) {
                     return;
                 }
 
-                showPage(page);
+                showPage(
+                    page
+                );
+
+                closeSidebar();
 
                 if (
                     page ===
@@ -1215,11 +1445,69 @@ document
                 ) {
                     loadGovernmentData();
                 }
+
+                if (
+                    page ===
+                    "admin"
+                ) {
+                    initializeAdminPortal();
+                }
             }
         );
-    });
+    }
+);
 
-function canAccessPage(pageName) {
+document
+    .querySelectorAll(
+        "[data-page-link]"
+    )
+    .forEach(
+        button => {
+
+            button.addEventListener(
+                "click",
+                event => {
+
+                    event.preventDefault();
+
+                    const page =
+                        button.dataset
+                            .pageLink;
+
+                    if (
+                        !canAccessPage(
+                            page
+                        )
+                    ) {
+                        return;
+                    }
+
+                    showPage(
+                        page
+                    );
+
+                    if (
+                        page ===
+                        "government"
+                    ) {
+                        loadGovernmentData();
+                    }
+
+                    if (
+                        page ===
+                        "admin"
+                    ) {
+                        initializeAdminPortal();
+                    }
+                }
+            );
+        }
+    );
+
+function canAccessPage(
+    pageName
+) {
+
     if (!currentUser) {
         return false;
     }
@@ -1253,10 +1541,8 @@ function canAccessPage(pageName) {
     }
 
     if (
-        pageName ===
-        "report" ||
-        pageName ===
-        "myReports"
+        pageName === "report" ||
+        pageName === "myReports"
     ) {
         return role ===
             "citizen";
@@ -1273,12 +1559,16 @@ function canAccessPage(pageName) {
     return true;
 }
 
-function showPage(pageName) {
+function showPage(
+    pageName
+) {
+
     if (
         !canAccessPage(
             pageName
         )
     ) {
+
         const role =
             normalizeRole(
                 currentUser?.role
@@ -1288,15 +1578,20 @@ function showPage(pageName) {
             role ===
             "government"
         ) {
+
             pageName =
                 "government";
+
         } else if (
             role ===
             "admin"
         ) {
+
             pageName =
                 "admin";
+
         } else {
+
             pageName =
                 "dashboard";
         }
@@ -1306,11 +1601,13 @@ function showPage(pageName) {
         .querySelectorAll(
             ".page"
         )
-        .forEach(page => {
-            page.classList.remove(
-                "active-page"
-            );
-        });
+        .forEach(
+            page => {
+                page.classList.remove(
+                    "active-page"
+                );
+            }
+        );
 
     const target =
         document.getElementById(
@@ -1325,20 +1622,24 @@ function showPage(pageName) {
         "active-page"
     );
 
-    navItems.forEach(item => {
-        item.classList.remove(
-            "active"
-        );
+    navItems.forEach(
+        item => {
 
-        if (
-            item.dataset.page ===
-            pageName
-        ) {
-            item.classList.add(
+            item.classList.remove(
                 "active"
             );
+
+            if (
+                item.dataset.page ===
+                pageName
+            ) {
+
+                item.classList.add(
+                    "active"
+                );
+            }
         }
-    });
+    );
 
     updatePageTitle(
         pageName
@@ -1350,7 +1651,10 @@ function showPage(pageName) {
     });
 }
 
-function updatePageTitle(page) {
+function updatePageTitle(
+    page
+) {
+
     const title =
         document.getElementById(
             "pageTitle"
@@ -1364,14 +1668,19 @@ function updatePageTitle(page) {
     const titles = {
         dashboard:
             "dashboard",
+
         report:
             "reportAnIssue",
+
         myReports:
             "myReports",
+
         map:
             "issueMap",
+
         government:
             "civicOperations",
+
         admin:
             "administration"
     };
@@ -1379,14 +1688,19 @@ function updatePageTitle(page) {
     const eyebrowKeys = {
         dashboard:
             "citizenPortal",
+
         report:
             "citizenPortal",
+
         myReports:
             "citizenActivity",
+
         map:
             "civicIntelligence",
+
         government:
             "governmentPortal",
+
         admin:
             "systemAdministration"
     };
@@ -1407,6 +1721,7 @@ function updatePageTitle(page) {
 mobileMenu.addEventListener(
     "click",
     () => {
+
         sidebar.classList.add(
             "open"
         );
@@ -1423,6 +1738,7 @@ sidebarOverlay.addEventListener(
 );
 
 function closeSidebar() {
+
     sidebar.classList.remove(
         "open"
     );
@@ -1435,6 +1751,7 @@ function closeSidebar() {
 logoutBtn.addEventListener(
     "click",
     () => {
+
         stopCamera();
 
         localStorage.removeItem(
@@ -1470,19 +1787,30 @@ document
     .querySelectorAll(
         ".language-btn"
     )
-    .forEach(button => {
-        button.addEventListener(
-            "click",
-            () => {
-                changeLanguage(
-                    button.dataset.language
-                );
-            }
-        );
-    });
+    .forEach(
+        button => {
 
-function changeLanguage(language) {
-    if (!translations[language]) {
+            button.addEventListener(
+                "click",
+                () => {
+
+                    changeLanguage(
+                        button.dataset.language
+                    );
+                }
+            );
+        }
+    );
+
+function changeLanguage(
+    language
+) {
+
+    if (
+        !translations[
+            language
+        ]
+    ) {
         return;
     }
 
@@ -1493,13 +1821,16 @@ function changeLanguage(language) {
         .querySelectorAll(
             ".language-btn"
         )
-        .forEach(button => {
-            button.classList.toggle(
-                "active",
-                button.dataset.language ===
+        .forEach(
+            button => {
+
+                button.classList.toggle(
+                    "active",
+                    button.dataset.language ===
                     language
-            );
-        });
+                );
+            }
+        );
 
     applyTranslations();
 
@@ -1507,6 +1838,7 @@ function changeLanguage(language) {
         language ===
         "ur"
     ) {
+
         document.body.classList.add(
             "rtl"
         );
@@ -1520,7 +1852,9 @@ function changeLanguage(language) {
             "dir",
             "rtl"
         );
+
     } else {
+
         document.body.classList.remove(
             "rtl"
         );
@@ -1543,9 +1877,20 @@ function changeLanguage(language) {
     updatePageTitle(
         getCurrentPage()
     );
+
+    if (
+        currentUser &&
+        normalizeRole(
+            currentUser.role
+        ) ===
+        "admin"
+    ) {
+        refreshOpenAdminPanel();
+    }
 }
 
 function getCurrentPage() {
+
     const active =
         document.querySelector(
             ".page.active-page"
@@ -1604,28 +1949,36 @@ const cameraFrame =
 startCamera.addEventListener(
     "click",
     async () => {
+
         try {
+
             if (
                 !navigator.mediaDevices ||
-                !navigator.mediaDevices.getUserMedia
+                !navigator.mediaDevices
+                    .getUserMedia
             ) {
+
                 showToast(
                     t("cameraUnavailable"),
                     t("cameraUnsupported")
                 );
+
                 return;
             }
 
             cameraStream =
-                await navigator.mediaDevices.getUserMedia({
-                    video: {
-                        facingMode: {
-                            ideal:
-                                "environment"
-                        }
-                    },
-                    audio: false
-                });
+                await navigator
+                    .mediaDevices
+                    .getUserMedia({
+                        video: {
+                            facingMode: {
+                                ideal:
+                                    "environment"
+                            }
+                        },
+                        audio:
+                            false
+                    });
 
             cameraVideo.srcObject =
                 cameraStream;
@@ -1658,7 +2011,9 @@ startCamera.addEventListener(
                 t("cameraReadyToast"),
                 t("pointCamera")
             );
+
         } catch (error) {
+
             console.error(
                 "Camera error:",
                 error
@@ -1675,11 +2030,14 @@ startCamera.addEventListener(
 capturePhoto.addEventListener(
     "click",
     () => {
+
         if (!cameraStream) {
+
             showToast(
                 t("cameraNotActive"),
                 t("startCameraFirst")
             );
+
             return;
         }
 
@@ -1690,10 +2048,12 @@ capturePhoto.addEventListener(
             cameraVideo.videoHeight;
 
         if (!width || !height) {
+
             showToast(
                 t("cameraLoading"),
                 t("waitForCamera")
             );
+
             return;
         }
 
@@ -1753,6 +2113,7 @@ capturePhoto.addEventListener(
 retakePhoto.addEventListener(
     "click",
     async () => {
+
         capturedPhoto =
             null;
 
@@ -1768,15 +2129,18 @@ retakePhoto.addEventListener(
 );
 
 function stopCamera() {
+
     if (!cameraStream) {
         return;
     }
 
     cameraStream
         .getTracks()
-        .forEach(track => {
-            track.stop();
-        });
+        .forEach(
+            track => {
+                track.stop();
+            }
+        );
 
     cameraStream =
         null;
@@ -1808,11 +2172,14 @@ const mapMarker =
 getLocation.addEventListener(
     "click",
     () => {
+
         if (!navigator.geolocation) {
+
             showToast(
                 t("locationUnavailable"),
                 t("locationUnsupported")
             );
+
             return;
         }
 
@@ -1826,6 +2193,7 @@ getLocation.addEventListener(
 
         navigator.geolocation.getCurrentPosition(
             position => {
+
                 currentCoordinates.latitude =
                     position.coords.latitude;
 
@@ -1833,14 +2201,14 @@ getLocation.addEventListener(
                     position.coords.longitude;
 
                 latitude.textContent =
-                    currentCoordinates.latitude.toFixed(
-                        6
-                    );
+                    currentCoordinates
+                        .latitude
+                        .toFixed(6);
 
                 longitude.textContent =
-                    currentCoordinates.longitude.toFixed(
-                        6
-                    );
+                    currentCoordinates
+                        .longitude
+                        .toFixed(6);
 
                 latitude.removeAttribute(
                     "data-i18n"
@@ -1869,7 +2237,9 @@ getLocation.addEventListener(
                     t("currentLocationCaptured")
                 );
             },
+
             error => {
+
                 console.error(
                     "Location error:",
                     error
@@ -1888,11 +2258,14 @@ getLocation.addEventListener(
                     t("allowLocation")
                 );
             },
+
             {
                 enableHighAccuracy:
                     true,
+
                 timeout:
                     10000,
+
                 maximumAge:
                     0
             }
@@ -1913,15 +2286,19 @@ const characterCount =
 issueDescription.addEventListener(
     "input",
     () => {
+
         if (
-            issueDescription.value.length >
+            issueDescription.value
+                .length >
             500
         ) {
+
             issueDescription.value =
-                issueDescription.value.substring(
-                    0,
-                    500
-                );
+                issueDescription.value
+                    .substring(
+                        0,
+                        500
+                    );
         }
 
         characterCount.textContent =
@@ -1947,26 +2324,32 @@ analyzeIssue.addEventListener(
             issueDescription.value.trim();
 
         if (!capturedPhoto) {
+
             showToast(
                 t("photoRequired"),
                 t("takePhotoBeforeAnalysis")
             );
+
             return;
         }
 
         if (!reportCity.value) {
+
             showToast(
                 t("cityRequired"),
                 t("selectCityToast")
             );
+
             return;
         }
 
         if (!description) {
+
             showToast(
                 t("descriptionRequired"),
                 t("describeIssueFirst")
             );
+
             return;
         }
 
@@ -1982,21 +2365,26 @@ analyzeIssue.addEventListener(
         `;
 
         try {
+
             await delay(1200);
 
             const analysis = {
+
                 issue_type:
                     detectIssueType(
                         description
                     ),
+
                 severity:
                     detectSeverity(
                         description
                     ),
+
                 priority:
                     detectPriority(
                         description
                     ),
+
                 answer:
                     t(
                         "aiRecommendation"
@@ -2011,14 +2399,12 @@ analyzeIssue.addEventListener(
             );
 
             showToast(
-                t(
-                    "aiAnalysisCompleteToast"
-                ),
-                t(
-                    "issueAnalyzed"
-                )
+                t("aiAnalysisCompleteToast"),
+                t("issueAnalyzed")
             );
+
         } catch (error) {
+
             console.error(
                 error
             );
@@ -2027,7 +2413,9 @@ analyzeIssue.addEventListener(
                 t("aiError"),
                 t("unableToAnalyze")
             );
+
         } finally {
+
             analyzeIssue.disabled =
                 false;
 
@@ -2042,6 +2430,7 @@ analyzeIssue.addEventListener(
 function detectIssueType(
     description
 ) {
+
     const text =
         description.toLowerCase();
 
@@ -2050,6 +2439,7 @@ function detectIssueType(
         text.includes("road") ||
         text.includes("street")
     ) {
+
         return t(
             "potholeRoadDamage"
         );
@@ -2059,6 +2449,7 @@ function detectIssueType(
         text.includes("light") ||
         text.includes("lamp")
     ) {
+
         return t(
             "streetlightIssue"
         );
@@ -2068,6 +2459,7 @@ function detectIssueType(
         text.includes("drain") ||
         text.includes("flood")
     ) {
+
         return t(
             "drainageFlooding"
         );
@@ -2078,6 +2470,7 @@ function detectIssueType(
         text.includes("garbage") ||
         text.includes("trash")
     ) {
+
         return t(
             "wasteManagement"
         );
@@ -2091,6 +2484,7 @@ function detectIssueType(
 function detectSeverity(
     description
 ) {
+
     const text =
         description.toLowerCase();
 
@@ -2102,6 +2496,7 @@ function detectSeverity(
         text.includes("major") ||
         text.includes("large")
     ) {
+
         return "high";
     }
 
@@ -2110,6 +2505,7 @@ function detectSeverity(
         text.includes("damage") ||
         text.includes("bad")
     ) {
+
         return "medium";
     }
 
@@ -2119,18 +2515,27 @@ function detectSeverity(
 function detectPriority(
     description
 ) {
+
     const severity =
         detectSeverity(
             description
         );
 
-    if (severity === "high") {
+    if (
+        severity ===
+        "high"
+    ) {
+
         return t(
             "urgentPriority"
         );
     }
 
-    if (severity === "medium") {
+    if (
+        severity ===
+        "medium"
+    ) {
+
         return t(
             "normalPriority"
         );
@@ -2144,6 +2549,7 @@ function detectPriority(
 function displayAIResult(
     analysis
 ) {
+
     aiResult.classList.remove(
         "hidden"
     );
@@ -2156,12 +2562,21 @@ function displayAIResult(
     document.getElementById(
         "detectedSeverity"
     ).textContent =
-        currentLanguage === "ur"
-            ? analysis.severity === "high"
-                ? t("highSeverity")
-                : analysis.severity === "medium"
-                    ? t("mediumSeverity")
-                    : t("lowSeverity")
+        currentLanguage ===
+            "ur"
+            ? analysis.severity ===
+              "high"
+                ? t(
+                    "highSeverity"
+                )
+                : analysis.severity ===
+                  "medium"
+                    ? t(
+                        "mediumSeverity"
+                    )
+                    : t(
+                        "lowSeverity"
+                    )
             : capitalize(
                 analysis.severity
             );
@@ -2182,29 +2597,50 @@ function displayAIResult(
         );
 
     severityBadge.textContent =
-        currentLanguage === "ur"
-            ? analysis.severity === "high"
-                ? t("highSeverity")
-                : analysis.severity === "medium"
-                    ? t("mediumSeverity")
-                    : t("lowSeverity")
+        currentLanguage ===
+            "ur"
+            ? analysis.severity ===
+              "high"
+                ? t(
+                    "highSeverity"
+                )
+                : analysis.severity ===
+                  "medium"
+                    ? t(
+                        "mediumSeverity"
+                    )
+                    : t(
+                        "lowSeverity"
+                    )
             : analysis.severity.toUpperCase();
 
-    if (analysis.severity === "high") {
+    if (
+        analysis.severity ===
+        "high"
+    ) {
+
         severityBadge.style.background =
             "#fff0f0";
+
         severityBadge.style.color =
             "#d94c4c";
+
     } else if (
-        analysis.severity === "medium"
+        analysis.severity ===
+        "medium"
     ) {
+
         severityBadge.style.background =
             "#fff5e8";
+
         severityBadge.style.color =
             "#c57a28";
+
     } else {
+
         severityBadge.style.background =
             "#eaf9f3";
+
         severityBadge.style.color =
             "#249b6c";
     }
@@ -2227,10 +2663,12 @@ submitReport.addEventListener(
     async () => {
 
         if (!currentUser) {
+
             showToast(
                 t("operationFailed"),
                 "Please login again."
             );
+
             return;
         }
 
@@ -2240,18 +2678,22 @@ submitReport.addEventListener(
             ) !==
             "citizen"
         ) {
+
             showToast(
                 t("operationFailed"),
                 "Only citizens can submit reports."
             );
+
             return;
         }
 
         if (!capturedPhoto) {
+
             showToast(
                 t("photoMissing"),
                 t("capturePhotoFirst")
             );
+
             return;
         }
 
@@ -2259,21 +2701,27 @@ submitReport.addEventListener(
             !reportCity.value ||
             !issueDescription.value.trim()
         ) {
+
             showToast(
                 t("incompleteReport"),
                 t("completeReport")
             );
+
             return;
         }
 
         if (
-            currentCoordinates.latitude === null ||
-            currentCoordinates.longitude === null
+            currentCoordinates.latitude ===
+                null ||
+            currentCoordinates.longitude ===
+                null
         ) {
+
             showToast(
                 t("locationUnavailable"),
                 "Please capture your current location before submitting."
             );
+
             return;
         }
 
@@ -2285,13 +2733,16 @@ submitReport.addEventListener(
                 );
 
         const priority =
-            severity === "high"
+            severity ===
+                "high"
                 ? "critical"
-                : severity === "medium"
+                : severity ===
+                  "medium"
                     ? "medium"
                     : "low";
 
         const payload = {
+
             report_id:
                 `REP-${Date.now()}`,
 
@@ -2305,6 +2756,7 @@ submitReport.addEventListener(
                 null,
 
             location: {
+
                 latitude:
                     currentCoordinates.latitude,
 
@@ -2334,12 +2786,14 @@ submitReport.addEventListener(
         `;
 
         try {
+
             const data =
                 await apiRequest(
                     "/reports",
                     {
                         method:
                             "POST",
+
                         body:
                             JSON.stringify(
                                 payload
@@ -2366,7 +2820,9 @@ submitReport.addEventListener(
                 },
                 800
             );
+
         } catch (error) {
+
             console.error(
                 "Report submission error:",
                 error
@@ -2376,7 +2832,9 @@ submitReport.addEventListener(
                 t("operationFailed"),
                 error.message
             );
+
         } finally {
+
             submitReport.disabled =
                 false;
 
@@ -2399,6 +2857,7 @@ clearReport.addEventListener(
 );
 
 function resetReport() {
+
     stopCamera();
 
     capturedPhoto =
@@ -2463,6 +2922,7 @@ function resetReport() {
     currentCoordinates = {
         latitude:
             null,
+
         longitude:
             null
     };
@@ -2491,6 +2951,7 @@ statusFilter.addEventListener(
 );
 
 function filterReports() {
+
     const search =
         reportSearch.value
             .toLowerCase()
@@ -2505,67 +2966,73 @@ function filterReports() {
         .querySelectorAll(
             ".reports-table .table-row"
         )
-        .forEach(row => {
+        .forEach(
+            row => {
 
-            const text =
-                row.textContent
-                    .toLowerCase();
+                const text =
+                    row.textContent
+                        .toLowerCase();
 
-            let matchesStatus =
-                true;
+                let matchesStatus =
+                    true;
 
-            if (
-                selected ===
-                "submitted"
-            ) {
-                matchesStatus =
+                if (
+                    selected ===
+                    "submitted"
+                ) {
+
+                    matchesStatus =
+                        text.includes(
+                            "submitted"
+                        );
+                }
+
+                if (
+                    selected ===
+                    "reviewing"
+                ) {
+
+                    matchesStatus =
+                        text.includes(
+                            "reviewing"
+                        );
+                }
+
+                if (
+                    selected ===
+                    "progress"
+                ) {
+
+                    matchesStatus =
+                        text.includes(
+                            "in progress"
+                        );
+                }
+
+                if (
+                    selected ===
+                    "resolved"
+                ) {
+
+                    matchesStatus =
+                        text.includes(
+                            "resolved"
+                        );
+                }
+
+                const matchesSearch =
+                    !search ||
                     text.includes(
-                        "submitted"
+                        search
                     );
+
+                row.style.display =
+                    matchesSearch &&
+                    matchesStatus
+                        ? "grid"
+                        : "none";
             }
-
-            if (
-                selected ===
-                "reviewing"
-            ) {
-                matchesStatus =
-                    text.includes(
-                        "reviewing"
-                    );
-            }
-
-            if (
-                selected ===
-                "progress"
-            ) {
-                matchesStatus =
-                    text.includes(
-                        "in progress"
-                    );
-            }
-
-            if (
-                selected ===
-                "resolved"
-            ) {
-                matchesStatus =
-                    text.includes(
-                        "resolved"
-                    );
-            }
-
-            const matchesSearch =
-                !search ||
-                text.includes(
-                    search
-                );
-
-            row.style.display =
-                matchesSearch &&
-                matchesStatus
-                    ? "grid"
-                    : "none";
-        });
+        );
 }
 
 const notificationButton =
@@ -2574,12 +3041,18 @@ const notificationButton =
     );
 
 if (notificationButton) {
+
     notificationButton.addEventListener(
         "click",
         () => {
+
             showToast(
-                t("notificationsTitle"),
-                t("newUpdates")
+                t(
+                    "notificationsTitle"
+                ),
+                t(
+                    "newUpdates"
+                )
             );
         }
     );
@@ -2589,6 +3062,7 @@ async function apiRequest(
     path,
     options = {}
 ) {
+
     const token =
         localStorage.getItem(
             "civic_token"
@@ -2602,11 +3076,13 @@ async function apiRequest(
         options.body &&
         !headers["Content-Type"]
     ) {
+
         headers["Content-Type"] =
             "application/json";
     }
 
     if (token) {
+
         headers.Authorization =
             `Bearer ${token}`;
     }
@@ -2614,6 +3090,7 @@ async function apiRequest(
     let response;
 
     try {
+
         response =
             await fetch(
                 `${API_BASE_URL}${path}`,
@@ -2622,7 +3099,9 @@ async function apiRequest(
                     headers
                 }
             );
+
     } catch (error) {
+
         throw new Error(
             "Failed to fetch. Make sure FastAPI is running on http://127.0.0.1:8000."
         );
@@ -2631,13 +3110,42 @@ async function apiRequest(
     let data = {};
 
     try {
+
         data =
             await response.json();
+
     } catch {
+
         data = {};
     }
 
     if (!response.ok) {
+
+        if (
+            response.status ===
+            401
+        ) {
+
+            localStorage.removeItem(
+                "civic_token"
+            );
+
+            throw new Error(
+                "Your session has expired. Please login again."
+            );
+        }
+
+        if (
+            response.status ===
+            403
+        ) {
+
+            throw new Error(
+                data.detail ||
+                "You do not have permission for this operation."
+            );
+        }
+
         throw new Error(
             data.detail ||
             data.message ||
@@ -2649,6 +3157,7 @@ async function apiRequest(
 }
 
 async function loadGovernmentReports() {
+
     const data =
         await apiRequest(
             "/reports"
@@ -2662,6 +3171,7 @@ async function loadGovernmentReports() {
 }
 
 async function loadGovernmentProjects() {
+
     const data =
         await apiRequest(
             "/projects/"
@@ -2675,6 +3185,7 @@ async function loadGovernmentProjects() {
 }
 
 async function loadGovernmentContractors() {
+
     const data =
         await apiRequest(
             "/contractors/"
@@ -2688,6 +3199,7 @@ async function loadGovernmentContractors() {
 }
 
 function ensureGovernmentWorkspace() {
+
     const page =
         document.getElementById(
             "governmentPage"
@@ -2712,6 +3224,7 @@ function ensureGovernmentWorkspace() {
         );
 
     if (!workspace) {
+
         workspace =
             document.createElement(
                 "div"
@@ -2728,7 +3241,10 @@ function ensureGovernmentWorkspace() {
     return workspace;
 }
 
-function statusLabel(status) {
+function statusLabel(
+    status
+) {
+
     const value =
         String(
             status ||
@@ -2738,28 +3254,40 @@ function statusLabel(status) {
             .trim();
 
     const map = {
+
         submitted:
             "submitted",
+
         reviewing:
             "reviewing",
+
         verified:
             "verified",
+
         rejected:
             "rejected",
+
         information_requested:
             "informationRequested",
+
         assigned:
             "assigned",
+
         in_progress:
             "inProgress",
+
         resolved:
             "resolved",
+
         proposed:
             "proposed",
+
         approved:
             "approved",
+
         bidding:
             "bidding",
+
         completed:
             "completed"
     };
@@ -2773,6 +3301,7 @@ function statusLabel(status) {
 function priorityLabel(
     priority
 ) {
+
     const value =
         String(
             priority ||
@@ -2781,31 +3310,51 @@ function priorityLabel(
             .toLowerCase()
             .trim();
 
-    if (value === "critical") {
+    if (
+        value ===
+        "critical"
+    ) {
         return "Critical";
     }
 
-    if (value === "high") {
-        return t("high");
+    if (
+        value ===
+        "high"
+    ) {
+        return t(
+            "high"
+        );
     }
 
-    if (value === "medium") {
-        return t("medium");
+    if (
+        value ===
+        "medium"
+    ) {
+        return t(
+            "medium"
+        );
     }
 
-    if (value === "low") {
-        return t("low");
+    if (
+        value ===
+        "low"
+    ) {
+        return t(
+            "low"
+        );
     }
 
     return "—";
 }
 
 async function loadGovernmentData() {
+
     if (
         !currentUser ||
         normalizeRole(
             currentUser.role
-        ) !== "government"
+        ) !==
+        "government"
     ) {
         return;
     }
@@ -2831,12 +3380,16 @@ async function loadGovernmentData() {
     let reports = [];
     let projects = [];
     let contractors = [];
+
     const errors = [];
 
     try {
+
         reports =
             await loadGovernmentReports();
+
     } catch (error) {
+
         console.error(
             "Reports error:",
             error
@@ -2848,9 +3401,12 @@ async function loadGovernmentData() {
     }
 
     try {
+
         projects =
             await loadGovernmentProjects();
+
     } catch (error) {
+
         console.error(
             "Projects error:",
             error
@@ -2862,9 +3418,12 @@ async function loadGovernmentData() {
     }
 
     try {
+
         contractors =
             await loadGovernmentContractors();
+
     } catch (error) {
+
         console.error(
             "Contractors error:",
             error
@@ -2889,6 +3448,7 @@ function renderGovernmentWorkspace(
     contractors,
     errors
 ) {
+
     const workspace =
         ensureGovernmentWorkspace();
 
@@ -2897,31 +3457,49 @@ function renderGovernmentWorkspace(
     }
 
     const counts = {
-        submitted: 0,
-        reviewing: 0,
-        verified: 0,
-        rejected: 0,
-        information_requested: 0,
-        resolved: 0,
-        in_progress: 0
+
+        submitted:
+            0,
+
+        reviewing:
+            0,
+
+        verified:
+            0,
+
+        rejected:
+            0,
+
+        information_requested:
+            0,
+
+        resolved:
+            0,
+
+        in_progress:
+            0
     };
 
-    reports.forEach(report => {
-        const value =
-            String(
-                report.status ||
-                ""
-            ).toLowerCase();
+    reports.forEach(
+        report => {
 
-        if (
-            Object.prototype.hasOwnProperty.call(
-                counts,
-                value
-            )
-        ) {
-            counts[value] += 1;
+            const value =
+                String(
+                    report.status ||
+                    ""
+                ).toLowerCase();
+
+            if (
+                Object.prototype.hasOwnProperty.call(
+                    counts,
+                    value
+                )
+            ) {
+
+                counts[value] += 1;
+            }
         }
-    });
+    );
 
     const pending =
         counts.submitted +
@@ -2966,7 +3544,9 @@ function renderGovernmentWorkspace(
                 >
                     <strong>
                         ${escapeHTML(
-                            t("operationFailed")
+                            t(
+                                "operationFailed"
+                            )
                         )}
                     </strong>
 
@@ -3003,7 +3583,8 @@ function renderGovernmentWorkspace(
         reports.length
             ? reports
                 .map(
-                    report => `
+                    report =>
+                        `
                         <div
                             style="
                                 display:grid;
@@ -3015,6 +3596,7 @@ function renderGovernmentWorkspace(
                             "
                         >
                             <div>
+
                                 <strong>
                                     ${escapeHTML(
                                         report.description ||
@@ -3033,12 +3615,15 @@ function renderGovernmentWorkspace(
                                     ${escapeHTML(
                                         report.report_id
                                     )}
+
                                     •
+
                                     ${escapeHTML(
                                         report.location?.address ||
                                         "Location unavailable"
                                     )}
                                 </span>
+
                             </div>
 
                             <span
@@ -3082,8 +3667,9 @@ function renderGovernmentWorkspace(
                                     t("review")
                                 )}
                             </button>
+
                         </div>
-                    `
+                        `
                 )
                 .join("")
             : `
@@ -3126,6 +3712,7 @@ function renderGovernmentWorkspace(
         ${errorHTML}
 
         <div class="white-card">
+
             <div
                 style="
                     display:flex;
@@ -3135,18 +3722,25 @@ function renderGovernmentWorkspace(
                     margin-bottom:24px;
                 "
             >
+
                 <div>
+
                     <span class="card-eyebrow">
                         ${escapeHTML(
-                            t("governmentPortal")
+                            t(
+                                "governmentPortal"
+                            )
                         )}
                     </span>
 
                     <h3>
                         ${escapeHTML(
-                            t("reportsRequiringAttention")
+                            t(
+                                "reportsRequiringAttention"
+                            )
                         )}
                     </h3>
+
                 </div>
 
                 <button
@@ -3156,9 +3750,10 @@ function renderGovernmentWorkspace(
                 >
                     <i class="fa-solid fa-rotate"></i>
                     ${escapeHTML(
-                        t("governmentDataLoaded")
+                        t("retry")
                     )}
                 </button>
+
             </div>
 
             <div
@@ -3169,91 +3764,87 @@ function renderGovernmentWorkspace(
                     margin-bottom:24px;
                 "
             >
-                <div
-                    style="
-                        padding:16px;
-                        background:#f8fafc;
-                        border-radius:14px;
-                    "
-                >
-                    <span>${escapeHTML(t("pendingReports"))}</span>
+
+                <div style="padding:16px;background:#f8fafc;border-radius:14px;">
+                    <span>
+                        ${escapeHTML(
+                            t("pendingReports")
+                        )}
+                    </span>
+
                     <strong style="display:block;font-size:26px;margin-top:5px;">
                         ${pending}
                     </strong>
                 </div>
 
-                <div
-                    style="
-                        padding:16px;
-                        background:#f8fafc;
-                        border-radius:14px;
-                    "
-                >
-                    <span>${escapeHTML(t("reviewing"))}</span>
+                <div style="padding:16px;background:#f8fafc;border-radius:14px;">
+                    <span>
+                        ${escapeHTML(
+                            t("reviewing")
+                        )}
+                    </span>
+
                     <strong style="display:block;font-size:26px;margin-top:5px;">
                         ${counts.reviewing}
                     </strong>
                 </div>
 
-                <div
-                    style="
-                        padding:16px;
-                        background:#f8fafc;
-                        border-radius:14px;
-                    "
-                >
-                    <span>${escapeHTML(t("verified"))}</span>
+                <div style="padding:16px;background:#f8fafc;border-radius:14px;">
+                    <span>
+                        ${escapeHTML(
+                            t("verified")
+                        )}
+                    </span>
+
                     <strong style="display:block;font-size:26px;margin-top:5px;">
                         ${counts.verified}
                     </strong>
                 </div>
 
-                <div
-                    style="
-                        padding:16px;
-                        background:#f8fafc;
-                        border-radius:14px;
-                    "
-                >
-                    <span>${escapeHTML(t("inProgress"))}</span>
+                <div style="padding:16px;background:#f8fafc;border-radius:14px;">
+                    <span>
+                        ${escapeHTML(
+                            t("inProgress")
+                        )}
+                    </span>
+
                     <strong style="display:block;font-size:26px;margin-top:5px;">
                         ${counts.in_progress}
                     </strong>
                 </div>
 
-                <div
-                    style="
-                        padding:16px;
-                        background:#f8fafc;
-                        border-radius:14px;
-                    "
-                >
-                    <span>${escapeHTML(t("completed"))}</span>
+                <div style="padding:16px;background:#f8fafc;border-radius:14px;">
+                    <span>
+                        ${escapeHTML(
+                            t("completed")
+                        )}
+                    </span>
+
                     <strong style="display:block;font-size:26px;margin-top:5px;">
                         ${completedProjects}
                     </strong>
                 </div>
 
-                <div
-                    style="
-                        padding:16px;
-                        background:#f8fafc;
-                        border-radius:14px;
-                    "
-                >
-                    <span>${escapeHTML(t("contractors"))}</span>
+                <div style="padding:16px;background:#f8fafc;border-radius:14px;">
+                    <span>
+                        ${escapeHTML(
+                            t("contractors")
+                        )}
+                    </span>
+
                     <strong style="display:block;font-size:26px;margin-top:5px;">
                         ${contractors.length}
                     </strong>
                 </div>
+
             </div>
 
-            <div>
-                ${reportHTML}
-            </div>
+            ${reportHTML}
+
         </div>
 
         <div class="white-card">
+
             <div
                 style="
                     display:flex;
@@ -3262,18 +3853,25 @@ function renderGovernmentWorkspace(
                     margin-bottom:24px;
                 "
             >
+
                 <div>
+
                     <span class="card-eyebrow">
                         ${escapeHTML(
-                            t("projectManagement")
+                            t(
+                                "projectManagement"
+                            )
                         )}
                     </span>
 
                     <h3>
                         ${escapeHTML(
-                            t("projectManagement")
+                            t(
+                                "projectManagement"
+                            )
                         )}
                     </h3>
+
                 </div>
 
                 <span class="role-badge government-role">
@@ -3282,11 +3880,11 @@ function renderGovernmentWorkspace(
                         t("projectsActive")
                     )}
                 </span>
+
             </div>
 
-            <div>
-                ${projectHTML}
-            </div>
+            ${projectHTML}
+
         </div>
     `;
 
@@ -3296,6 +3894,7 @@ function renderGovernmentWorkspace(
         );
 
     if (refreshButton) {
+
         refreshButton.addEventListener(
             "click",
             loadGovernmentData
@@ -3308,6 +3907,7 @@ function renderGovernmentWorkspace(
         );
 
     if (retryButton) {
+
         retryButton.addEventListener(
             "click",
             loadGovernmentData
@@ -3318,54 +3918,59 @@ function renderGovernmentWorkspace(
         .querySelectorAll(
             ".gov-review-live"
         )
-        .forEach(button => {
-            button.addEventListener(
-                "click",
-                async () => {
+        .forEach(
+            button => {
 
-                    const report =
-                        reports.find(
-                            item =>
-                                String(
-                                    item.report_id
-                                ) ===
-                                String(
-                                    button.dataset.reportId
-                                )
-                        );
+                button.addEventListener(
+                    "click",
+                    async () => {
 
-                    if (report) {
-                        await openGovernmentReview(
-                            report
-                        );
+                        const report =
+                            reports.find(
+                                item =>
+                                    String(
+                                        item.report_id
+                                    ) ===
+                                    String(
+                                        button.dataset.reportId
+                                    )
+                            );
+
+                        if (report) {
+
+                            await openGovernmentReview(
+                                report
+                            );
+                        }
                     }
-                }
-            );
-        });
+                );
+            }
+        );
 
     attachProjectButtons(
         projects,
         contractors
     );
-
-    bindExistingGovernmentReviewButtons();
 }
 
 function renderProjectRow(
     project
 ) {
+
     const status =
         String(
             project.status ||
             ""
         ).toLowerCase();
 
-    let action = "";
+    let action =
+        "";
 
     if (
         status ===
         "proposed"
     ) {
+
         action = `
             <button
                 type="button"
@@ -3386,6 +3991,7 @@ function renderProjectRow(
         status ===
         "approved"
     ) {
+
         action = `
             <button
                 type="button"
@@ -3406,6 +4012,7 @@ function renderProjectRow(
         status ===
         "bidding"
     ) {
+
         action = `
             <button
                 type="button"
@@ -3425,6 +4032,7 @@ function renderProjectRow(
         status ===
         "assigned"
     ) {
+
         action = `
             <button
                 type="button"
@@ -3445,6 +4053,7 @@ function renderProjectRow(
         status ===
         "in_progress"
     ) {
+
         action = `
             <button
                 type="button"
@@ -3465,6 +4074,7 @@ function renderProjectRow(
         status ===
         "completed"
     ) {
+
         action = `
             <button
                 type="button"
@@ -3491,6 +4101,7 @@ function renderProjectRow(
                 border-bottom:1px solid #edf0f3;
             "
         >
+
             <div>
                 <strong>
                     ${escapeHTML(
@@ -3524,12 +4135,7 @@ function renderProjectRow(
                     )}
                 </small>
 
-                <strong
-                    style="
-                        display:block;
-                        margin-top:4px;
-                    "
-                >
+                <strong style="display:block;margin-top:4px;">
                     ${escapeHTML(
                         statusLabel(
                             status
@@ -3545,12 +4151,7 @@ function renderProjectRow(
                     )}
                 </small>
 
-                <strong
-                    style="
-                        display:block;
-                        margin-top:4px;
-                    "
-                >
+                <strong style="display:block;margin-top:4px;">
                     ${escapeHTML(
                         project.assigned_contractor_id ||
                         "—"
@@ -3565,12 +4166,7 @@ function renderProjectRow(
                     )}
                 </small>
 
-                <strong
-                    style="
-                        display:block;
-                        margin-top:4px;
-                    "
-                >
+                <strong style="display:block;margin-top:4px;">
                     ${
                         project.estimated_budget != null
                             ? escapeHTML(
@@ -3586,6 +4182,7 @@ function renderProjectRow(
             <div>
                 ${action}
             </div>
+
         </div>
     `;
 }
@@ -3594,92 +4191,76 @@ function attachProjectButtons(
     projects,
     contractors
 ) {
+
     document
         .querySelectorAll(
             ".project-status-action"
         )
-        .forEach(button => {
-            button.addEventListener(
-                "click",
-                async () => {
-                    await updateGovernmentProjectStatus(
-                        button.dataset.projectId,
-                        button.dataset.nextStatus
-                    );
-                }
-            );
-        });
+        .forEach(
+            button => {
+
+                button.addEventListener(
+                    "click",
+                    async () => {
+
+                        await updateGovernmentProjectStatus(
+                            button.dataset.projectId,
+                            button.dataset.nextStatus
+                        );
+                    }
+                );
+            }
+        );
 
     document
         .querySelectorAll(
             ".contractor-select-action"
         )
-        .forEach(button => {
-            button.addEventListener(
-                "click",
-                () => {
-                    openContractorSelector(
-                        button.dataset.projectId,
-                        contractors
-                    );
-                }
-            );
-        });
+        .forEach(
+            button => {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        openContractorSelector(
+                            button.dataset.projectId,
+                            contractors
+                        );
+                    }
+                );
+            }
+        );
 
     document
         .querySelectorAll(
             ".resolve-project-action"
         )
-        .forEach(button => {
-            button.addEventListener(
-                "click",
-                async () => {
-                    await resolveGovernmentReport(
-                        button.dataset.reportId
-                    );
-                }
-            );
-        });
-}
+        .forEach(
+            button => {
 
-function bindExistingGovernmentReviewButtons() {
-    document
-        .querySelectorAll(
-            ".government-reports .small-action"
-        )
-        .forEach(button => {
-            if (
-                button.dataset.bound ===
-                "true"
-            ) {
-                return;
+                button.addEventListener(
+                    "click",
+                    async () => {
+
+                        await resolveGovernmentReport(
+                            button.dataset.reportId
+                        );
+                    }
+                );
             }
-
-            button.dataset.bound =
-                "true";
-
-            button.addEventListener(
-                "click",
-                event => {
-                    event.preventDefault();
-                    event.stopPropagation();
-
-                    showToast(
-                        t("review"),
-                        "Use the live report queue above to review the latest database report."
-                    );
-                }
-            );
-        });
+        );
 }
 
 async function openGovernmentReview(
     report
 ) {
+
     let currentReport =
         report;
 
     try {
+
         const data =
             await apiRequest(
                 `/reports/${encodeURIComponent(
@@ -3690,7 +4271,9 @@ async function openGovernmentReview(
         currentReport =
             data.report ||
             report;
+
     } catch (error) {
+
         console.error(
             "Review load error:",
             error
@@ -3701,7 +4284,9 @@ async function openGovernmentReview(
         currentReport.status ===
         "submitted"
     ) {
+
         try {
+
             const data =
                 await apiRequest(
                     `/reports/${encodeURIComponent(
@@ -3716,7 +4301,9 @@ async function openGovernmentReview(
             currentReport =
                 data.report ||
                 currentReport;
+
         } catch (error) {
+
             console.error(
                 "Review status error:",
                 error
@@ -3732,6 +4319,7 @@ async function openGovernmentReview(
 function showGovernmentReviewModal(
     report
 ) {
+
     const previous =
         document.getElementById(
             "governmentReviewModal"
@@ -3763,6 +4351,7 @@ function showGovernmentReviewModal(
                 z-index:10000;
             "
         >
+
             <div
                 style="
                     width:min(760px,100%);
@@ -3773,6 +4362,7 @@ function showGovernmentReviewModal(
                     padding:28px;
                 "
             >
+
                 <div
                     style="
                         display:flex;
@@ -3781,7 +4371,9 @@ function showGovernmentReviewModal(
                         margin-bottom:24px;
                     "
                 >
+
                     <div>
+
                         <span class="card-eyebrow">
                             ${escapeHTML(
                                 t("reviewReport")
@@ -3793,6 +4385,7 @@ function showGovernmentReviewModal(
                                 report.report_id
                             )}
                         </h2>
+
                     </div>
 
                     <button
@@ -3807,6 +4400,7 @@ function showGovernmentReviewModal(
                     >
                         <i class="fa-solid fa-xmark"></i>
                     </button>
+
                 </div>
 
                 <div
@@ -3816,6 +4410,7 @@ function showGovernmentReviewModal(
                         gap:14px;
                     "
                 >
+
                     ${reviewField(
                         t("reportStatus"),
                         statusLabel(
@@ -3861,6 +4456,7 @@ function showGovernmentReviewModal(
                             border-radius:14px;
                         "
                     >
+
                         <small>
                             ${escapeHTML(
                                 t("description")
@@ -3873,7 +4469,9 @@ function showGovernmentReviewModal(
                                 "—"
                             )}
                         </p>
+
                     </div>
+
                 </div>
 
                 <div
@@ -3888,7 +4486,9 @@ function showGovernmentReviewModal(
                         report
                     )}
                 </div>
+
             </div>
+
         </div>
     `;
 
@@ -3902,7 +4502,8 @@ function showGovernmentReviewModal(
         )
         .addEventListener(
             "click",
-            () => modal.remove()
+            () =>
+                modal.remove()
         );
 
     modal
@@ -3912,11 +4513,13 @@ function showGovernmentReviewModal(
         .addEventListener(
             "click",
             event => {
+
                 if (
                     event.target.hasAttribute(
                         "data-review-backdrop"
                     )
                 ) {
+
                     modal.remove();
                 }
             }
@@ -3932,6 +4535,7 @@ function reviewField(
     label,
     value
 ) {
+
     return `
         <div
             style="
@@ -3940,6 +4544,7 @@ function reviewField(
                 border-radius:14px;
             "
         >
+
             <small
                 style="
                     display:block;
@@ -3959,6 +4564,7 @@ function reviewField(
                     )
                 )}
             </strong>
+
         </div>
     `;
 }
@@ -3966,6 +4572,7 @@ function reviewField(
 function getReportActionHTML(
     report
 ) {
+
     const status =
         String(
             report.status ||
@@ -3976,9 +4583,12 @@ function getReportActionHTML(
         "";
 
     if (
-        status === "submitted" ||
-        status === "reviewing"
+        status ===
+            "submitted" ||
+        status ===
+            "reviewing"
     ) {
+
         html += `
             <button
                 type="button"
@@ -4016,8 +4626,10 @@ function getReportActionHTML(
     }
 
     if (
-        status === "verified"
+        status ===
+        "verified"
     ) {
+
         html += `
             <button
                 type="button"
@@ -4055,8 +4667,10 @@ function getReportActionHTML(
     }
 
     if (
-        status === "assigned"
+        status ===
+        "assigned"
     ) {
+
         html += `
             <button
                 type="button"
@@ -4072,8 +4686,10 @@ function getReportActionHTML(
     }
 
     if (
-        status === "in_progress"
+        status ===
+        "in_progress"
     ) {
+
         html += `
             <button
                 type="button"
@@ -4095,235 +4711,283 @@ function attachGovernmentReviewActions(
     modal,
     report
 ) {
+
     modal
         .querySelectorAll(
             ".government-review-action"
         )
-        .forEach(button => {
-            button.addEventListener(
-                "click",
-                async () => {
+        .forEach(
+            button => {
 
-                    const action =
-                        button.dataset.action;
+                button.addEventListener(
+                    "click",
+                    async () => {
 
-                    try {
-                        if (
-                            action ===
-                            "verify"
-                        ) {
-                            await apiRequest(
-                                `/reports/${encodeURIComponent(
-                                    report.report_id
-                                )}/verify`,
-                                {
-                                    method:
-                                        "PUT"
+                        const action =
+                            button.dataset.action;
+
+                        try {
+
+                            if (
+                                action ===
+                                "verify"
+                            ) {
+
+                                await apiRequest(
+                                    `/reports/${encodeURIComponent(
+                                        report.report_id
+                                    )}/verify`,
+                                    {
+                                        method:
+                                            "PUT"
+                                    }
+                                );
+
+                                showToast(
+                                    t("reportVerified"),
+                                    t(
+                                        "reportVerifiedSuccessfully"
+                                    )
+                                );
+                            }
+
+                            if (
+                                action ===
+                                "reject"
+                            ) {
+
+                                const reason =
+                                    window.prompt(
+                                        t(
+                                            "rejectReason"
+                                        )
+                                    );
+
+                                if (
+                                    reason &&
+                                    reason.trim()
+                                ) {
+
+                                    await apiRequest(
+                                        `/reports/${encodeURIComponent(
+                                            report.report_id
+                                        )}/reject`,
+                                        {
+                                            method:
+                                                "PUT",
+
+                                            body:
+                                                JSON.stringify({
+                                                    reason:
+                                                        reason.trim()
+                                                })
+                                        }
+                                    );
+
+                                    showToast(
+                                        t(
+                                            "reportRejected"
+                                        ),
+                                        t(
+                                            "reportRejectedSuccessfully"
+                                        )
+                                    );
                                 }
-                            );
+                            }
+
+                            if (
+                                action ===
+                                "information"
+                            ) {
+
+                                const message =
+                                    window.prompt(
+                                        t(
+                                            "informationRequest"
+                                        )
+                                    );
+
+                                if (
+                                    message &&
+                                    message.trim()
+                                ) {
+
+                                    await apiRequest(
+                                        `/reports/${encodeURIComponent(
+                                            report.report_id
+                                        )}/request-information`,
+                                        {
+                                            method:
+                                                "PUT",
+
+                                            body:
+                                                JSON.stringify({
+                                                    message:
+                                                        message.trim()
+                                                })
+                                        }
+                                    );
+
+                                    showToast(
+                                        t(
+                                            "informationRequested"
+                                        ),
+                                        t(
+                                            "informationRequestedSuccessfully"
+                                        )
+                                    );
+                                }
+                            }
+
+                            if (
+                                action ===
+                                "priority"
+                            ) {
+
+                                const priority =
+                                    window.prompt(
+                                        "Enter priority: low, medium, high, critical"
+                                    );
+
+                                if (
+                                    priority &&
+                                    [
+                                        "low",
+                                        "medium",
+                                        "high",
+                                        "critical"
+                                    ].includes(
+                                        priority
+                                            .toLowerCase()
+                                            .trim()
+                                    )
+                                ) {
+
+                                    await apiRequest(
+                                        `/reports/${encodeURIComponent(
+                                            report.report_id
+                                        )}/priority`,
+                                        {
+                                            method:
+                                                "PUT",
+
+                                            body:
+                                                JSON.stringify({
+                                                    priority:
+                                                        priority
+                                                            .toLowerCase()
+                                                            .trim()
+                                                })
+                                        }
+                                    );
+
+                                    showToast(
+                                        t(
+                                            "statusUpdated"
+                                        ),
+                                        t(
+                                            "actionCompleted"
+                                        )
+                                    );
+                                }
+                            }
+
+                            if (
+                                action ===
+                                "department"
+                            ) {
+
+                                const department =
+                                    window.prompt(
+                                        "Enter department"
+                                    );
+
+                                if (
+                                    department &&
+                                    department.trim()
+                                ) {
+
+                                    await apiRequest(
+                                        `/reports/${encodeURIComponent(
+                                            report.report_id
+                                        )}/department`,
+                                        {
+                                            method:
+                                                "PUT",
+
+                                            body:
+                                                JSON.stringify({
+                                                    department:
+                                                        department.trim()
+                                                })
+                                        }
+                                    );
+
+                                    showToast(
+                                        t(
+                                            "departmentAssigned"
+                                        ),
+                                        t(
+                                            "departmentAssignedSuccessfully"
+                                        )
+                                    );
+                                }
+                            }
+
+                            if (
+                                action ===
+                                "project"
+                            ) {
+
+                                await createGovernmentProject(
+                                    report
+                                );
+                            }
+
+                            if (
+                                action ===
+                                "progress"
+                            ) {
+
+                                await updateGovernmentReportStatus(
+                                    report,
+                                    "in_progress"
+                                );
+                            }
+
+                            if (
+                                action ===
+                                "resolve"
+                            ) {
+
+                                await resolveGovernmentReport(
+                                    report.report_id
+                                );
+                            }
+
+                        } catch (error) {
 
                             showToast(
-                                t("reportVerified"),
-                                t("reportVerifiedSuccessfully")
+                                t(
+                                    "operationFailed"
+                                ),
+                                error.message
                             );
                         }
 
-                        if (
-                            action ===
-                            "reject"
-                        ) {
-                            const reason =
-                                window.prompt(
-                                    t("rejectReason")
-                                );
+                        modal.remove();
 
-                            if (
-                                reason &&
-                                reason.trim()
-                            ) {
-                                await apiRequest(
-                                    `/reports/${encodeURIComponent(
-                                        report.report_id
-                                    )}/reject`,
-                                    {
-                                        method:
-                                            "PUT",
-                                        body:
-                                            JSON.stringify({
-                                                reason:
-                                                    reason.trim()
-                                            })
-                                    }
-                                );
-
-                                showToast(
-                                    t("reportRejected"),
-                                    t("reportRejectedSuccessfully")
-                                );
-                            }
-                        }
-
-                        if (
-                            action ===
-                            "information"
-                        ) {
-                            const message =
-                                window.prompt(
-                                    t("informationRequest")
-                                );
-
-                            if (
-                                message &&
-                                message.trim()
-                            ) {
-                                await apiRequest(
-                                    `/reports/${encodeURIComponent(
-                                        report.report_id
-                                    )}/request-information`,
-                                    {
-                                        method:
-                                            "PUT",
-                                        body:
-                                            JSON.stringify({
-                                                message:
-                                                    message.trim()
-                                            })
-                                    }
-                                );
-
-                                showToast(
-                                    t("informationRequested"),
-                                    t("informationRequestedSuccessfully")
-                                );
-                            }
-                        }
-
-                        if (
-                            action ===
-                            "priority"
-                        ) {
-                            const priority =
-                                window.prompt(
-                                    "Enter priority: low, medium, high, critical"
-                                );
-
-                            if (
-                                priority &&
-                                [
-                                    "low",
-                                    "medium",
-                                    "high",
-                                    "critical"
-                                ].includes(
-                                    priority
-                                        .toLowerCase()
-                                        .trim()
-                                )
-                            ) {
-                                await apiRequest(
-                                    `/reports/${encodeURIComponent(
-                                        report.report_id
-                                    )}/priority`,
-                                    {
-                                        method:
-                                            "PUT",
-                                        body:
-                                            JSON.stringify({
-                                                priority:
-                                                    priority
-                                                        .toLowerCase()
-                                                        .trim()
-                                            })
-                                    }
-                                );
-
-                                showToast(
-                                    t("statusUpdated"),
-                                    t("actionCompleted")
-                                );
-                            }
-                        }
-
-                        if (
-                            action ===
-                            "department"
-                        ) {
-                            const department =
-                                window.prompt(
-                                    "Enter department"
-                                );
-
-                            if (
-                                department &&
-                                department.trim()
-                            ) {
-                                await apiRequest(
-                                    `/reports/${encodeURIComponent(
-                                        report.report_id
-                                    )}/department`,
-                                    {
-                                        method:
-                                            "PUT",
-                                        body:
-                                            JSON.stringify({
-                                                department:
-                                                    department.trim()
-                                            })
-                                    }
-                                );
-
-                                showToast(
-                                    t("departmentAssigned"),
-                                    t("departmentAssignedSuccessfully")
-                                );
-                            }
-                        }
-
-                        if (
-                            action ===
-                            "project"
-                        ) {
-                            await createGovernmentProject(
-                                report
-                            );
-                        }
-
-                        if (
-                            action ===
-                            "progress"
-                        ) {
-                            await updateGovernmentReportStatus(
-                                report,
-                                "in_progress"
-                            );
-                        }
-
-                        if (
-                            action ===
-                            "resolve"
-                        ) {
-                            await resolveGovernmentReport(
-                                report.report_id
-                            );
-                        }
-                    } catch (error) {
-                        showToast(
-                            t("operationFailed"),
-                            error.message
-                        );
+                        await loadGovernmentData();
                     }
-
-                    modal.remove();
-
-                    await loadGovernmentData();
-                }
-            );
-        });
+                );
+            }
+        );
 }
 
 async function createGovernmentProject(
     report
 ) {
+
     const existing =
         await loadGovernmentProjects();
 
@@ -4334,10 +4998,12 @@ async function createGovernmentProject(
                 report.report_id
         )
     ) {
+
         showToast(
             t("operationFailed"),
             "A project already exists for this report."
         );
+
         return;
     }
 
@@ -4348,7 +5014,10 @@ async function createGovernmentProject(
             "Civic Project"
         );
 
-    if (!title || !title.trim()) {
+    if (
+        !title ||
+        !title.trim()
+    ) {
         return;
     }
 
@@ -4375,10 +5044,12 @@ async function createGovernmentProject(
             budget < 0
         )
     ) {
+
         showToast(
             t("operationFailed"),
             "Invalid budget."
         );
+
         return;
     }
 
@@ -4387,21 +5058,28 @@ async function createGovernmentProject(
         {
             method:
                 "POST",
+
             body:
                 JSON.stringify({
                     project_id:
                         `PRJ-${Date.now()}`,
+
                     report_id:
                         report.report_id,
+
                     title:
                         title.trim(),
+
                     description:
                         report.description ||
                         title.trim(),
+
                     estimated_budget:
                         budget,
+
                     status:
                         "proposed",
+
                     assigned_contractor_id:
                         null
                 })
@@ -4410,7 +5088,9 @@ async function createGovernmentProject(
 
     showToast(
         t("projectCreated"),
-        t("projectCreatedSuccessfully")
+        t(
+            "projectCreatedSuccessfully"
+        )
     );
 }
 
@@ -4418,6 +5098,7 @@ async function updateGovernmentReportStatus(
     report,
     status
 ) {
+
     await apiRequest(
         `/reports/${encodeURIComponent(
             report.report_id
@@ -4442,7 +5123,9 @@ async function updateGovernmentProjectStatus(
     projectId,
     status
 ) {
+
     try {
+
         await apiRequest(
             `/projects/${encodeURIComponent(
                 projectId
@@ -4465,6 +5148,7 @@ async function updateGovernmentProjectStatus(
         await loadGovernmentData();
 
     } catch (error) {
+
         showToast(
             t("operationFailed"),
             error.message
@@ -4476,6 +5160,7 @@ function openContractorSelector(
     projectId,
     contractors
 ) {
+
     const previous =
         document.getElementById(
             "contractorModal"
@@ -4509,7 +5194,9 @@ function openContractorSelector(
                                 border-bottom:1px solid #edf0f3;
                             "
                         >
+
                             <div>
+
                                 <strong>
                                     ${escapeHTML(
                                         contractor.company_name ||
@@ -4528,6 +5215,7 @@ function openContractorSelector(
                                         ""
                                     )}
                                 </small>
+
                             </div>
 
                             <div>
@@ -4544,7 +5232,9 @@ function openContractorSelector(
 
                             <div>
                                 ${escapeHTML(
-                                    t("completedProjects")
+                                    t(
+                                        "completedProjects"
+                                    )
                                 )}:
                                 ${escapeHTML(
                                     String(
@@ -4562,9 +5252,12 @@ function openContractorSelector(
                                 )}"
                             >
                                 ${escapeHTML(
-                                    t("assignContractor")
+                                    t(
+                                        "assignContractor"
+                                    )
                                 )}
                             </button>
+
                         </div>
                         `
                 )
@@ -4572,7 +5265,9 @@ function openContractorSelector(
             : `
                 <div>
                     ${escapeHTML(
-                        t("noContractors")
+                        t(
+                            "noContractors"
+                        )
                     )}
                 </div>
             `;
@@ -4591,6 +5286,7 @@ function openContractorSelector(
                 z-index:10001;
             "
         >
+
             <div
                 style="
                     width:min(850px,100%);
@@ -4601,6 +5297,7 @@ function openContractorSelector(
                     padding:28px;
                 "
             >
+
                 <div
                     style="
                         display:flex;
@@ -4609,10 +5306,14 @@ function openContractorSelector(
                         margin-bottom:20px;
                     "
                 >
+
                     <div>
+
                         <span class="card-eyebrow">
                             ${escapeHTML(
-                                t("contractors")
+                                t(
+                                    "contractors"
+                                )
                             )}
                         </span>
 
@@ -4621,6 +5322,7 @@ function openContractorSelector(
                                 projectId
                             )}
                         </h2>
+
                     </div>
 
                     <button
@@ -4635,10 +5337,13 @@ function openContractorSelector(
                     >
                         <i class="fa-solid fa-xmark"></i>
                     </button>
+
                 </div>
 
                 ${rows}
+
             </div>
+
         </div>
     `;
 
@@ -4652,7 +5357,8 @@ function openContractorSelector(
         )
         .addEventListener(
             "click",
-            () => modal.remove()
+            () =>
+                modal.remove()
         );
 
     modal
@@ -4662,11 +5368,13 @@ function openContractorSelector(
         .addEventListener(
             "click",
             event => {
+
                 if (
                     event.target.hasAttribute(
                         "data-contractor-backdrop"
                     )
                 ) {
+
                     modal.remove();
                 }
             }
@@ -4676,29 +5384,35 @@ function openContractorSelector(
         .querySelectorAll(
             ".assign-contractor-button"
         )
-        .forEach(button => {
-            button.addEventListener(
-                "click",
-                async () => {
+        .forEach(
+            button => {
 
-                    await assignGovernmentContractor(
-                        projectId,
-                        button.dataset.contractorId
-                    );
+                button.addEventListener(
+                    "click",
+                    async () => {
 
-                    modal.remove();
+                        await assignGovernmentContractor(
+                            projectId,
+                            button.dataset
+                                .contractorId
+                        );
 
-                    await loadGovernmentData();
-                }
-            );
-        });
+                        modal.remove();
+
+                        await loadGovernmentData();
+                    }
+                );
+            }
+        );
 }
 
 async function assignGovernmentContractor(
     projectId,
     contractorId
 ) {
+
     try {
+
         await apiRequest(
             `/projects/${encodeURIComponent(
                 projectId
@@ -4713,10 +5427,13 @@ async function assignGovernmentContractor(
 
         showToast(
             t("contractorAssigned"),
-            t("contractorAssignedSuccessfully")
+            t(
+                "contractorAssignedSuccessfully"
+            )
         );
 
     } catch (error) {
+
         showToast(
             t("operationFailed"),
             error.message
@@ -4727,7 +5444,9 @@ async function assignGovernmentContractor(
 async function resolveGovernmentReport(
     reportId
 ) {
+
     try {
+
         await apiRequest(
             `/reports/${encodeURIComponent(
                 reportId
@@ -4740,12 +5459,15 @@ async function resolveGovernmentReport(
 
         showToast(
             t("reportResolved"),
-            t("reportResolvedSuccessfully")
+            t(
+                "reportResolvedSuccessfully"
+            )
         );
 
         await loadGovernmentData();
 
     } catch (error) {
+
         showToast(
             t("operationFailed"),
             error.message
@@ -4753,8 +5475,13 @@ async function resolveGovernmentReport(
     }
 }
 
-function escapeHTML(value) {
-    return String(value)
+function escapeHTML(
+    value
+) {
+
+    return String(
+        value
+    )
         .replace(
             /&/g,
             "&amp;"
@@ -4777,7 +5504,2057 @@ function escapeHTML(value) {
         );
 }
 
-function delay(ms) {
+/* =====================================================
+   ADMIN PORTAL
+===================================================== */
+
+let currentAdminPanel =
+    null;
+
+let adminUsersCache =
+    [];
+
+let adminSystemDataCache = {
+    users: [],
+    reports: [],
+    projects: [],
+    contractors: [],
+    decisions: []
+};
+
+function initializeAdminPortal() {
+
+    if (
+        !currentUser ||
+        normalizeRole(
+            currentUser.role
+        ) !==
+        "admin"
+    ) {
+        return;
+    }
+
+    attachAdminCardButtons();
+
+    showAdminOverview();
+}
+
+function attachAdminCardButtons() {
+
+    const adminCards =
+        document.querySelectorAll(
+            "#adminPage .admin-card"
+        );
+
+    adminCards.forEach(
+        (card, index) => {
+
+            const button =
+                card.querySelector(
+                    "button"
+                );
+
+            if (!button) {
+                return;
+            }
+
+            if (
+                button.dataset
+                    .adminBound ===
+                "true"
+            ) {
+                return;
+            }
+
+            button.dataset.adminBound =
+                "true";
+
+            if (index === 0) {
+
+                button.addEventListener(
+                    "click",
+                    event => {
+
+                        event.preventDefault();
+
+                        openAdminUsers();
+                    }
+                );
+
+            } else if (
+                index === 1
+            ) {
+
+                button.addEventListener(
+                    "click",
+                    event => {
+
+                        event.preventDefault();
+
+                        openAdminRoles();
+                    }
+                );
+
+            } else if (
+                index === 2
+            ) {
+
+                button.addEventListener(
+                    "click",
+                    event => {
+
+                        event.preventDefault();
+
+                        openAdminCities();
+                    }
+                );
+
+            } else if (
+                index === 3
+            ) {
+
+                button.addEventListener(
+                    "click",
+                    event => {
+
+                        event.preventDefault();
+
+                        openAdminSystemData();
+                    }
+                );
+            }
+        }
+    );
+}
+
+function ensureAdminWorkspace() {
+
+    const page =
+        document.getElementById(
+            "adminPage"
+        );
+
+    if (!page) {
+        return null;
+    }
+
+    const content =
+        page.querySelector(
+            ".content"
+        );
+
+    if (!content) {
+        return null;
+    }
+
+    let workspace =
+        document.getElementById(
+            "adminDynamicWorkspace"
+        );
+
+    if (!workspace) {
+
+        workspace =
+            document.createElement(
+                "div"
+            );
+
+        workspace.id =
+            "adminDynamicWorkspace";
+
+        content.appendChild(
+            workspace
+        );
+    }
+
+    return workspace;
+}
+
+function showAdminOverview() {
+
+    const workspace =
+        ensureAdminWorkspace();
+
+    if (!workspace) {
+        return;
+    }
+
+    currentAdminPanel =
+        "overview";
+
+    workspace.innerHTML = `
+        <div
+            class="white-card"
+            style="margin-top:20px;"
+        >
+
+            <div
+                style="
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    gap:20px;
+                "
+            >
+
+                <div>
+                    <span class="card-eyebrow">
+                        ${escapeHTML(
+                            t(
+                                "systemAdministration"
+                            )
+                        )}
+                    </span>
+
+                    <h3>
+                        ${escapeHTML(
+                            t(
+                                "adminSystemData"
+                            )
+                        )}
+                    </h3>
+
+                    <p>
+                        ${escapeHTML(
+                            t(
+                                "adminDescription"
+                            )
+                        )}
+                    </p>
+                </div>
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="adminRefreshOverview"
+                >
+                    <i class="fa-solid fa-rotate"></i>
+                    ${escapeHTML(
+                        t("refreshData")
+                    )}
+                </button>
+
+            </div>
+
+            <div
+                id="adminOverviewStats"
+                style="
+                    margin-top:24px;
+                    display:grid;
+                    grid-template-columns:repeat(4,minmax(0,1fr));
+                    gap:14px;
+                "
+            >
+
+                <div
+                    style="
+                        padding:20px;
+                        background:#f8fafc;
+                        border-radius:14px;
+                    "
+                >
+                    <span>
+                        ${escapeHTML(
+                            t(
+                                "totalUsers"
+                            )
+                        )}
+                    </span>
+
+                    <strong
+                        id="adminUserCount"
+                        style="
+                            display:block;
+                            font-size:28px;
+                            margin-top:8px;
+                        "
+                    >
+                        —
+                    </strong>
+                </div>
+
+                <div
+                    style="
+                        padding:20px;
+                        background:#f8fafc;
+                        border-radius:14px;
+                    "
+                >
+                    <span>
+                        ${escapeHTML(
+                            t(
+                                "totalReportsAdmin"
+                            )
+                        )}
+                    </span>
+
+                    <strong
+                        id="adminReportCount"
+                        style="
+                            display:block;
+                            font-size:28px;
+                            margin-top:8px;
+                        "
+                    >
+                        —
+                    </strong>
+                </div>
+
+                <div
+                    style="
+                        padding:20px;
+                        background:#f8fafc;
+                        border-radius:14px;
+                    "
+                >
+                    <span>
+                        ${escapeHTML(
+                            t(
+                                "totalProjects"
+                            )
+                        )}
+                    </span>
+
+                    <strong
+                        id="adminProjectCount"
+                        style="
+                            display:block;
+                            font-size:28px;
+                            margin-top:8px;
+                        "
+                    >
+                        —
+                    </strong>
+                </div>
+
+                <div
+                    style="
+                        padding:20px;
+                        background:#f8fafc;
+                        border-radius:14px;
+                    "
+                >
+                    <span>
+                        ${escapeHTML(
+                            t(
+                                "totalContractors"
+                            )
+                        )}
+                    </span>
+
+                    <strong
+                        id="adminContractorCount"
+                        style="
+                            display:block;
+                            font-size:28px;
+                            margin-top:8px;
+                        "
+                    >
+                        —
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+    `;
+
+    document
+        .getElementById(
+            "adminRefreshOverview"
+        )
+        .addEventListener(
+            "click",
+            openAdminSystemData
+        );
+
+    loadAdminSystemCounts();
+}
+
+async function loadAdminSystemCounts() {
+
+    try {
+
+        const requests =
+            await Promise.allSettled([
+                apiRequest(
+                    "/users/"
+                ),
+
+                apiRequest(
+                    "/reports"
+                ),
+
+                apiRequest(
+                    "/projects/"
+                ),
+
+                apiRequest(
+                    "/contractors/"
+                )
+            ]);
+
+        const users =
+            requests[0].status ===
+            "fulfilled"
+                ? requests[0].value
+                : {};
+
+        const reports =
+            requests[1].status ===
+            "fulfilled"
+                ? requests[1].value
+                : {};
+
+        const projects =
+            requests[2].status ===
+            "fulfilled"
+                ? requests[2].value
+                : {};
+
+        const contractors =
+            requests[3].status ===
+            "fulfilled"
+                ? requests[3].value
+                : {};
+
+        const userList =
+            Array.isArray(
+                users.users
+            )
+                ? users.users
+                : [];
+
+        const reportList =
+            Array.isArray(
+                reports.reports
+            )
+                ? reports.reports
+                : [];
+
+        const projectList =
+            Array.isArray(
+                projects.projects
+            )
+                ? projects.projects
+                : [];
+
+        const contractorList =
+            Array.isArray(
+                contractors.contractors
+            )
+                ? contractors.contractors
+                : [];
+
+        adminSystemDataCache.users =
+            userList;
+
+        adminSystemDataCache.reports =
+            reportList;
+
+        adminSystemDataCache.projects =
+            projectList;
+
+        adminSystemDataCache.contractors =
+            contractorList;
+
+        const userCount =
+            document.getElementById(
+                "adminUserCount"
+            );
+
+        const reportCount =
+            document.getElementById(
+                "adminReportCount"
+            );
+
+        const projectCount =
+            document.getElementById(
+                "adminProjectCount"
+            );
+
+        const contractorCount =
+            document.getElementById(
+                "adminContractorCount"
+            );
+
+        if (userCount) {
+            userCount.textContent =
+                userList.length;
+        }
+
+        if (reportCount) {
+            reportCount.textContent =
+                reportList.length;
+        }
+
+        if (projectCount) {
+            projectCount.textContent =
+                projectList.length;
+        }
+
+        if (contractorCount) {
+            contractorCount.textContent =
+                contractorList.length;
+        }
+
+    } catch (error) {
+
+        console.error(
+            "Admin system count error:",
+            error
+        );
+
+        showToast(
+            t(
+                "operationFailed"
+            ),
+            error.message
+        );
+    }
+}
+
+async function openAdminUsers() {
+
+    const workspace =
+        ensureAdminWorkspace();
+
+    if (!workspace) {
+        return;
+    }
+
+    currentAdminPanel =
+        "users";
+
+    workspace.innerHTML = `
+        <div
+            class="white-card"
+            style="margin-top:20px;"
+        >
+
+            <div
+                style="
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    gap:20px;
+                    margin-bottom:22px;
+                "
+            >
+
+                <div>
+                    <span class="card-eyebrow">
+                        ${escapeHTML(
+                            t(
+                                "adminUsers"
+                            )
+                        )}
+                    </span>
+
+                    <h3>
+                        ${escapeHTML(
+                            t("users")
+                        )}
+                    </h3>
+                </div>
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="adminUsersBack"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                    ${escapeHTML(
+                        t("close")
+                    )}
+                </button>
+
+            </div>
+
+            <div
+                style="
+                    display:flex;
+                    gap:12px;
+                    margin-bottom:20px;
+                "
+            >
+
+                <div
+                    style="
+                        flex:1;
+                        position:relative;
+                    "
+                >
+
+                    <input
+                        id="adminUserSearch"
+                        type="text"
+                        placeholder="${escapeHTML(
+                            t("searchUsers")
+                        )}"
+                        style="
+                            width:100%;
+                            padding:12px 14px;
+                            border:1px solid #e5e7eb;
+                            border-radius:12px;
+                        "
+                    >
+
+                </div>
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="adminUsersRefresh"
+                >
+                    <i class="fa-solid fa-rotate"></i>
+                    ${escapeHTML(
+                        t("refreshData")
+                    )}
+                </button>
+
+            </div>
+
+            <div id="adminUsersContainer">
+                <div
+                    style="
+                        padding:30px;
+                        text-align:center;
+                    "
+                >
+                    <i class="fa-solid fa-spinner fa-spin"></i>
+                    ${escapeHTML(
+                        t("loading")
+                    )}
+                </div>
+            </div>
+
+        </div>
+    `;
+
+    document
+        .getElementById(
+            "adminUsersBack"
+        )
+        .addEventListener(
+            "click",
+            showAdminOverview
+        );
+
+    document
+        .getElementById(
+            "adminUsersRefresh"
+        )
+        .addEventListener(
+            "click",
+            loadAdminUsers
+        );
+
+    document
+        .getElementById(
+            "adminUserSearch"
+        )
+        .addEventListener(
+            "input",
+            filterAdminUsers
+        );
+
+    await loadAdminUsers();
+}
+
+async function loadAdminUsers() {
+
+    const container =
+        document.getElementById(
+            "adminUsersContainer"
+        );
+
+    if (!container) {
+        return;
+    }
+
+    container.innerHTML = `
+        <div
+            style="
+                padding:30px;
+                text-align:center;
+            "
+        >
+            <i class="fa-solid fa-spinner fa-spin"></i>
+            ${escapeHTML(
+                t("loading")
+            )}
+        </div>
+    `;
+
+    try {
+
+        const data =
+            await apiRequest(
+                "/users/"
+            );
+
+        adminUsersCache =
+            Array.isArray(
+                data.users
+            )
+                ? data.users
+                : [];
+
+        renderAdminUsers(
+            adminUsersCache
+        );
+
+    } catch (error) {
+
+        console.error(
+            "Admin users error:",
+            error
+        );
+
+        container.innerHTML = `
+            <div
+                style="
+                    padding:30px;
+                    text-align:center;
+                "
+            >
+
+                <strong>
+                    ${escapeHTML(
+                        t(
+                            "operationFailed"
+                        )
+                    )}
+                </strong>
+
+                <p>
+                    ${escapeHTML(
+                        error.message
+                    )}
+                </p>
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="retryAdminUsers"
+                >
+                    ${escapeHTML(
+                        t("retry")
+                    )}
+                </button>
+
+            </div>
+        `;
+
+        document
+            .getElementById(
+                "retryAdminUsers"
+            )
+            ?.addEventListener(
+                "click",
+                loadAdminUsers
+            );
+    }
+}
+
+function filterAdminUsers() {
+
+    const input =
+        document.getElementById(
+            "adminUserSearch"
+        );
+
+    const search =
+        input
+            ? input.value
+                .toLowerCase()
+                .trim()
+            : "";
+
+    const filtered =
+        adminUsersCache.filter(
+            user => {
+
+                const text =
+                    [
+                        user.user_id,
+                        user.name,
+                        user.email,
+                        user.role
+                    ]
+                        .filter(Boolean)
+                        .join(" ")
+                        .toLowerCase();
+
+                return (
+                    !search ||
+                    text.includes(
+                        search
+                    )
+                );
+            }
+        );
+
+    renderAdminUsers(
+        filtered
+    );
+}
+
+function renderAdminUsers(
+    users
+) {
+
+    const container =
+        document.getElementById(
+            "adminUsersContainer"
+        );
+
+    if (!container) {
+        return;
+    }
+
+    if (!users.length) {
+
+        container.innerHTML = `
+            <div
+                style="
+                    padding:30px;
+                    text-align:center;
+                    opacity:.65;
+                "
+            >
+                ${escapeHTML(
+                    t("noUsers")
+                )}
+            </div>
+        `;
+
+        return;
+    }
+
+    container.innerHTML = `
+        <div
+            style="
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr auto;
+                gap:12px;
+                font-weight:700;
+                padding:12px 0;
+                border-bottom:1px solid #e5e7eb;
+            "
+        >
+            <span>
+                ${escapeHTML(
+                    t("userId")
+                )}
+            </span>
+
+            <span>
+                ${escapeHTML(
+                    t("users")
+                )}
+            </span>
+
+            <span>
+                ${escapeHTML(
+                    t("selectRole")
+                )}
+            </span>
+
+            <span>
+                ${escapeHTML(
+                    t("details")
+                )}
+            </span>
+        </div>
+
+        ${users
+            .map(
+                user => {
+
+                    const isCurrent =
+                        currentUser &&
+                        String(
+                            currentUser.user_id
+                        ) ===
+                        String(
+                            user.user_id
+                        );
+
+                    return `
+                        <div
+                            style="
+                                display:grid;
+                                grid-template-columns:1fr 1fr 1fr auto;
+                                gap:12px;
+                                align-items:center;
+                                padding:16px 0;
+                                border-bottom:1px solid #edf0f3;
+                            "
+                        >
+
+                            <div>
+                                <strong>
+                                    ${escapeHTML(
+                                        user.user_id
+                                    )}
+                                </strong>
+
+                                <small
+                                    style="
+                                        display:block;
+                                        opacity:.6;
+                                        margin-top:4px;
+                                    "
+                                >
+                                    ${escapeHTML(
+                                        user.email
+                                    )}
+                                </small>
+                            </div>
+
+                            <div>
+                                ${escapeHTML(
+                                    user.name
+                                )}
+                            </div>
+
+                            <div>
+
+                                <select
+                                    class="admin-role-select"
+                                    data-user-id="${escapeHTML(
+                                        user.user_id
+                                    )}"
+                                    ${
+                                        isCurrent
+                                            ? "disabled"
+                                            : ""
+                                    }
+                                    style="
+                                        width:100%;
+                                        padding:9px 10px;
+                                        border:1px solid #e5e7eb;
+                                        border-radius:10px;
+                                    "
+                                >
+
+                                    <option
+                                        value="citizen"
+                                        ${
+                                            user.role ===
+                                            "citizen"
+                                                ? "selected"
+                                                : ""
+                                        }
+                                    >
+                                        Citizen
+                                    </option>
+
+                                    <option
+                                        value="government"
+                                        ${
+                                            user.role ===
+                                            "government"
+                                                ? "selected"
+                                                : ""
+                                        }
+                                    >
+                                        Government
+                                    </option>
+
+                                    <option
+                                        value="admin"
+                                        ${
+                                            user.role ===
+                                            "admin"
+                                                ? "selected"
+                                                : ""
+                                        }
+                                    >
+                                        Admin
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                class="small-action admin-save-role"
+                                data-user-id="${escapeHTML(
+                                    user.user_id
+                                )}"
+                                ${
+                                    isCurrent
+                                        ? "disabled"
+                                        : ""
+                                }
+                            >
+                                ${escapeHTML(
+                                    t("saveRole")
+                                )}
+                            </button>
+
+                        </div>
+                    `;
+                }
+            )
+            .join("")}
+    `;
+
+    container
+        .querySelectorAll(
+            ".admin-save-role"
+        )
+        .forEach(
+            button => {
+
+                button.addEventListener(
+                    "click",
+                    async () => {
+
+                        await updateAdminUserRole(
+                            button.dataset
+                                .userId
+                        );
+                    }
+                );
+            }
+        );
+}
+
+async function updateAdminUserRole(
+    userId
+) {
+
+    if (
+        !currentUser ||
+        currentUser.user_id ===
+        userId
+    ) {
+
+        showToast(
+            t("operationFailed"),
+            t(
+                "cannotChangeOwnRole"
+            )
+        );
+
+        return;
+    }
+
+    const select =
+        document.querySelector(
+            `.admin-role-select[data-user-id="${CSS.escape(
+                userId
+            )}"]`
+        );
+
+    if (!select) {
+        return;
+    }
+
+    const role =
+        select.value;
+
+    try {
+
+        await apiRequest(
+            `/users/${encodeURIComponent(
+                userId
+            )}/role`,
+            {
+                method:
+                    "PUT",
+
+                body:
+                    JSON.stringify({
+                        role
+                    })
+            }
+        );
+
+        showToast(
+            t("userRoleUpdated"),
+            t(
+                "userRoleUpdatedSuccessfully"
+            )
+        );
+
+        await loadAdminUsers();
+
+    } catch (error) {
+
+        showToast(
+            t("operationFailed"),
+            error.message
+        );
+    }
+}
+
+function openAdminRoles() {
+
+    const workspace =
+        ensureAdminWorkspace();
+
+    if (!workspace) {
+        return;
+    }
+
+    currentAdminPanel =
+        "roles";
+
+    const roles = [
+        {
+            key:
+                "citizen",
+
+            title:
+                "Citizen",
+
+            icon:
+                "fa-user",
+
+            permissions: [
+                "permissionSubmitReports",
+                "permissionViewOwnReports",
+                "permissionIssueMap"
+            ]
+        },
+
+        {
+            key:
+                "government",
+
+            title:
+                "Government",
+
+            icon:
+                "fa-building-columns",
+
+            permissions: [
+                "permissionReviewReports",
+                "permissionVerifyReports",
+                "permissionManageProjects",
+                "permissionManageContractors"
+            ]
+        },
+
+        {
+            key:
+                "admin",
+
+            title:
+                "Administrator",
+
+            icon:
+                "fa-shield-halved",
+
+            permissions: [
+                "permissionManageUsers",
+                "permissionManageRoles",
+                "permissionManageSystem"
+            ]
+        }
+    ];
+
+    workspace.innerHTML = `
+        <div
+            class="white-card"
+            style="margin-top:20px;"
+        >
+
+            <div
+                style="
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    margin-bottom:24px;
+                "
+            >
+
+                <div>
+
+                    <span class="card-eyebrow">
+                        ${escapeHTML(
+                            t(
+                                "adminRoles"
+                            )
+                        )}
+                    </span>
+
+                    <h3>
+                        ${escapeHTML(
+                            t(
+                                "rolesPermissions"
+                            )
+                        )}
+                    </h3>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="adminRolesBack"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                    ${escapeHTML(
+                        t("close")
+                    )}
+                </button>
+
+            </div>
+
+            <div
+                style="
+                    display:grid;
+                    grid-template-columns:repeat(3,minmax(0,1fr));
+                    gap:18px;
+                "
+            >
+
+                ${roles
+                    .map(
+                        role => `
+                            <div
+                                style="
+                                    padding:22px;
+                                    background:#f8fafc;
+                                    border-radius:16px;
+                                    border:1px solid #edf0f3;
+                                "
+                            >
+
+                                <div
+                                    style="
+                                        width:46px;
+                                        height:46px;
+                                        border-radius:14px;
+                                        display:flex;
+                                        align-items:center;
+                                        justify-content:center;
+                                        background:white;
+                                        margin-bottom:14px;
+                                    "
+                                >
+                                    <i class="fa-solid ${role.icon}"></i>
+                                </div>
+
+                                <h3>
+                                    ${escapeHTML(
+                                        role.title
+                                    )}
+                                </h3>
+
+                                <div
+                                    style="
+                                        margin-top:15px;
+                                    "
+                                >
+                                    ${role.permissions
+                                        .map(
+                                            permission =>
+                                                `
+                                                <div
+                                                    style="
+                                                        display:flex;
+                                                        gap:8px;
+                                                        align-items:center;
+                                                        margin:10px 0;
+                                                        font-size:14px;
+                                                    "
+                                                >
+                                                    <i
+                                                        class="fa-solid fa-check"
+                                                        style="opacity:.7;"
+                                                    ></i>
+
+                                                    <span>
+                                                        ${escapeHTML(
+                                                            t(
+                                                                permission
+                                                            )
+                                                        )}
+                                                    </span>
+                                                </div>
+                                                `
+                                        )
+                                        .join("")}
+                                </div>
+
+                            </div>
+                        `
+                    )
+                    .join("")}
+
+            </div>
+
+        </div>
+    `;
+
+    document
+        .getElementById(
+            "adminRolesBack"
+        )
+        .addEventListener(
+            "click",
+            showAdminOverview
+        );
+}
+
+function openAdminCities() {
+
+    const workspace =
+        ensureAdminWorkspace();
+
+    if (!workspace) {
+        return;
+    }
+
+    currentAdminPanel =
+        "cities";
+
+    workspace.innerHTML = `
+        <div
+            class="white-card"
+            style="margin-top:20px;"
+        >
+
+            <div
+                style="
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    gap:20px;
+                    margin-bottom:22px;
+                "
+            >
+
+                <div>
+
+                    <span class="card-eyebrow">
+                        ${escapeHTML(
+                            t(
+                                "adminCities"
+                            )
+                        )}
+                    </span>
+
+                    <h3>
+                        ${escapeHTML(
+                            t("cities")
+                        )}
+                    </h3>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="adminCitiesBack"
+                >
+                    <i class="fa-solid fa-arrow-left"></i>
+                    ${escapeHTML(
+                        t("close")
+                    )}
+                </button>
+
+            </div>
+
+            <div
+                style="
+                    display:flex;
+                    gap:12px;
+                    align-items:center;
+                    margin-bottom:20px;
+                "
+            >
+
+                <input
+                    id="adminCitySearch"
+                    type="text"
+                    placeholder="${escapeHTML(
+                        t("searchCities")
+                    )}"
+                    style="
+                        flex:1;
+                        padding:12px 14px;
+                        border:1px solid #e5e7eb;
+                        border-radius:12px;
+                    "
+                >
+
+                <span
+                    id="adminCityCount"
+                    class="role-badge"
+                >
+                    ${pakistanCities.length}
+                </span>
+
+            </div>
+
+            <div
+                id="adminCityGrid"
+                style="
+                    display:grid;
+                    grid-template-columns:repeat(4,minmax(0,1fr));
+                    gap:10px;
+                "
+            ></div>
+
+        </div>
+    `;
+
+    document
+        .getElementById(
+            "adminCitiesBack"
+        )
+        .addEventListener(
+            "click",
+            showAdminOverview
+        );
+
+    document
+        .getElementById(
+            "adminCitySearch"
+        )
+        .addEventListener(
+            "input",
+            renderAdminCities
+        );
+
+    renderAdminCities();
+}
+
+function renderAdminCities() {
+
+    const searchInput =
+        document.getElementById(
+            "adminCitySearch"
+        );
+
+    const grid =
+        document.getElementById(
+            "adminCityGrid"
+        );
+
+    const count =
+        document.getElementById(
+            "adminCityCount"
+        );
+
+    if (!grid) {
+        return;
+    }
+
+    const search =
+        searchInput
+            ? searchInput.value
+                .toLowerCase()
+                .trim()
+            : "";
+
+    const cities =
+        [...new Set(
+            pakistanCities
+        )]
+            .sort(
+                (a, b) =>
+                    a.localeCompare(
+                        b
+                    )
+            )
+            .filter(
+                city =>
+                    !search ||
+                    city
+                        .toLowerCase()
+                        .includes(
+                            search
+                        )
+            );
+
+    if (count) {
+        count.textContent =
+            cities.length;
+    }
+
+    grid.innerHTML =
+        cities.length
+            ? cities
+                .map(
+                    city =>
+                        `
+                        <div
+                            style="
+                                padding:13px 14px;
+                                background:#f8fafc;
+                                border:1px solid #edf0f3;
+                                border-radius:12px;
+                                display:flex;
+                                gap:9px;
+                                align-items:center;
+                            "
+                        >
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                ${escapeHTML(
+                                    city
+                                )}
+                            </span>
+                        </div>
+                        `
+                )
+                .join("")
+            : `
+                <div
+                    style="
+                        grid-column:1/-1;
+                        padding:30px;
+                        text-align:center;
+                        opacity:.65;
+                    "
+                >
+                    ${escapeHTML(
+                        t("noReports")
+                    )}
+                </div>
+            `;
+}
+
+async function openAdminSystemData() {
+
+    const workspace =
+        ensureAdminWorkspace();
+
+    if (!workspace) {
+        return;
+    }
+
+    currentAdminPanel =
+        "systemData";
+
+    workspace.innerHTML = `
+        <div
+            class="white-card"
+            style="margin-top:20px;"
+        >
+
+            <div
+                style="
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    margin-bottom:22px;
+                "
+            >
+
+                <div>
+
+                    <span class="card-eyebrow">
+                        ${escapeHTML(
+                            t(
+                                "adminSystemData"
+                            )
+                        )}
+                    </span>
+
+                    <h3>
+                        ${escapeHTML(
+                            t(
+                                "systemData"
+                            )
+                        )}
+                    </h3>
+
+                </div>
+
+                <div
+                    style="
+                        display:flex;
+                        gap:10px;
+                    "
+                >
+
+                    <button
+                        type="button"
+                        class="secondary-btn"
+                        id="adminSystemRefresh"
+                    >
+                        <i class="fa-solid fa-rotate"></i>
+                        ${escapeHTML(
+                            t("refreshData")
+                        )}
+                    </button>
+
+                    <button
+                        type="button"
+                        class="secondary-btn"
+                        id="adminSystemBack"
+                    >
+                        <i class="fa-solid fa-arrow-left"></i>
+                        ${escapeHTML(
+                            t("close")
+                        )}
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div
+                id="adminSystemDataGrid"
+                style="
+                    display:grid;
+                    grid-template-columns:repeat(5,minmax(0,1fr));
+                    gap:14px;
+                    margin-bottom:26px;
+                "
+            >
+                <div style="padding:20px;background:#f8fafc;border-radius:14px;">
+                    ${escapeHTML(t("loading"))}
+                </div>
+            </div>
+
+            <div id="adminSystemDetails"></div>
+
+        </div>
+    `;
+
+    document
+        .getElementById(
+            "adminSystemBack"
+        )
+        .addEventListener(
+            "click",
+            showAdminOverview
+        );
+
+    document
+        .getElementById(
+            "adminSystemRefresh"
+        )
+        .addEventListener(
+            "click",
+            openAdminSystemData
+        );
+
+    await loadAdminSystemData();
+}
+
+async function loadAdminSystemData() {
+
+    const grid =
+        document.getElementById(
+            "adminSystemDataGrid"
+        );
+
+    const details =
+        document.getElementById(
+            "adminSystemDetails"
+        );
+
+    if (!grid) {
+        return;
+    }
+
+    try {
+
+        const results =
+            await Promise.allSettled([
+                apiRequest(
+                    "/users/"
+                ),
+
+                apiRequest(
+                    "/reports"
+                ),
+
+                apiRequest(
+                    "/projects/"
+                ),
+
+                apiRequest(
+                    "/contractors/"
+                ),
+
+                apiRequest(
+                    "/decisions/"
+                )
+            ]);
+
+        const users =
+            results[0].status ===
+            "fulfilled"
+                ? results[0].value
+                : {};
+
+        const reports =
+            results[1].status ===
+            "fulfilled"
+                ? results[1].value
+                : {};
+
+        const projects =
+            results[2].status ===
+            "fulfilled"
+                ? results[2].value
+                : {};
+
+        const contractors =
+            results[3].status ===
+            "fulfilled"
+                ? results[3].value
+                : {};
+
+        const decisions =
+            results[4].status ===
+            "fulfilled"
+                ? results[4].value
+                : {};
+
+        const userList =
+            Array.isArray(
+                users.users
+            )
+                ? users.users
+                : [];
+
+        const reportList =
+            Array.isArray(
+                reports.reports
+            )
+                ? reports.reports
+                : [];
+
+        const projectList =
+            Array.isArray(
+                projects.projects
+            )
+                ? projects.projects
+                : [];
+
+        const contractorList =
+            Array.isArray(
+                contractors.contractors
+            )
+                ? contractors.contractors
+                : [];
+
+        const decisionList =
+            Array.isArray(
+                decisions.decisions
+            )
+                ? decisions.decisions
+                : [];
+
+        adminSystemDataCache = {
+            users:
+                userList,
+
+            reports:
+                reportList,
+
+            projects:
+                projectList,
+
+            contractors:
+                contractorList,
+
+            decisions:
+                decisionList
+        };
+
+        grid.innerHTML = `
+            ${adminMetric(
+                t("totalUsers"),
+                userList.length
+            )}
+
+            ${adminMetric(
+                t("totalReportsAdmin"),
+                reportList.length
+            )}
+
+            ${adminMetric(
+                t("totalProjects"),
+                projectList.length
+            )}
+
+            ${adminMetric(
+                t("totalContractors"),
+                contractorList.length
+            )}
+
+            ${adminMetric(
+                t("totalDecisions"),
+                decisionList.length
+            )}
+        `;
+
+        if (details) {
+
+            details.innerHTML = `
+                <div
+                    style="
+                        display:grid;
+                        grid-template-columns:1fr 1fr;
+                        gap:16px;
+                    "
+                >
+
+                    ${adminDataBox(
+                        t("users"),
+                        userList
+                            .slice(0, 8)
+                            .map(
+                                user =>
+                                    `<div>${escapeHTML(
+                                        user.name
+                                    )} • ${escapeHTML(
+                                        user.role
+                                    )}</div>`
+                            )
+                            .join("") ||
+                        escapeHTML(
+                            t("noUsers")
+                        )
+                    )}
+
+                    ${adminDataBox(
+                        t("reports"),
+                        reportList
+                            .slice(0, 8)
+                            .map(
+                                report =>
+                                    `<div>${escapeHTML(
+                                        report.report_id
+                                    )} • ${escapeHTML(
+                                        statusLabel(
+                                            report.status
+                                        )
+                                    )}</div>`
+                            )
+                            .join("") ||
+                        escapeHTML(
+                            t("noReports")
+                        )
+                    )}
+
+                    ${adminDataBox(
+                        t("projectManagement"),
+                        projectList
+                            .slice(0, 8)
+                            .map(
+                                project =>
+                                    `<div>${escapeHTML(
+                                        project.project_id
+                                    )} • ${escapeHTML(
+                                        statusLabel(
+                                            project.status
+                                        )
+                                    )}</div>`
+                            )
+                            .join("") ||
+                        escapeHTML(
+                            t("noProjects")
+                        )
+                    )}
+
+                    ${adminDataBox(
+                        t("contractors"),
+                        contractorList
+                            .slice(0, 8)
+                            .map(
+                                contractor =>
+                                    `<div>${escapeHTML(
+                                        contractor.company_name ||
+                                        contractor.contractor_id
+                                    )}</div>`
+                            )
+                            .join("") ||
+                        escapeHTML(
+                            t("noContractors")
+                        )
+                    )}
+
+                </div>
+            `;
+        }
+
+    } catch (error) {
+
+        console.error(
+            "Admin system data error:",
+            error
+        );
+
+        grid.innerHTML = `
+            <div
+                style="
+                    grid-column:1/-1;
+                    padding:30px;
+                    text-align:center;
+                "
+            >
+                <strong>
+                    ${escapeHTML(
+                        t(
+                            "operationFailed"
+                        )
+                    )}
+                </strong>
+
+                <p>
+                    ${escapeHTML(
+                        error.message
+                    )}
+                </p>
+            </div>
+        `;
+    }
+}
+
+function adminMetric(
+    label,
+    value
+) {
+
+    return `
+        <div
+            style="
+                padding:20px;
+                background:#f8fafc;
+                border-radius:14px;
+            "
+        >
+
+            <span>
+                ${escapeHTML(
+                    label
+                )}
+            </span>
+
+            <strong
+                style="
+                    display:block;
+                    font-size:30px;
+                    margin-top:8px;
+                "
+            >
+                ${escapeHTML(
+                    String(
+                        value
+                    )
+                )}
+            </strong>
+
+        </div>
+    `;
+}
+
+function adminDataBox(
+    title,
+    html
+) {
+
+    return `
+        <div
+            style="
+                background:#f8fafc;
+                border-radius:16px;
+                padding:20px;
+            "
+        >
+
+            <h4>
+                ${escapeHTML(
+                    title
+                )}
+            </h4>
+
+            <div
+                style="
+                    display:flex;
+                    flex-direction:column;
+                    gap:8px;
+                    margin-top:12px;
+                    font-size:14px;
+                "
+            >
+                ${html}
+            </div>
+
+        </div>
+    `;
+}
+
+function refreshOpenAdminPanel() {
+
+    if (
+        !currentUser ||
+        normalizeRole(
+            currentUser.role
+        ) !==
+        "admin"
+    ) {
+        return;
+    }
+
+    if (
+        currentAdminPanel ===
+        "users"
+    ) {
+
+        openAdminUsers();
+
+        return;
+    }
+
+    if (
+        currentAdminPanel ===
+        "roles"
+    ) {
+
+        openAdminRoles();
+
+        return;
+    }
+
+    if (
+        currentAdminPanel ===
+        "cities"
+    ) {
+
+        openAdminCities();
+
+        return;
+    }
+
+    if (
+        currentAdminPanel ===
+        "systemData"
+    ) {
+
+        openAdminSystemData();
+
+        return;
+    }
+
+    showAdminOverview();
+}
+
+/* =====================================================
+   UTILITY
+===================================================== */
+
+function delay(
+    ms
+) {
+
     return new Promise(
         resolve =>
             setTimeout(
@@ -4787,7 +7564,10 @@ function delay(ms) {
     );
 }
 
-function capitalize(text) {
+function capitalize(
+    text
+) {
+
     if (!text) {
         return "";
     }
@@ -4798,12 +7578,17 @@ function capitalize(text) {
     );
 }
 
+/* =====================================================
+   TOAST
+===================================================== */
+
 let toastTimer;
 
 function showToast(
     title,
     message
 ) {
+
     toastTitle.textContent =
         title;
 
@@ -4821,15 +7606,22 @@ function showToast(
     toastTimer =
         setTimeout(
             () => {
+
                 toast.classList.remove(
                     "show"
                 );
+
             },
             3200
         );
 }
 
+/* =====================================================
+   LOAD SAVED USER
+===================================================== */
+
 function loadSavedUser() {
+
     const saved =
         localStorage.getItem(
             "civic_user"
@@ -4840,6 +7632,7 @@ function loadSavedUser() {
     }
 
     try {
+
         const user =
             JSON.parse(
                 saved
@@ -4853,7 +7646,9 @@ function loadSavedUser() {
         startApplication(
             user
         );
+
     } catch (error) {
+
         console.error(
             "Saved user error:",
             error
@@ -4869,13 +7664,19 @@ function loadSavedUser() {
     }
 }
 
+/* =====================================================
+   ESCAPE KEY
+===================================================== */
+
 document.addEventListener(
     "keydown",
     event => {
+
         if (
             event.key ===
             "Escape"
         ) {
+
             closeSidebar();
 
             const reviewModal =
@@ -4894,6 +7695,15 @@ document.addEventListener(
 
             if (contractorModal) {
                 contractorModal.remove();
+            }
+
+            const adminModal =
+                document.getElementById(
+                    "adminModal"
+                );
+
+            if (adminModal) {
+                adminModal.remove();
             }
         }
     }
