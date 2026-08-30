@@ -6,14 +6,22 @@ from Backend.Config.settings import settings
 
 DATABASE_URL = (
     f"mssql+pyodbc://{settings.DB_USER}:{settings.DB_PASSWORD}"
-    f"@{settings.DB_SERVER}/{settings.DB_NAME}"
+    f"@{settings.DB_SERVER}:1433/{settings.DB_NAME}"
     f"?driver={settings.DB_DRIVER.replace(' ', '+')}"
+    f"&Encrypt=yes"
+    f"&TrustServerCertificate=no"
+    f"&Connection+Timeout=30"
 )
 
 
 engine = create_engine(
     DATABASE_URL,
-    echo=False
+    echo=False,
+    pool_pre_ping=True,
+    pool_recycle=1800,
+    connect_args={
+        "timeout": 30
+    }
 )
 
 
