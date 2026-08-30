@@ -9,3 +9,4 @@ python-jose[cryptography]
 passlib[bcrypt]
 groq
 python-multipart
+pinecone
