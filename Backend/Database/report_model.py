@@ -46,3 +46,28 @@ class ReportDB(Base):
         String(50),
         nullable=False
     )
+
+    priority = Column(
+        String(50),
+        nullable=True
+    )
+
+    department = Column(
+        String(150),
+        nullable=True
+    )
+
+    government_notes = Column(
+        Text,
+        nullable=True
+    )
+
+    rejection_reason = Column(
+        Text,
+        nullable=True
+    )
+
+    information_request = Column(
+        Text,
+        nullable=True
+    )

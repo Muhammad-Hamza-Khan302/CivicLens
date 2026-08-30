@@ -1,3 +1,4 @@
+
 from sqlalchemy.orm import Session
 
 from Backend.Models.project import Project, ProjectStatus
@@ -37,6 +38,9 @@ def assign_contractor(
 ):
     """
     Assign a contractor to a project.
+
+    Contractors can only be assigned while the project
+    is in the bidding stage.
     """
 
     project = db.query(ProjectDB).filter(
@@ -53,10 +57,10 @@ def assign_contractor(
     if not contractor:
         return None, "Contractor not found"
 
-    if project.status not in ["proposed", "bidding"]:
+    if project.status != ProjectStatus.BIDDING.value:
         return None, (
-            "Contractor can only be assigned to a "
-            "proposed or bidding project"
+            "Contractor can only be assigned "
+            "while the project is in bidding"
         )
 
     project.assigned_contractor_id = contractor_id
@@ -88,12 +92,27 @@ def update_project_status(
     new_status_value = new_status.value
 
     valid_transitions = {
-        "proposed": ["approved"],
-        "approved": ["bidding"],
-        "bidding": ["assigned"],
-        "assigned": ["in_progress"],
-        "in_progress": ["completed"],
-        "completed": []
+        ProjectStatus.PROPOSED.value: [
+            ProjectStatus.APPROVED.value
+        ],
+
+        ProjectStatus.APPROVED.value: [
+            ProjectStatus.BIDDING.value
+        ],
+
+        ProjectStatus.BIDDING.value: [
+            ProjectStatus.ASSIGNED.value
+        ],
+
+        ProjectStatus.ASSIGNED.value: [
+            ProjectStatus.IN_PROGRESS.value
+        ],
+
+        ProjectStatus.IN_PROGRESS.value: [
+            ProjectStatus.COMPLETED.value
+        ],
+
+        ProjectStatus.COMPLETED.value: []
     }
 
     allowed_statuses = valid_transitions.get(
@@ -167,3 +186,4 @@ def get_projects_by_report_id(
     return db.query(ProjectDB).filter(
         ProjectDB.report_id == report_id
     ).all()
+

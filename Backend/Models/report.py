@@ -1,14 +1,24 @@
 from enum import Enum
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from typing import Optional
 
 
 class ReportStatus(str, Enum):
     SUBMITTED = "submitted"
-    PROCESSING = "processing"
-    ANALYZED = "analyzed"
+    REVIEWING = "reviewing"
+    INFORMATION_REQUESTED = "information_requested"
     VERIFIED = "verified"
+    REJECTED = "rejected"
+    ASSIGNED = "assigned"
+    IN_PROGRESS = "in_progress"
     RESOLVED = "resolved"
+
+
+class ReportPriority(str, Enum):
+    LOW = "low"
+    MEDIUM = "medium"
+    HIGH = "high"
+    CRITICAL = "critical"
 
 
 class Location(BaseModel):
@@ -24,3 +34,24 @@ class Report(BaseModel):
     image_url: Optional[str] = None
     location: Location
     status: ReportStatus = ReportStatus.SUBMITTED
+    priority: Optional[ReportPriority] = None
+    department: Optional[str] = None
+    government_notes: Optional[str] = None
+    rejection_reason: Optional[str] = None
+    information_request: Optional[str] = None
+
+
+class RejectReportRequest(BaseModel):
+    reason: str
+
+
+class RequestInformationRequest(BaseModel):
+    message: str
+
+
+class UpdatePriorityRequest(BaseModel):
+    priority: ReportPriority
+
+
+class AssignDepartmentRequest(BaseModel):
+    department: str
