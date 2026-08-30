@@ -42,6 +42,7 @@ def submit_report(
     return {
         "message":
             "Civic report submitted successfully",
+
         "report":
             created_report
     }
@@ -52,7 +53,9 @@ def get_all_reports(
     db: Session = Depends(get_db)
 ):
 
-    reports = get_reports(db)
+    reports = get_reports(
+        db
+    )
 
     return {
         "message":
@@ -66,7 +69,9 @@ def get_all_reports(
     }
 
 
-@router.get("/reports/{report_id}")
+@router.get(
+    "/reports/{report_id}"
+)
 def get_single_report(
     report_id: str,
     db: Session = Depends(get_db)
@@ -78,6 +83,7 @@ def get_single_report(
     )
 
     if not report:
+
         raise HTTPException(
             status_code=404,
             detail="Report not found"
@@ -92,9 +98,36 @@ def get_single_report(
     }
 
 
-# ============================================================
-# GOVERNMENT ACTIONS
-# ============================================================
+@router.put(
+    "/reports/{report_id}/status"
+)
+def change_report_status(
+    report_id: str,
+    status: ReportStatus,
+    db: Session = Depends(get_db)
+):
+
+    report, error = update_report_status(
+        report_id,
+        status,
+        db
+    )
+
+    if error:
+
+        raise HTTPException(
+            status_code=400,
+            detail=error
+        )
+
+    return {
+        "message":
+            "Report status updated successfully",
+
+        "report":
+            report
+    }
+
 
 @router.put(
     "/reports/{report_id}/review"
@@ -111,6 +144,7 @@ def start_report_review(
     )
 
     if error:
+
         raise HTTPException(
             status_code=400,
             detail=error
@@ -139,6 +173,7 @@ def verify_civic_report(
     )
 
     if error:
+
         raise HTTPException(
             status_code=400,
             detail=error
@@ -163,6 +198,7 @@ def reject_civic_report(
 ):
 
     if not data.reason.strip():
+
         raise HTTPException(
             status_code=400,
             detail="Rejection reason is required"
@@ -175,6 +211,7 @@ def reject_civic_report(
     )
 
     if error:
+
         raise HTTPException(
             status_code=400,
             detail=error
@@ -199,6 +236,7 @@ def request_report_information(
 ):
 
     if not data.message.strip():
+
         raise HTTPException(
             status_code=400,
             detail="Information request is required"
@@ -211,6 +249,7 @@ def request_report_information(
     )
 
     if error:
+
         raise HTTPException(
             status_code=400,
             detail=error
@@ -241,6 +280,7 @@ def change_report_priority(
     )
 
     if error:
+
         raise HTTPException(
             status_code=400,
             detail=error
@@ -264,6 +304,13 @@ def assign_report_department(
     db: Session = Depends(get_db)
 ):
 
+    if not data.department.strip():
+
+        raise HTTPException(
+            status_code=400,
+            detail="Department is required"
+        )
+
     report, error = assign_department(
         report_id,
         data.department,
@@ -271,6 +318,7 @@ def assign_report_department(
     )
 
     if error:
+
         raise HTTPException(
             status_code=400,
             detail=error

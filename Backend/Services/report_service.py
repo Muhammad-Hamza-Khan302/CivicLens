@@ -65,11 +65,14 @@ def create_report(
     db.commit()
     db.refresh(db_report)
 
-    return report_to_model(db_report)
+    return report_to_model(
+        db_report
+    )
 
 
-def get_reports(db: Session):
-
+def get_reports(
+    db: Session
+):
     reports = db.query(
         ReportDB
     ).all()
@@ -84,7 +87,6 @@ def get_report_by_id(
     report_id: str,
     db: Session
 ):
-
     report = (
         db.query(ReportDB)
         .filter(
@@ -96,7 +98,9 @@ def get_report_by_id(
     if not report:
         return None
 
-    return report_to_model(report)
+    return report_to_model(
+        report
+    )
 
 
 def update_report_status(
@@ -104,7 +108,6 @@ def update_report_status(
     new_status: ReportStatus,
     db: Session
 ):
-
     report = (
         db.query(ReportDB)
         .filter(
@@ -116,11 +119,52 @@ def update_report_status(
     if not report:
         return None, "Report not found"
 
-    current_status = report.status
-    target_status = new_status.value
+    current_status = (
+        report.status
+    )
+
+    target_status = (
+        new_status.value
+    )
+
+    if current_status == target_status:
+        return (
+            report_to_model(report),
+            None
+        )
+
+    if (
+        current_status == "rejected" and
+        target_status != "rejected"
+    ):
+        return None, (
+            "A rejected report cannot be moved "
+            "to another status"
+        )
+
+    if (
+        current_status == "resolved" and
+        target_status != "resolved"
+    ):
+        return None, (
+            "A resolved report cannot be moved "
+            "to another status"
+        )
+
+    if target_status == "resolved":
+        report.status = (
+            ReportStatus.RESOLVED.value
+        )
+
+        db.commit()
+        db.refresh(report)
+
+        return (
+            report_to_model(report),
+            None
+        )
 
     valid_transitions = {
-
         "submitted": [
             "reviewing",
             "rejected",
@@ -134,7 +178,9 @@ def update_report_status(
         ],
 
         "information_requested": [
-            "reviewing"
+            "reviewing",
+            "rejected",
+            "resolved"
         ],
 
         "verified": [
@@ -144,7 +190,8 @@ def update_report_status(
         ],
 
         "assigned": [
-            "in_progress"
+            "in_progress",
+            "resolved"
         ],
 
         "in_progress": [
@@ -154,12 +201,13 @@ def update_report_status(
         "rejected": [],
 
         "resolved": []
-
     }
 
-    allowed_statuses = valid_transitions.get(
-        current_status,
-        []
+    allowed_statuses = (
+        valid_transitions.get(
+            current_status,
+            []
+        )
     )
 
     if target_status not in allowed_statuses:
@@ -173,14 +221,16 @@ def update_report_status(
     db.commit()
     db.refresh(report)
 
-    return report_to_model(report), None
+    return (
+        report_to_model(report),
+        None
+    )
 
 
 def verify_report(
     report_id: str,
     db: Session
 ):
-
     return update_report_status(
         report_id,
         ReportStatus.VERIFIED,
@@ -193,7 +243,6 @@ def reject_report(
     reason: str,
     db: Session
 ):
-
     report = (
         db.query(ReportDB)
         .filter(
@@ -205,14 +254,31 @@ def reject_report(
     if not report:
         return None, "Report not found"
 
-    report.rejection_reason = reason
+    if not reason.strip():
+        return None, (
+            "Rejection reason is required"
+        )
 
-    report.status = ReportStatus.REJECTED.value
+    if report.status == "resolved":
+        return None, (
+            "A resolved report cannot be rejected"
+        )
+
+    report.rejection_reason = (
+        reason.strip()
+    )
+
+    report.status = (
+        ReportStatus.REJECTED.value
+    )
 
     db.commit()
     db.refresh(report)
 
-    return report_to_model(report), None
+    return (
+        report_to_model(report),
+        None
+    )
 
 
 def request_information(
@@ -220,7 +286,6 @@ def request_information(
     message: str,
     db: Session
 ):
-
     report = (
         db.query(ReportDB)
         .filter(
@@ -232,16 +297,24 @@ def request_information(
     if not report:
         return None, "Report not found"
 
-    if report.status not in [
-        "submitted",
-        "reviewing"
-    ]:
+    if not message.strip():
         return None, (
-            "Information can only be requested "
-            "while reviewing a report"
+            "Information request is required"
         )
 
-    report.information_request = message
+    if report.status in [
+        "rejected",
+        "resolved"
+    ]:
+        return None, (
+            "Information cannot be requested "
+            "for a closed report"
+        )
+
+    report.information_request = (
+        message.strip()
+    )
+
     report.status = (
         ReportStatus.INFORMATION_REQUESTED.value
     )
@@ -249,7 +322,10 @@ def request_information(
     db.commit()
     db.refresh(report)
 
-    return report_to_model(report), None
+    return (
+        report_to_model(report),
+        None
+    )
 
 
 def update_report_priority(
@@ -257,7 +333,6 @@ def update_report_priority(
     priority: ReportPriority,
     db: Session
 ):
-
     report = (
         db.query(ReportDB)
         .filter(
@@ -269,12 +344,23 @@ def update_report_priority(
     if not report:
         return None, "Report not found"
 
-    report.priority = priority.value
+    if report.status == "rejected":
+        return None, (
+            "Priority cannot be changed "
+            "for a rejected report"
+        )
+
+    report.priority = (
+        priority.value
+    )
 
     db.commit()
     db.refresh(report)
 
-    return report_to_model(report), None
+    return (
+        report_to_model(report),
+        None
+    )
 
 
 def assign_department(
@@ -282,7 +368,6 @@ def assign_department(
     department: str,
     db: Session
 ):
-
     report = (
         db.query(ReportDB)
         .filter(
@@ -294,12 +379,25 @@ def assign_department(
     if not report:
         return None, "Report not found"
 
-    report.department = department.strip()
+    department = department.strip()
 
-    if not report.department:
-        return None, "Department cannot be empty"
+    if not department:
+        return None, (
+            "Department cannot be empty"
+        )
+
+    if report.status == "rejected":
+        return None, (
+            "Department cannot be assigned "
+            "to a rejected report"
+        )
+
+    report.department = department
 
     db.commit()
     db.refresh(report)
 
-    return report_to_model(report), None
+    return (
+        report_to_model(report),
+        None
+    )
