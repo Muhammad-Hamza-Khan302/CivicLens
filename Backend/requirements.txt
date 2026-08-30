@@ -10,3 +10,4 @@ passlib[bcrypt]
 groq
 python-multipart
 pinecone
+email-validator
