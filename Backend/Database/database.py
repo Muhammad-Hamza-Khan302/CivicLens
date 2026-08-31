@@ -1,16 +1,25 @@
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
+from urllib.parse import quote_plus
 
 from Backend.Config.settings import settings
 
 
+connection_string = (
+    f"DRIVER={{{settings.DB_DRIVER}}};"
+    f"SERVER=tcp:{settings.DB_SERVER},1433;"
+    f"DATABASE={settings.DB_NAME};"
+    f"UID={settings.DB_USER};"
+    f"PWD={settings.DB_PASSWORD};"
+    f"Encrypt=yes;"
+    f"TrustServerCertificate=no;"
+    f"Connection Timeout=30;"
+)
+
 DATABASE_URL = (
-    f"mssql+pyodbc://{settings.DB_USER}:{settings.DB_PASSWORD}"
-    f"@{settings.DB_SERVER}:1433/{settings.DB_NAME}"
-    f"?driver={settings.DB_DRIVER.replace(' ', '+')}"
-    f"&Encrypt=yes"
-    f"&TrustServerCertificate=no"
-    f"&Connection+Timeout=30"
+    "mssql+pyodbc:///?odbc_connect="
+    + quote_plus(connection_string)
 )
 
 
@@ -18,10 +27,7 @@ engine = create_engine(
     DATABASE_URL,
     echo=False,
     pool_pre_ping=True,
-    pool_recycle=1800,
-    connect_args={
-        "timeout": 30
-    }
+    pool_recycle=1800
 )
 
 
@@ -42,3 +48,4 @@ def get_db():
         yield db
     finally:
         db.close()
+
