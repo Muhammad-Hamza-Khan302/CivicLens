@@ -1,3 +1,4 @@
+
 from sqlalchemy.orm import Session
 
 from Backend.Models.report import (
@@ -61,13 +62,16 @@ def create_report(
         information_request=report.information_request
     )
 
-    db.add(db_report)
-    db.commit()
-    db.refresh(db_report)
+    try:
+        db.add(db_report)
+        db.commit()
+        db.refresh(db_report)
 
-    return report_to_model(
-        db_report
-    )
+    except Exception:
+        db.rollback()
+        raise
+
+    return report_to_model(db_report)
 
 
 def get_reports(
@@ -98,9 +102,7 @@ def get_report_by_id(
     if not report:
         return None
 
-    return report_to_model(
-        report
-    )
+    return report_to_model(report)
 
 
 def update_report_status(
@@ -119,13 +121,8 @@ def update_report_status(
     if not report:
         return None, "Report not found"
 
-    current_status = (
-        report.status
-    )
-
-    target_status = (
-        new_status.value
-    )
+    current_status = report.status
+    target_status = new_status.value
 
     if current_status == target_status:
         return (
@@ -152,12 +149,15 @@ def update_report_status(
         )
 
     if target_status == "resolved":
-        report.status = (
-            ReportStatus.RESOLVED.value
-        )
+        report.status = ReportStatus.RESOLVED.value
 
-        db.commit()
-        db.refresh(report)
+        try:
+            db.commit()
+            db.refresh(report)
+
+        except Exception:
+            db.rollback()
+            raise
 
         return (
             report_to_model(report),
@@ -170,44 +170,35 @@ def update_report_status(
             "rejected",
             "information_requested"
         ],
-
         "reviewing": [
             "verified",
             "rejected",
             "information_requested"
         ],
-
         "information_requested": [
             "reviewing",
             "rejected",
             "resolved"
         ],
-
         "verified": [
             "assigned",
             "in_progress",
             "resolved"
         ],
-
         "assigned": [
             "in_progress",
             "resolved"
         ],
-
         "in_progress": [
             "resolved"
         ],
-
         "rejected": [],
-
         "resolved": []
     }
 
-    allowed_statuses = (
-        valid_transitions.get(
-            current_status,
-            []
-        )
+    allowed_statuses = valid_transitions.get(
+        current_status,
+        []
     )
 
     if target_status not in allowed_statuses:
@@ -218,8 +209,13 @@ def update_report_status(
 
     report.status = target_status
 
-    db.commit()
-    db.refresh(report)
+    try:
+        db.commit()
+        db.refresh(report)
+
+    except Exception:
+        db.rollback()
+        raise
 
     return (
         report_to_model(report),
@@ -264,16 +260,16 @@ def reject_report(
             "A resolved report cannot be rejected"
         )
 
-    report.rejection_reason = (
-        reason.strip()
-    )
+    report.rejection_reason = reason.strip()
+    report.status = ReportStatus.REJECTED.value
 
-    report.status = (
-        ReportStatus.REJECTED.value
-    )
+    try:
+        db.commit()
+        db.refresh(report)
 
-    db.commit()
-    db.refresh(report)
+    except Exception:
+        db.rollback()
+        raise
 
     return (
         report_to_model(report),
@@ -311,16 +307,18 @@ def request_information(
             "for a closed report"
         )
 
-    report.information_request = (
-        message.strip()
-    )
-
+    report.information_request = message.strip()
     report.status = (
         ReportStatus.INFORMATION_REQUESTED.value
     )
 
-    db.commit()
-    db.refresh(report)
+    try:
+        db.commit()
+        db.refresh(report)
+
+    except Exception:
+        db.rollback()
+        raise
 
     return (
         report_to_model(report),
@@ -350,12 +348,15 @@ def update_report_priority(
             "for a rejected report"
         )
 
-    report.priority = (
-        priority.value
-    )
+    report.priority = priority.value
 
-    db.commit()
-    db.refresh(report)
+    try:
+        db.commit()
+        db.refresh(report)
+
+    except Exception:
+        db.rollback()
+        raise
 
     return (
         report_to_model(report),
@@ -394,10 +395,16 @@ def assign_department(
 
     report.department = department
 
-    db.commit()
-    db.refresh(report)
+    try:
+        db.commit()
+        db.refresh(report)
+
+    except Exception:
+        db.rollback()
+        raise
 
     return (
         report_to_model(report),
         None
     )
+

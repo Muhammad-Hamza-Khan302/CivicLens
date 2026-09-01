@@ -1,36 +1,51 @@
-import os
+
 import pyodbc
-from dotenv import load_dotenv
 
-load_dotenv()
 
-server = os.getenv("DB_SERVER")
-database = os.getenv("DB_NAME")
-username = os.getenv("DB_USER")
-password = os.getenv("DB_PASSWORD")
-driver = os.getenv("DB_DRIVER")
+SERVER = r"DESKTOP-1T9BLN2\SQLEXPRESS"
+DATABASE = "CivicLens"
+USERNAME = "civiclens_app"
 
-print("SERVER:", server)
-print("DATABASE:", database)
-print("USER:", username)
-print("PASSWORD SET:", bool(password))
-print("DRIVER:", driver)
+PASSWORD = input("Enter local SQL password: ")
+
 
 connection_string = (
-    f"DRIVER={{{driver}}};"
-    f"SERVER={server},1433;"
-    f"DATABASE={database};"
-    f"UID={username};"
-    f"PWD={password};"
-    "Encrypt=yes;"
-    "TrustServerCertificate=no;"
-    "Connection Timeout=10;"
+    f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+    f"SERVER={SERVER};"
+    f"DATABASE={DATABASE};"
+    f"UID={USERNAME};"
+    f"PWD={PASSWORD};"
+    f"TrustServerCertificate=yes;"
 )
+
 
 try:
     connection = pyodbc.connect(connection_string)
-    print("AZURE SQL CONNECTION SUCCESS")
+
+    cursor = connection.cursor()
+
+    tables = [
+        "users",
+        "reports",
+        "issues",
+        "decisions",
+        "projects",
+        "contractors"
+    ]
+
+    print("\nLOCAL SQL SERVER DATA:")
+
+    for table in tables:
+        cursor.execute(f"SELECT COUNT(*) FROM [{table}]")
+        count = cursor.fetchone()[0]
+        print(f"{table}: {count}")
+
+    cursor.close()
     connection.close()
+
+    print("\nLOCAL SQL CONNECTION SUCCESS")
+
 except Exception as e:
-    print("AZURE SQL CONNECTION FAILED")
+    print("\nLOCAL SQL CONNECTION FAILED")
     print(e)
+

@@ -1,3 +1,4 @@
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
@@ -33,7 +34,6 @@ def submit_report(
     report: Report,
     db: Session = Depends(get_db)
 ):
-
     created_report = create_report(
         report,
         db
@@ -52,7 +52,6 @@ def submit_report(
 def get_all_reports(
     db: Session = Depends(get_db)
 ):
-
     reports = get_reports(
         db
     )
@@ -76,14 +75,12 @@ def get_single_report(
     report_id: str,
     db: Session = Depends(get_db)
 ):
-
     report = get_report_by_id(
         report_id,
         db
     )
 
     if not report:
-
         raise HTTPException(
             status_code=404,
             detail="Report not found"
@@ -106,7 +103,6 @@ def change_report_status(
     status: ReportStatus,
     db: Session = Depends(get_db)
 ):
-
     report, error = update_report_status(
         report_id,
         status,
@@ -114,7 +110,6 @@ def change_report_status(
     )
 
     if error:
-
         raise HTTPException(
             status_code=400,
             detail=error
@@ -136,7 +131,6 @@ def start_report_review(
     report_id: str,
     db: Session = Depends(get_db)
 ):
-
     report, error = update_report_status(
         report_id,
         ReportStatus.REVIEWING,
@@ -144,7 +138,6 @@ def start_report_review(
     )
 
     if error:
-
         raise HTTPException(
             status_code=400,
             detail=error
@@ -166,14 +159,12 @@ def verify_civic_report(
     report_id: str,
     db: Session = Depends(get_db)
 ):
-
     report, error = verify_report(
         report_id,
         db
     )
 
     if error:
-
         raise HTTPException(
             status_code=400,
             detail=error
@@ -196,9 +187,7 @@ def reject_civic_report(
     data: RejectReportRequest,
     db: Session = Depends(get_db)
 ):
-
     if not data.reason.strip():
-
         raise HTTPException(
             status_code=400,
             detail="Rejection reason is required"
@@ -211,7 +200,6 @@ def reject_civic_report(
     )
 
     if error:
-
         raise HTTPException(
             status_code=400,
             detail=error
@@ -234,9 +222,7 @@ def request_report_information(
     data: RequestInformationRequest,
     db: Session = Depends(get_db)
 ):
-
     if not data.message.strip():
-
         raise HTTPException(
             status_code=400,
             detail="Information request is required"
@@ -249,7 +235,6 @@ def request_report_information(
     )
 
     if error:
-
         raise HTTPException(
             status_code=400,
             detail=error
@@ -272,7 +257,6 @@ def change_report_priority(
     data: UpdatePriorityRequest,
     db: Session = Depends(get_db)
 ):
-
     report, error = update_report_priority(
         report_id,
         data.priority,
@@ -280,7 +264,6 @@ def change_report_priority(
     )
 
     if error:
-
         raise HTTPException(
             status_code=400,
             detail=error
@@ -303,9 +286,7 @@ def assign_report_department(
     data: AssignDepartmentRequest,
     db: Session = Depends(get_db)
 ):
-
     if not data.department.strip():
-
         raise HTTPException(
             status_code=400,
             detail="Department is required"
@@ -318,7 +299,6 @@ def assign_report_department(
     )
 
     if error:
-
         raise HTTPException(
             status_code=400,
             detail=error
@@ -331,3 +311,4 @@ def assign_report_department(
         "report":
             report
     }
+
